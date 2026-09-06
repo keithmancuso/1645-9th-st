@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1645 9th St, Berkeley — renovation</title>
+<style>
+:root{--ink:#222;--muted:#666;--bg:#fbfaf7;--line:#e2ddd3;--accent:#1a7a3c}
+*{box-sizing:border-box}body{margin:0;font:16px/1.5 -apple-system,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+main{max-width:1100px;margin:0 auto;padding:20px}h1{font-size:26px;margin:0 0 4px}h2{font-size:20px;margin:36px 0 10px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.sub{color:var(--muted);margin:0 0 16px}a{color:#1d5fb4}
+.links a{display:inline-block;margin:4px 12px 4px 0}
+.toggle{display:flex;gap:6px;margin:12px 0}.toggle button{font:600 15px inherit;padding:8px 16px;border:1px solid var(--line);background:#fff;border-radius:8px;cursor:pointer}
+.toggle button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.plan img{width:100%;max-width:700px;display:block;border:1px solid var(--line);border-radius:8px;background:#fff}
+.plan .hidden{display:none}
+.notes{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 16px}
+.notes li{margin:4px 0}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+.gal a{position:relative;display:block;aspect-ratio:4/3;overflow:hidden;border-radius:6px;background:#ddd}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.gal span{position:absolute;left:6px;bottom:4px;font-size:11px;color:#fff;text-shadow:0 0 4px #000}
+table{border-collapse:collapse;font-size:14px}td,th{padding:4px 12px 4px 0;text-align:left;vertical-align:top}th{color:var(--muted);font-weight:600}
+</style></head><body><main>
+<h1>1645 9th St, Berkeley, CA 94710</h1>
+<p class="sub">1919 bungalow · 2 bed · 1 bath · 734 sq ft · 2,613 sq ft lot · listed at $649,000 · fixer</p>
+<div class="links">
+<a href="https://www.zillow.com/homedetails/1645-9th-St-Berkeley-CA-94710/24838128_zpid/" target="_blank">Zillow listing (subject)</a>
+<a href="https://www.zillow.com/homedetails/2435-Valley-St-Berkeley-CA-94702/24835270_zpid/" target="_blank">Zillow listing (Valley St reference)</a>
+<a href="https://github.com/keithmancuso/1645-9th-st" target="_blank">GitHub repo</a>
+<a href="CLAUDE.md" target="_blank">Project notes (CLAUDE.md)</a>
+</div>
+
+<h2>Floor plan</h2>
+<div class="toggle"><button class="on" data-plan="existing">Existing</button><button data-plan="proposed">Proposed</button></div>
+<div class="plan">
+<a id="plan-link" href="floor-plan/existing.png" target="_blank"><img id="plan-img" src="floor-plan/existing.png" alt="floor plan"></a>
+</div>
+<p class="sub" style="margin-top:8px">Reconstructed from listing photos, not measured. Room sizes are ±2 ft. Editable SVGs and the generator script are in <code>floor-plan/</code>.</p>
+<div class="notes">
+<strong>Proposed changes</strong>
+<ul>
+<li><strong>Swap kitchen and bedroom 2.</strong> Kitchen moves to the rear-left room with the slider so it opens directly onto the deck. Becomes an eat-in kitchen, roughly 15 × 12. Bedroom 2 takes the old galley kitchen space, roughly 9 × 11, with a closet added.</li>
+<li><strong>Rear porch becomes laundry / mudroom</strong>, still opening onto the deck. Water heater relocates there out of the kitchen. Open question: whether it's entered from bedroom 2, the deck only, or both.</li>
+<li>Living room, bedroom 1, bath, hall, and front porch unchanged in this pass.</li>
+</ul>
+<strong>Open questions</strong>
+<ul>
+<li>Plumbing run for the new kitchen location (sink on the west wall vs. the bath side wall to share the wet wall with the bathroom).</li>
+<li>Bathroom position and bedroom 1 door placement in the existing plan are the least certain reads from the photos. Verify on a walkthrough.</li>
+<li>Floor furnace in the hall: keep, or replace with a heat pump / mini-splits.</li>
+</ul>
+</div>
+
+<h2>Subject photos — 1645 9th St (21)</h2>
+<div class="gal"><a href="photos/1645-9th-st/01.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/01.jpg" alt="01.jpg"><span>01</span></a>
+<a href="photos/1645-9th-st/02.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/02.jpg" alt="02.jpg"><span>02</span></a>
+<a href="photos/1645-9th-st/03.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/03.jpg" alt="03.jpg"><span>03</span></a>
+<a href="photos/1645-9th-st/04.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/04.jpg" alt="04.jpg"><span>04</span></a>
+<a href="photos/1645-9th-st/05.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/05.jpg" alt="05.jpg"><span>05</span></a>
+<a href="photos/1645-9th-st/06.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/06.jpg" alt="06.jpg"><span>06</span></a>
+<a href="photos/1645-9th-st/07.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/07.jpg" alt="07.jpg"><span>07</span></a>
+<a href="photos/1645-9th-st/08.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/08.jpg" alt="08.jpg"><span>08</span></a>
+<a href="photos/1645-9th-st/09.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/09.jpg" alt="09.jpg"><span>09</span></a>
+<a href="photos/1645-9th-st/10.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/10.jpg" alt="10.jpg"><span>10</span></a>
+<a href="photos/1645-9th-st/11.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/11.jpg" alt="11.jpg"><span>11</span></a>
+<a href="photos/1645-9th-st/12.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/12.jpg" alt="12.jpg"><span>12</span></a>
+<a href="photos/1645-9th-st/13.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/13.jpg" alt="13.jpg"><span>13</span></a>
+<a href="photos/1645-9th-st/14.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/14.jpg" alt="14.jpg"><span>14</span></a>
+<a href="photos/1645-9th-st/15.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/15.jpg" alt="15.jpg"><span>15</span></a>
+<a href="photos/1645-9th-st/16.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/16.jpg" alt="16.jpg"><span>16</span></a>
+<a href="photos/1645-9th-st/17.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/17.jpg" alt="17.jpg"><span>17</span></a>
+<a href="photos/1645-9th-st/18.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/18.jpg" alt="18.jpg"><span>18</span></a>
+<a href="photos/1645-9th-st/19.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/19.jpg" alt="19.jpg"><span>19</span></a>
+<a href="photos/1645-9th-st/20.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/20.jpg" alt="20.jpg"><span>20</span></a>
+<a href="photos/1645-9th-st/21.jpg" target="_blank"><img loading="lazy" src="photos/1645-9th-st/21.jpg" alt="21.jpg"><span>21</span></a></div>
+
+<h2>Reference photos — 2435 Valley St (87)</h2>
+<p class="sub">1908 cottage a few blocks away, already renovated: coved ceilings, wainscoting, oak floors, gas fireplace insert, eat-in kitchen, skylights, rear expansion. 1,067 sq ft, listed at $995,000. This is the look we're aiming for.</p>
+<div class="gal"><a href="photos/2435-valley-st-reference/01.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/01.jpg" alt="01.jpg"><span>01</span></a>
+<a href="photos/2435-valley-st-reference/02.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/02.jpg" alt="02.jpg"><span>02</span></a>
+<a href="photos/2435-valley-st-reference/03.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/03.jpg" alt="03.jpg"><span>03</span></a>
+<a href="photos/2435-valley-st-reference/04.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/04.jpg" alt="04.jpg"><span>04</span></a>
+<a href="photos/2435-valley-st-reference/05.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/05.jpg" alt="05.jpg"><span>05</span></a>
+<a href="photos/2435-valley-st-reference/06.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/06.jpg" alt="06.jpg"><span>06</span></a>
+<a href="photos/2435-valley-st-reference/07.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/07.jpg" alt="07.jpg"><span>07</span></a>
+<a href="photos/2435-valley-st-reference/08.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/08.jpg" alt="08.jpg"><span>08</span></a>
+<a href="photos/2435-valley-st-reference/09.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/09.jpg" alt="09.jpg"><span>09</span></a>
+<a href="photos/2435-valley-st-reference/10.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/10.jpg" alt="10.jpg"><span>10</span></a>
+<a href="photos/2435-valley-st-reference/11.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/11.jpg" alt="11.jpg"><span>11</span></a>
+<a href="photos/2435-valley-st-reference/12.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/12.jpg" alt="12.jpg"><span>12</span></a>
+<a href="photos/2435-valley-st-reference/13.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/13.jpg" alt="13.jpg"><span>13</span></a>
+<a href="photos/2435-valley-st-reference/14.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/14.jpg" alt="14.jpg"><span>14</span></a>
+<a href="photos/2435-valley-st-reference/15.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/15.jpg" alt="15.jpg"><span>15</span></a>
+<a href="photos/2435-valley-st-reference/16.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/16.jpg" alt="16.jpg"><span>16</span></a>
+<a href="photos/2435-valley-st-reference/17.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/17.jpg" alt="17.jpg"><span>17</span></a>
+<a href="photos/2435-valley-st-reference/18.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/18.jpg" alt="18.jpg"><span>18</span></a>
+<a href="photos/2435-valley-st-reference/19.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/19.jpg" alt="19.jpg"><span>19</span></a>
+<a href="photos/2435-valley-st-reference/20.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/20.jpg" alt="20.jpg"><span>20</span></a>
+<a href="photos/2435-valley-st-reference/21.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/21.jpg" alt="21.jpg"><span>21</span></a>
+<a href="photos/2435-valley-st-reference/22.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/22.jpg" alt="22.jpg"><span>22</span></a>
+<a href="photos/2435-valley-st-reference/23.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/23.jpg" alt="23.jpg"><span>23</span></a>
+<a href="photos/2435-valley-st-reference/24.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/24.jpg" alt="24.jpg"><span>24</span></a>
+<a href="photos/2435-valley-st-reference/25.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/25.jpg" alt="25.jpg"><span>25</span></a>
+<a href="photos/2435-valley-st-reference/26.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/26.jpg" alt="26.jpg"><span>26</span></a>
+<a href="photos/2435-valley-st-reference/27.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/27.jpg" alt="27.jpg"><span>27</span></a>
+<a href="photos/2435-valley-st-reference/28.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/28.jpg" alt="28.jpg"><span>28</span></a>
+<a href="photos/2435-valley-st-reference/29.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/29.jpg" alt="29.jpg"><span>29</span></a>
+<a href="photos/2435-valley-st-reference/30.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/30.jpg" alt="30.jpg"><span>30</span></a>
+<a href="photos/2435-valley-st-reference/31.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/31.jpg" alt="31.jpg"><span>31</span></a>
+<a href="photos/2435-valley-st-reference/32.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/32.jpg" alt="32.jpg"><span>32</span></a>
+<a href="photos/2435-valley-st-reference/33.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/33.jpg" alt="33.jpg"><span>33</span></a>
+<a href="photos/2435-valley-st-reference/34.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/34.jpg" alt="34.jpg"><span>34</span></a>
+<a href="photos/2435-valley-st-reference/35.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/35.jpg" alt="35.jpg"><span>35</span></a>
+<a href="photos/2435-valley-st-reference/36.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/36.jpg" alt="36.jpg"><span>36</span></a>
+<a href="photos/2435-valley-st-reference/37.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/37.jpg" alt="37.jpg"><span>37</span></a>
+<a href="photos/2435-valley-st-reference/38.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/38.jpg" alt="38.jpg"><span>38</span></a>
+<a href="photos/2435-valley-st-reference/39.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/39.jpg" alt="39.jpg"><span>39</span></a>
+<a href="photos/2435-valley-st-reference/40.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/40.jpg" alt="40.jpg"><span>40</span></a>
+<a href="photos/2435-valley-st-reference/41.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/41.jpg" alt="41.jpg"><span>41</span></a>
+<a href="photos/2435-valley-st-reference/42.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/42.jpg" alt="42.jpg"><span>42</span></a>
+<a href="photos/2435-valley-st-reference/43.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/43.jpg" alt="43.jpg"><span>43</span></a>
+<a href="photos/2435-valley-st-reference/44.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/44.jpg" alt="44.jpg"><span>44</span></a>
+<a href="photos/2435-valley-st-reference/45.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/45.jpg" alt="45.jpg"><span>45</span></a>
+<a href="photos/2435-valley-st-reference/46.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/46.jpg" alt="46.jpg"><span>46</span></a>
+<a href="photos/2435-valley-st-reference/47.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/47.jpg" alt="47.jpg"><span>47</span></a>
+<a href="photos/2435-valley-st-reference/48.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/48.jpg" alt="48.jpg"><span>48</span></a>
+<a href="photos/2435-valley-st-reference/49.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/49.jpg" alt="49.jpg"><span>49</span></a>
+<a href="photos/2435-valley-st-reference/50.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/50.jpg" alt="50.jpg"><span>50</span></a>
+<a href="photos/2435-valley-st-reference/51.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/51.jpg" alt="51.jpg"><span>51</span></a>
+<a href="photos/2435-valley-st-reference/52.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/52.jpg" alt="52.jpg"><span>52</span></a>
+<a href="photos/2435-valley-st-reference/53.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/53.jpg" alt="53.jpg"><span>53</span></a>
+<a href="photos/2435-valley-st-reference/54.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/54.jpg" alt="54.jpg"><span>54</span></a>
+<a href="photos/2435-valley-st-reference/55.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/55.jpg" alt="55.jpg"><span>55</span></a>
+<a href="photos/2435-valley-st-reference/56.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/56.jpg" alt="56.jpg"><span>56</span></a>
+<a href="photos/2435-valley-st-reference/57.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/57.jpg" alt="57.jpg"><span>57</span></a>
+<a href="photos/2435-valley-st-reference/58.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/58.jpg" alt="58.jpg"><span>58</span></a>
+<a href="photos/2435-valley-st-reference/59.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/59.jpg" alt="59.jpg"><span>59</span></a>
+<a href="photos/2435-valley-st-reference/60.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/60.jpg" alt="60.jpg"><span>60</span></a>
+<a href="photos/2435-valley-st-reference/61.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/61.jpg" alt="61.jpg"><span>61</span></a>
+<a href="photos/2435-valley-st-reference/62.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/62.jpg" alt="62.jpg"><span>62</span></a>
+<a href="photos/2435-valley-st-reference/63.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/63.jpg" alt="63.jpg"><span>63</span></a>
+<a href="photos/2435-valley-st-reference/64.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/64.jpg" alt="64.jpg"><span>64</span></a>
+<a href="photos/2435-valley-st-reference/65.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/65.jpg" alt="65.jpg"><span>65</span></a>
+<a href="photos/2435-valley-st-reference/66.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/66.jpg" alt="66.jpg"><span>66</span></a>
+<a href="photos/2435-valley-st-reference/67.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/67.jpg" alt="67.jpg"><span>67</span></a>
+<a href="photos/2435-valley-st-reference/68.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/68.jpg" alt="68.jpg"><span>68</span></a>
+<a href="photos/2435-valley-st-reference/69.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/69.jpg" alt="69.jpg"><span>69</span></a>
+<a href="photos/2435-valley-st-reference/70.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/70.jpg" alt="70.jpg"><span>70</span></a>
+<a href="photos/2435-valley-st-reference/71.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/71.jpg" alt="71.jpg"><span>71</span></a>
+<a href="photos/2435-valley-st-reference/72.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/72.jpg" alt="72.jpg"><span>72</span></a>
+<a href="photos/2435-valley-st-reference/73.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/73.jpg" alt="73.jpg"><span>73</span></a>
+<a href="photos/2435-valley-st-reference/74.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/74.jpg" alt="74.jpg"><span>74</span></a>
+<a href="photos/2435-valley-st-reference/75.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/75.jpg" alt="75.jpg"><span>75</span></a>
+<a href="photos/2435-valley-st-reference/76.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/76.jpg" alt="76.jpg"><span>76</span></a>
+<a href="photos/2435-valley-st-reference/77.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/77.jpg" alt="77.jpg"><span>77</span></a>
+<a href="photos/2435-valley-st-reference/78.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/78.jpg" alt="78.jpg"><span>78</span></a>
+<a href="photos/2435-valley-st-reference/79.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/79.jpg" alt="79.jpg"><span>79</span></a>
+<a href="photos/2435-valley-st-reference/80.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/80.jpg" alt="80.jpg"><span>80</span></a>
+<a href="photos/2435-valley-st-reference/81.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/81.jpg" alt="81.jpg"><span>81</span></a>
+<a href="photos/2435-valley-st-reference/82.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/82.jpg" alt="82.jpg"><span>82</span></a>
+<a href="photos/2435-valley-st-reference/83.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/83.jpg" alt="83.jpg"><span>83</span></a>
+<a href="photos/2435-valley-st-reference/84.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/84.jpg" alt="84.jpg"><span>84</span></a>
+<a href="photos/2435-valley-st-reference/85.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/85.jpg" alt="85.jpg"><span>85</span></a>
+<a href="photos/2435-valley-st-reference/86.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/86.jpg" alt="86.jpg"><span>86</span></a>
+<a href="photos/2435-valley-st-reference/87.jpg" target="_blank"><img loading="lazy" src="photos/2435-valley-st-reference/87.jpg" alt="87.jpg"><span>87</span></a></div>
+
+<script>
+document.querySelectorAll('.toggle button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.toggle button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  const p=b.dataset.plan;document.getElementById('plan-img').src='floor-plan/'+p+'.png';document.getElementById('plan-link').href='floor-plan/'+p+'.png';
+  history.replaceState(null,'','#'+p);
+});
+if(location.hash==='#proposed')document.querySelector('[data-plan=proposed]').click();
+</script>
+</main></body></html>

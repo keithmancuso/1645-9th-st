@@ -33,11 +33,22 @@ Rough photo index:
 - 15, 16, 17 bedroom 1 (front, east side)
 - 18, 19, 20 bedroom 2 (rear, sliding door to deck)
 
-## Floor plan
+## Floor plans
 
-`floor-plan/floor-plan.png` (and editable `floor-plan.svg`).
+- `floor-plan/existing.png` / `.svg` — the house as listed
+- `floor-plan/proposed.png` / `.svg` — current proposal
+- `floor-plan/generate.py` — generates both SVGs; edit this, run it, then re-export PNGs with headless Chrome (see below)
+- `index.html` — shareable page with an existing/proposed toggle and both photo galleries, published at https://keithmancuso.github.io/1645-9th-st/
 
-This was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and bedroom 1; enclosed front porch front-right; bedroom 1 behind the porch; small central hall with a floor furnace; bathroom on the left; galley kitchen rear-right; bedroom 2 rear-left with a slider to the deck; unfinished enclosed rear porch off the kitchen. Bathroom position and bedroom 1 door placement are the least certain parts.
+The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and bedroom 1; enclosed front porch front-right; bedroom 1 behind the porch; small central hall with a floor furnace; bathroom on the left; galley kitchen rear-right; bedroom 2 rear-left with a slider to the deck; unfinished enclosed rear porch off the kitchen. Bathroom position and bedroom 1 door placement are the least certain parts.
+
+### Proposed changes (as of Sept 5, 2026)
+
+1. **Swap kitchen and bedroom 2.** Kitchen moves to the rear-left room with the slider so it opens directly onto the deck (eat-in, ≈15×12). Bedroom 2 takes the old galley kitchen space (≈9×11) with a closet added. Reason: don't want to walk through a bedroom to reach the yard.
+2. **Rear porch becomes laundry / mudroom**, still opening onto the deck; water heater relocates there. Open question: entered from bedroom 2, the deck only, or both.
+3. Living room, bedroom 1, bath, hall, front porch unchanged in this pass.
+
+Open questions: plumbing run for the relocated kitchen; verify bathroom position and bedroom 1 door on a walkthrough; keep the floor furnace or go to mini-splits.
 
 ## Renovation reference — 2435 Valley St, Berkeley, CA 94702
 
@@ -58,4 +69,10 @@ Photos: `photos/2435-valley-st-reference/` (87 images, Zillow gallery order, 153
 ## Conventions
 
 - Photo filenames are the Zillow gallery position, zero-padded. Do not renumber.
-- Keep the floor plan SVG as the source of truth; re-export the PNG from it after edits.
+- `floor-plan/generate.py` is the source of truth for the plans. After editing, run:
+
+  ```
+  cd floor-plan && python3 generate.py
+  for v in existing proposed; do "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1046 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
+  ```
+- `index.html` galleries are static lists; regenerate if photos are added.
