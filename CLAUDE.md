@@ -6,6 +6,7 @@ Working files for evaluating and planning a renovation of a 1919 bungalow in Nor
 
 - **Subject property (1645 9th St):** https://www.zillow.com/homedetails/1645-9th-St-Berkeley-CA-94710/24838128_zpid/
 - **Renovation reference (2435 Valley St):** https://www.zillow.com/homedetails/2435-Valley-St-Berkeley-CA-94702/24835270_zpid/
+- **Budget and offer position:** `BUDGET.md` — hard cap $1M all-in; lean scope ~$330–485k; offer ~$575k. Summarizes the seller's disclosure package (PDF is in the iCloud folder, not this repo).
 
 ## Subject property — 1645 9th St, Berkeley, CA 94710
 
@@ -48,7 +49,7 @@ The existing plan was reconstructed from the listing photos only, not measured. 
 2. **Rear porch becomes laundry / mudroom**, still opening onto the deck; water heater relocates there. Open question: entered from bedroom 2, the deck only, or both.
 3. Living room, bedroom 1, bath, hall, front porch unchanged in this pass.
 
-Open questions: plumbing run for the relocated kitchen; verify bathroom position and bedroom 1 door on a walkthrough; keep the floor furnace or go to mini-splits.
+Open questions: plumbing run for the relocated kitchen; verify bathroom position and bedroom 1 door on a walkthrough; confirm whether the termite report's "rear half bathroom" means there is a second sink/half bath in the rear porch area. The floor furnace is red-tagged by PG&E (Aug 2026) and comes out; heating will be mini-splits (see `BUDGET.md`).
 
 ## Renovation reference — 2435 Valley St, Berkeley, CA 94702
 
