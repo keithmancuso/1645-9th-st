@@ -43,7 +43,7 @@ Rough photo index:
 
 The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left, with the built-in, the brick fireplace (flush on the far side) and the door to the front porch along its east wall; the living room connects to the hall through an inset cased doorway in an alcove at its north-east corner (photos 04, 07); the hall's west end is the bath door with the floor furnace grate right outside it (photo 14), and a cased opening on the hall's east side leads into the front-right room; enclosed front porch front-right; **kitchen behind the porch (front-right, ≈11×12)**, entered from the hall through a cased opening; small central hall open to the rear-left room; narrow bathroom on the left (door at the east end; from it, vanity on the south wall, tub on the north wall with its end at the door, toilet under the west window); **bedroom 1 rear-right (≈13×12) with a door to the rear porch, reached through a door in the rear corner of bedroom 2** (photo 18); bedroom 2 rear-left (≈12×12) with a slider at the east end of its back wall onto the deck (≈11×8, stairs off its west end stepping down westward toward the side gate) and a small window west of the slider; unfinished enclosed rear porch off bedroom 1. Bathroom position and door placements are the least certain parts.
 
-The lot is drawn from photos 01, 05 and 21 and the listed 2,613 sq ft: about 36 ft wide (an 8 ft dirt driveway on the west running from the curb to the side gate, 2 ft on the east) by 73 ft deep, with roughly 19 ft of bare backyard behind the deck and 12 ft of gravel front yard to the sidewalk. The side-yard gate is near the house's rear corner. None of that is measured.
+The lot is drawn from photos 01, 05 and 21 and the listed 2,613 sq ft: about 37.5 ft wide (an 8 ft dirt driveway on the west running from the curb to a gate near the house's rear corner, a 3.5 ft gravel side yard on the east with its own gate at the back of the porch) by 70 ft deep, with roughly 18 ft of bare backyard behind the deck and 10 ft of gravel front yard to the sidewalk. None of that is measured.
 
 Correction, Sept 9: the first draft had the kitchen and bedroom 1 swapped (kitchen rear-right, bedroom 1 front-right). Keith confirmed after the walkthrough that the front-right room is the kitchen today. Room sizes still need checking against a real plan; none was found in the listing or the disclosure package. The first draft also drew a 2 ft double wall between the two rear rooms; there was no evidence for it, so it is now one wall with a single door in the rear corner, where photo 18 shows it. The same photo shows no closet in that corner, so the bedroom 2 closet from the first draft is gone.
 
@@ -80,12 +80,12 @@ Photos: `photos/2435-valley-st-reference/` (87 images, Zillow gallery order, 153
 
   ```
   cd floor-plan && python3 generate.py
-  for v in existing proposed; do "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1262 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
+  for v in existing proposed; do "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1237 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
   ```
 - On Linux (Claude Code on the web), export PNGs with Playwright's headless shell instead; the `chromium --headless=new` binary there clips the bottom ~90 px of the sheet:
 
   ```
-  for v in existing proposed; do /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1262 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
+  for v in existing proposed; do /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1237 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
   ```
 
 - `index.html` galleries are static lists; regenerate if photos are added.

@@ -2,11 +2,11 @@
 """Generate floor-plan SVGs for 1645 9th St. Run: python3 generate.py
 Produces existing.svg and proposed.svg. Units are feet; y grows toward the street (south on the drawing)."""
 S = 14                 # px per foot
-OX, OY = 165, 540      # origin: house NW corner. Lot spans x -8..28, y -27..46
+OX, OY = 165, 540      # origin: house NW corner. Lot spans x -8..29.5, y -26..44
 
 def build(variant):
     out = []
-    W, H = 688, int(OY + 51.6*S)
+    W, H = 688, int(OY + 49.8*S)
     def P(x, y): return (OX + x*S, OY + y*S)
     def rect(x1,y1,x2,y2,fill="#fff",stroke="#222",sw=3):
         a=P(x1,y1); b=P(x2,y2)
@@ -46,19 +46,22 @@ def build(variant):
         out.append(f'<text x="40" y="86" font-size="12" fill="#a33">From the listing photos; room positions corrected after the walkthrough. Sizes are estimates (±2 ft), not measured.</text>')
 
     # lot: 2,613 sq ft per listing. Width and depths are read from photos 01, 05, 21, not measured:
-    # ≈8 ft side yard / parking on the west, ≈2 ft on the east, ≈19 ft backyard to the rear fence, ≈12 ft front yard to the sidewalk
-    rect(-8,-27,28,46,fill="#f1eee6",stroke="#8a6a3a",sw=2)
-    for x1,y1,x2,y2 in [(-8,-27,28,-27),(-8,-27,-8,46),(28,-27,28,46)]: line(x1,y1,x2,y2,stroke="#8a6a3a",sw=3)
-    line(-8,46,28,46,stroke="#999",sw=1.5)   # front lot line / sidewalk
+    # ≈8 ft driveway on the west, ≈3.5 ft gravel side yard on the east (photo 03), ≈18 ft backyard to the rear fence, ≈10 ft front yard to the sidewalk
+    rect(-8,-26,29.5,44,fill="#f1eee6",stroke="#8a6a3a",sw=2)
+    for x1,y1,x2,y2 in [(-8,-26,29.5,-26),(-8,-26,-8,44),(29.5,-26,29.5,44)]: line(x1,y1,x2,y2,stroke="#8a6a3a",sw=3)
+    line(-8,44,29.5,44,stroke="#999",sw=1.5)   # front lot line / sidewalk
+    rect(26.2,-26,29.5,44,fill="#e9e4d8",stroke="none",sw=0)   # east side yard, gravel
+    line(26,26,27.1,26,stroke="#8a6a3a",sw=3); line(28.4,26,29.5,26,stroke="#8a6a3a",sw=3); label(27.8,25,"gate",7,False,"#555")
+    p=P(28.1,34); out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="7" text-anchor="middle" fill="#555">gravel side yard ≈ 3.5 ft</text>')
     line(-8,6,-3.2,6,stroke="#8a6a3a",sw=3); line(-0.2,6,0,6,stroke="#8a6a3a",sw=3); label(-4,4.8,"gate",7,False,"#555")   # side-yard gate (photos 01, 21)
-    label(10,-19,"BACKYARD",12); label(10,-17.4,"≈ 36' × 19' to the rear fence · bare dirt",9,False,"#555")
+    label(10,-18.5,"BACKYARD",12); label(10,-16.9,"≈ 37' × 18' to the rear fence · bare dirt",9,False,"#555")
     # driveway (photos 01, 02): dirt, from the curb along the west side of the house to the gate; the one off-street space
-    rect(-8,6.2,-0.3,46,fill="#e4dfd3",stroke="#b8ad98",sw=1)
+    rect(-8,6.2,-0.3,44,fill="#e4dfd3",stroke="#b8ad98",sw=1)
     p=P(-4.1,27); out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="10" font-weight="bold" text-anchor="middle" fill="#222">DRIVEWAY</text>')
     p=P(-2.9,27); out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="8" text-anchor="middle" fill="#555">dirt · ≈ 8 × 40 ft · off-street space · curb cut</text>')
-    label(9,40.5,"FRONT YARD",10); label(9,41.9,"gravel bed · ≈ 12' to sidewalk",9,False,"#555")
-    rect(19,36.6,22,46,fill="#ddd",stroke="#999",sw=1)   # front walk
-    label(10,47.6,"sidewalk · 9th Street",9,False,"#555")
+    label(9,39.6,"FRONT YARD",10); label(9,41,"gravel beds · ≈ 10' to sidewalk",9,False,"#555")
+    rect(19,36.6,22,44,fill="#ddd",stroke="#999",sw=1)   # front walk
+    label(10,45.6,"sidewalk · 9th Street",9,False,"#555")
     # deck (photo 21): between the rear porch and the slider; stairs off its west end step down westward toward the side gate
     rect(6,-8,17,0,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
     for i in range(1,11): line(6+i,-8,6+i,0,stroke="#c9b48f",sw=1)
@@ -138,12 +141,12 @@ def build(variant):
     # dims / north / street / legend
     line(-9.3,0,-9.3,30,stroke="#777",sw=1); p=P(-10.1,15)
     out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="10" text-anchor="middle" fill="#555">house ≈ 30 ft</text>')
-    line(30,-27,30,46,stroke="#777",sw=1); p=P(30.9,9.5)
-    out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(90)" font-size="10" text-anchor="middle" fill="#555">lot ≈ 73 ft (2,613 sq ft ÷ 36 ft, assumed)</text>')
-    line(-8,-29.5,28,-29.5,stroke="#777",sw=1); label(10,-30.2,"lot ≈ 36 ft",10,False,"#555")
-    p=P(33,-22); out.append(f'<g transform="translate({p[0]},{p[1]})"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>')
-    label(10,49.2,'"N" is drawn as away from the street, not true north · lot edges are estimates from photos',8,False,"#555")
-    ly=OY+50.4*S
+    line(31.5,-26,31.5,44,stroke="#777",sw=1); p=P(32.4,9)
+    out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(90)" font-size="10" text-anchor="middle" fill="#555">lot ≈ 70 ft (2,613 sq ft ÷ 37.5 ft, assumed)</text>')
+    line(-8,-28.5,29.5,-28.5,stroke="#777",sw=1); label(10.75,-29.2,"lot ≈ 37.5 ft",10,False,"#555")
+    p=P(35,-21); out.append(f'<g transform="translate({p[0]},{p[1]})"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>')
+    label(10,47.2,'"N" is drawn as away from the street, not true north · lot edges are estimates from photos',8,False,"#555")
+    ly=OY+48.6*S
     out.append(f'<line x1="40" y1="{ly}" x2="70" y2="{ly}" stroke="#3a7bd5" stroke-width="2.5"/><text x="78" y="{ly+4}" font-size="11" fill="#555">window / glass</text>')
     out.append(f'<line x1="190" y1="{ly}" x2="220" y2="{ly}" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/><text x="228" y="{ly+4}" font-size="11" fill="#555">cased opening</text>')
     out.append(f'<text x="340" y="{ly+4}" font-size="11" fill="#555">arc = door swing · FP = brick fireplace · WH = water heater</text>')

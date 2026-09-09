@@ -1,25 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="688" height="1262" viewBox="0 0 688 1262" font-family="Helvetica, Arial, sans-serif">
-<rect width="688" height="1262" fill="#fbfaf7"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="688" height="1237" viewBox="0 0 688 1237" font-family="Helvetica, Arial, sans-serif">
+<rect width="688" height="1237" fill="#fbfaf7"/>
 <text x="40" y="44" font-size="22" font-weight="bold" fill="#222">1645 9th St, Berkeley — Existing Layout (as listed)</text>
 <text x="40" y="68" font-size="13" fill="#555">2 bed · 1 bath · 734 sq ft · built 1919 · 2,613 sq ft lot · single-story bungalow</text>
 <text x="40" y="86" font-size="12" fill="#a33">From the listing photos; room positions corrected after the walkthrough. Sizes are estimates (±2 ft), not measured.</text>
-<rect x="53" y="162" width="504" height="1022" fill="#f1eee6" stroke="#8a6a3a" stroke-width="2"/>
-<line x1="53" y1="162" x2="557" y2="162" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="53" y1="162" x2="53" y2="1184" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="557" y1="162" x2="557" y2="1184" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="53" y1="1184" x2="557" y2="1184" stroke="#999" stroke-width="1.5" stroke-linecap="square"/>
+<rect x="53" y="176" width="525.0" height="980" fill="#f1eee6" stroke="#8a6a3a" stroke-width="2"/>
+<line x1="53" y1="176" x2="578.0" y2="176" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="53" y1="176" x2="53" y2="1156" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="578.0" y1="176" x2="578.0" y2="1156" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="53" y1="1156" x2="578.0" y2="1156" stroke="#999" stroke-width="1.5" stroke-linecap="square"/>
+<rect x="531.8" y="176" width="46.200000000000045" height="980" fill="#e9e4d8" stroke="none" stroke-width="0"/>
+<line x1="529" y1="904" x2="544.4000000000001" y2="904" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="562.5999999999999" y1="904" x2="578.0" y2="904" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<text x="554.2" y="890" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">gate</text>
+<text transform="translate(558.4000000000001,1016) rotate(-90)" font-size="7" text-anchor="middle" fill="#555">gravel side yard ≈ 3.5 ft</text>
 <line x1="53" y1="624" x2="120.19999999999999" y2="624" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
 <line x1="162.2" y1="624" x2="165" y2="624" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
 <text x="109" y="607.2" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">gate</text>
-<text x="305" y="274" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BACKYARD</text>
-<text x="305" y="296.40000000000003" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 36' × 19' to the rear fence · bare dirt</text>
-<rect x="53" y="626.8" width="107.80000000000001" height="557.2" fill="#e4dfd3" stroke="#b8ad98" stroke-width="1"/>
+<text x="305" y="281.0" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BACKYARD</text>
+<text x="305" y="303.40000000000003" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 37' × 18' to the rear fence · bare dirt</text>
+<rect x="53" y="626.8" width="107.80000000000001" height="529.2" fill="#e4dfd3" stroke="#b8ad98" stroke-width="1"/>
 <text transform="translate(107.60000000000001,918) rotate(-90)" font-size="10" font-weight="bold" text-anchor="middle" fill="#222">DRIVEWAY</text>
 <text transform="translate(124.4,918) rotate(-90)" font-size="8" text-anchor="middle" fill="#555">dirt · ≈ 8 × 40 ft · off-street space · curb cut</text>
-<text x="291" y="1107.0" font-size="10" text-anchor="middle" fill="#222" font-weight="bold">FRONT YARD</text>
-<text x="291" y="1126.6" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">gravel bed · ≈ 12' to sidewalk</text>
-<rect x="431" y="1052.4" width="42" height="131.5999999999999" fill="#ddd" stroke="#999" stroke-width="1"/>
-<text x="305" y="1206.4" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">sidewalk · 9th Street</text>
+<text x="291" y="1094.4" font-size="10" text-anchor="middle" fill="#222" font-weight="bold">FRONT YARD</text>
+<text x="291" y="1114" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">gravel beds · ≈ 10' to sidewalk</text>
+<rect x="431" y="1052.4" width="42" height="103.59999999999991" fill="#ddd" stroke="#999" stroke-width="1"/>
+<text x="305" y="1178.4" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">sidewalk · 9th Street</text>
 <rect x="249" y="428" width="154" height="112" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
 <line x1="263" y1="428" x2="263" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
 <line x1="277" y1="428" x2="277" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
@@ -134,13 +139,13 @@
 <text x="270.0" y="884.4000000000001" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 15' × 13' · fireplace + built-ins</text>
 <line x1="34.79999999999998" y1="540" x2="34.79999999999998" y2="960" stroke="#777" stroke-width="1" stroke-linecap="square"/>
 <text transform="translate(23.599999999999994,750) rotate(-90)" font-size="10" text-anchor="middle" fill="#555">house ≈ 30 ft</text>
-<line x1="585" y1="162" x2="585" y2="1184" stroke="#777" stroke-width="1" stroke-linecap="square"/>
-<text transform="translate(597.5999999999999,673.0) rotate(90)" font-size="10" text-anchor="middle" fill="#555">lot ≈ 73 ft (2,613 sq ft ÷ 36 ft, assumed)</text>
-<line x1="53" y1="127.0" x2="557" y2="127.0" stroke="#777" stroke-width="1" stroke-linecap="square"/>
-<text x="305" y="117.19999999999999" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">lot ≈ 36 ft</text>
-<g transform="translate(627,232)"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>
-<text x="305" y="1228.8000000000002" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">"N" is drawn as away from the street, not true north · lot edges are estimates from photos</text>
-<line x1="40" y1="1245.6" x2="70" y2="1245.6" stroke="#3a7bd5" stroke-width="2.5"/><text x="78" y="1249.6" font-size="11" fill="#555">window / glass</text>
-<line x1="190" y1="1245.6" x2="220" y2="1245.6" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/><text x="228" y="1249.6" font-size="11" fill="#555">cased opening</text>
-<text x="340" y="1249.6" font-size="11" fill="#555">arc = door swing · FP = brick fireplace · WH = water heater</text>
+<line x1="606.0" y1="176" x2="606.0" y2="1156" stroke="#777" stroke-width="1" stroke-linecap="square"/>
+<text transform="translate(618.5999999999999,666) rotate(90)" font-size="10" text-anchor="middle" fill="#555">lot ≈ 70 ft (2,613 sq ft ÷ 37.5 ft, assumed)</text>
+<line x1="53" y1="141.0" x2="578.0" y2="141.0" stroke="#777" stroke-width="1" stroke-linecap="square"/>
+<text x="315.5" y="131.2" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">lot ≈ 37.5 ft</text>
+<g transform="translate(655,246)"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>
+<text x="305" y="1200.8000000000002" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">"N" is drawn as away from the street, not true north · lot edges are estimates from photos</text>
+<line x1="40" y1="1220.4" x2="70" y2="1220.4" stroke="#3a7bd5" stroke-width="2.5"/><text x="78" y="1224.4" font-size="11" fill="#555">window / glass</text>
+<line x1="190" y1="1220.4" x2="220" y2="1220.4" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/><text x="228" y="1224.4" font-size="11" fill="#555">cased opening</text>
+<text x="340" y="1224.4" font-size="11" fill="#555">arc = door swing · FP = brick fireplace · WH = water heater</text>
 </svg>
