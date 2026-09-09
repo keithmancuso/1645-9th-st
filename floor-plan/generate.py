@@ -76,14 +76,15 @@ def build(variant):
     rect(12.8,21,15,24.4,fill="#c0553f",stroke="#222",sw=1.5); label(13.9,22.9,"FP",9,True,"#fff")   # brick fireplace sits in the living room; the far wall is flush
     rect(14.4,18,15,20,fill="#ddd",stroke="#222",sw=1); label(12.8,19.2,"built-in",8,False,"#555")
     # bath
-    rect(0,15,5,17,fill="#eee",stroke="#222",sw=1); label(2.5,16.2,"tub",9,False)
-    rect(4,12,9,13.5,fill="#eee",stroke="#222",sw=1); label(6.5,13,"vanity",8,False)
-    e=P(1.5,13.2); out.append(f'<ellipse cx="{e[0]}" cy="{e[1]}" rx="{0.7*S}" ry="{1*S}" fill="#fff" stroke="#222" stroke-width="1"/>')
+    # bath (photos 13, 14): from the east-end door, vanity left (south wall), tub right (north wall, end at the door), toilet under the west window
+    rect(4,12,9,14.5,fill="#eee",stroke="#222",sw=1); label(6.5,13.5,"tub",9,False)
+    rect(3,15.5,9,17,fill="#eee",stroke="#222",sw=1); label(6,16.5,"vanity",8,False)
+    e=P(1.4,14.6); out.append(f'<ellipse cx="{e[0]}" cy="{e[1]}" rx="{1*S}" ry="{0.7*S}" fill="#fff" stroke="#222" stroke-width="1"/>')
     if proposed:
         label(11,13.9,"furnace out",7,False,"#1a7a3c"); label(11,14.8,"mini-splits in",7,False,"#1a7a3c")
     else:
         rect(10,13.2,12,14.6,fill="#888",stroke="#222",sw=1); label(11,15.4,"floor furnace",7,False,"#555")
-    label(4.5,14.7,"BATH",13); label(10.7,16.6,"HALL",10)
+    label(5.5,15.2,"BATH",11); label(10.7,16.6,"HALL",10)
 
     if not proposed:
         # bedroom 2 rear-left with slider; bedroom 1 rear-right; kitchen front-right (per Keith, Sept 9)
@@ -113,7 +114,7 @@ def build(variant):
         label(19.5,6,"BEDROOM 2",13); label(19.5,7.4,"≈ 13' × 12' · closet added",10,False,"#555")
         label(23.8,-0.7,"WH moves here",7,False,"#a33")
     # shared: bedroom 1, living room, doors
-    door(9,13.5,2.5,'w'); opening(22,14.5,25,14.5); door(15,26.5,2.5,'e')
+    door(9,14.5,2.5,'w'); opening(22,14.5,25,14.5); door(15,26.5,2.5,'e')
     window(0,3,0,7); window(0,13,0,15.5); window(0,19,0,22); window(3,30,9,30); window(26,17,26,21); window(26,8,26,10)
     if proposed:
         label(19.5,18.5,"BEDROOM 1",14); label(19.5,20,"≈ 11' × 12' · former kitchen",10,False,"#555"); label(23.5,13.4,"closet",8,False)
