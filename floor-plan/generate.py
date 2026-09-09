@@ -52,8 +52,11 @@ def build(variant):
     line(-8,46,28,46,stroke="#999",sw=1.5)   # front lot line / sidewalk
     line(-8,6,-3.2,6,stroke="#8a6a3a",sw=3); line(-0.2,6,0,6,stroke="#8a6a3a",sw=3); label(-4,4.8,"gate",7,False,"#555")   # side-yard gate (photos 01, 21)
     label(10,-19,"BACKYARD",12); label(10,-17.4,"≈ 36' × 19' to the rear fence · bare dirt",9,False,"#555")
-    label(-4,20,"side yard /",8,False,"#555"); label(-4,21.2,"parking",8,False,"#555"); label(-4,22.4,"≈ 8' wide",8,False,"#555")
-    label(8,41,"FRONT YARD",10); label(8,42.4,"gravel · ≈ 12' to sidewalk",9,False,"#555")
+    # driveway (photos 01, 02): dirt, from the curb along the west side of the house to the gate; the one off-street space
+    rect(-8,6.2,-0.3,46,fill="#e4dfd3",stroke="#b8ad98",sw=1)
+    p=P(-4.1,27); out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="10" font-weight="bold" text-anchor="middle" fill="#222">DRIVEWAY</text>')
+    p=P(-2.9,27); out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="8" text-anchor="middle" fill="#555">dirt · ≈ 8 × 40 ft · off-street space · curb cut</text>')
+    label(9,40.5,"FRONT YARD",10); label(9,41.9,"gravel bed · ≈ 12' to sidewalk",9,False,"#555")
     rect(19,36.6,22,46,fill="#ddd",stroke="#999",sw=1)   # front walk
     label(10,47.6,"sidewalk · 9th Street",9,False,"#555")
     # deck (photo 21): between the rear porch and the slider; stairs off its west end step down westward toward the side gate
