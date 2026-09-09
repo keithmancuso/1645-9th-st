@@ -71,8 +71,11 @@ def build(variant):
     line(15,12,15,26)
     line(21,12,21,14.5); line(21,14.5,26,14.5)
     # fireplace / built-in
-    rect(12.8,21,15,24.5,fill="#c0553f",stroke="#222",sw=1.5); label(13.9,23.1,"FP",9,True,"#fff")   # brick fireplace sits in the living room; the far wall is flush
-    rect(14.4,18,15,20.5,fill="#ddd",stroke="#222",sw=1); label(13.3,19.5,"built-in",8,False,"#555")
+    rect(12.8,23.4,15,26.2,fill="#c0553f",stroke="#222",sw=1.5); label(13.9,25.2,"FP",9,True,"#fff")   # brick fireplace sits in the living room; the far wall is flush
+    rect(14.4,21.2,15,23.1,fill="#ddd",stroke="#222",sw=1); label(12.6,22.4,"built-in",8,False,"#555")
+    # inset doorway, living room -> front-right room (photo 04): a wall section projects into the living room at the NE corner
+    rect(13.5,17,15,18.4,fill="#222",stroke="#222",sw=1)
+    opening(15,18.8,15,21)
     # bath
     rect(0,15,5,17,fill="#eee",stroke="#222",sw=1); label(2.5,16.2,"tub",9,False)
     rect(4,12,9,13.5,fill="#eee",stroke="#222",sw=1); label(6.5,13,"vanity",8,False)
@@ -93,7 +96,7 @@ def build(variant):
         rect(24,15,26,24,fill="#eee",stroke="#222",sw=1); label(25,22.2,"tile",8,False); label(25,23.1,"counter",8,False)
         rect(24,17.5,26,20.5,fill="#ddd",stroke="#222",sw=1); label(25,19.2,"sink",8,False)
         rect(18,12.2,20.5,14.2,fill="#ddd",stroke="#222",sw=1); label(19.25,13.4,"range",8,False)
-        rect(15.2,16,17.7,18.5,fill="#ddd",stroke="#222",sw=1); label(16.45,17.5,"fridge",8,False)
+        rect(15.2,22,17.7,24.5,fill="#ddd",stroke="#222",sw=1); label(16.45,23.5,"fridge",8,False)
         circle(24.9,25,0.8); label(24.9,25.3,"WH",7,False)
     else:
         # kitchen rear-left, eat-in, opens to deck; bedroom 2 rear-right
@@ -111,7 +114,7 @@ def build(variant):
         label(21,6,"BEDROOM 2",13); label(21,7.4,"≈ 11' × 12' · closet added",10,False,"#555")
         label(23.8,-0.7,"WH moves here",7,False,"#a33")
     # shared: bedroom 1, living room, doors
-    door(9,13.5,2.5,'w'); door(15,13,2.5,'e'); opening(22,14.5,25,14.5); opening(11,17,14,17); door(15,26.5,2.5,'e')
+    door(9,13.5,2.5,'w'); door(15,13,2.5,'e'); opening(22,14.5,25,14.5); opening(10.5,17,13.2,17); door(15,27,2.5,'e')
     window(0,3,0,7); window(0,13,0,15.5); window(0,19,0,22); window(3,30,9,30); window(26,17,26,21); window(26,8,26,10)
     if proposed:
         label(19.5,18.5,"BEDROOM 1",14); label(19.5,20,"≈ 11' × 12' · former kitchen",10,False,"#555"); label(23.5,13.4,"closet",8,False)

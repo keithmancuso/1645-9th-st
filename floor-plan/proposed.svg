@@ -55,10 +55,13 @@
 <line x1="350" y1="516" x2="350" y2="768" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="458" y1="516" x2="458" y2="561.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="458" y1="561.0" x2="548" y2="561.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<rect x="310.4" y="678" width="39.60000000000002" height="63.0" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
-<text x="330.20000000000005" y="715.8" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
-<rect x="339.2" y="624" width="10.800000000000011" height="45.0" fill="#ddd" stroke="#222" stroke-width="1"/>
-<text x="319.4" y="651.0" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">built-in</text>
+<rect x="310.4" y="721.2" width="39.60000000000002" height="50.399999999999864" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
+<text x="330.20000000000005" y="753.5999999999999" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
+<rect x="339.2" y="681.5999999999999" width="10.800000000000011" height="34.200000000000045" fill="#ddd" stroke="#222" stroke-width="1"/>
+<text x="306.79999999999995" y="703.2" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">built-in</text>
+<rect x="323.0" y="606" width="27.0" height="25.200000000000045" fill="#222" stroke="#222" stroke-width="1"/>
+<line x1="350" y1="638.4000000000001" x2="350" y2="678" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="350" y1="638.4000000000001" x2="350" y2="678" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <rect x="80" y="570" width="90" height="36" fill="#eee" stroke="#222" stroke-width="1"/>
 <text x="125.0" y="591.5999999999999" font-size="9" text-anchor="middle" fill="#222" font-weight="normal">tub</text>
 <rect x="152" y="516" width="90" height="27.0" fill="#eee" stroke="#222" stroke-width="1"/>
@@ -100,10 +103,10 @@
 <path d="M350,534 L395.0,534 A45.0,45.0 0 0 1 350,579.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="476" y1="561.0" x2="530" y2="561.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="476" y1="561.0" x2="530" y2="561.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
-<line x1="278" y1="606" x2="332" y2="606" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="278" y1="606" x2="332" y2="606" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
-<line x1="350" y1="777.0" x2="350" y2="822.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M350,777.0 L395.0,777.0 A45.0,45.0 0 0 1 350,822.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="269.0" y1="606" x2="317.6" y2="606" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="269.0" y1="606" x2="317.6" y2="606" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
+<line x1="350" y1="786" x2="350" y2="831.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M350,786 L395.0,786 A45.0,45.0 0 0 1 350,831.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="80" y1="354" x2="80" y2="426" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
 <line x1="80" y1="354" x2="80" y2="426" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="80" y1="534" x2="80" y2="579.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
