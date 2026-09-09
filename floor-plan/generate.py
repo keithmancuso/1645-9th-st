@@ -66,9 +66,9 @@ def build(variant):
     door(19,34,3,'n'); window(16,30.5,16,33.5); window(23,34,25.5,34)
     label(21,35.4,"concrete steps",9,False,"#555")
     # shared interior walls
-    line(15,0,15,12); line(15,12,26,12)   # one wall between the rear rooms (the earlier draft had a 2 ft double wall here; no evidence for it)
-    line(0,12,9,12); line(0,17,15,17); line(9,12,9,17)
-    line(15,12,15,26)
+    line(13.5,0,13.5,12); line(13.5,12,26,12)   # one wall between the rear rooms, in line with the block by the living-room doorway
+    line(0,12,9,12); line(0,17,13.5,17); line(9,12,9,17)
+    line(13.5,12,13.5,18.4); line(15,18.4,15,26)   # hall east wall at 13.5; living room fireplace wall steps out to 15
     line(21,12,21,14.5); line(21,14.5,26,14.5)
     # fireplace / built-in
     rect(12.8,23.4,15,26.2,fill="#c0553f",stroke="#222",sw=1.5); label(13.9,25.2,"FP",9,True,"#fff")   # brick fireplace sits in the living room; the far wall is flush
@@ -81,17 +81,17 @@ def build(variant):
     rect(4,12,9,13.5,fill="#eee",stroke="#222",sw=1); label(6.5,13,"vanity",8,False)
     e=P(1.5,13.2); out.append(f'<ellipse cx="{e[0]}" cy="{e[1]}" rx="{0.7*S}" ry="{1*S}" fill="#fff" stroke="#222" stroke-width="1"/>')
     if proposed:
-        label(12,15.3,"floor furnace out · mini-splits",8,False,"#1a7a3c")
+        label(11.2,15,"furnace out",8,False,"#1a7a3c"); label(11.2,16,"mini-splits in",8,False,"#1a7a3c")
     else:
-        rect(12.4,9,14.6,10.5,fill="#888",stroke="#222",sw=1); label(12.3,8.4,"floor furnace (red-tagged)",8,False,"#555")
-    label(4.5,14.7,"BATH",13); label(12,12.4,"HALL",11)
+        rect(11,9,13.2,10.5,fill="#888",stroke="#222",sw=1); label(10.9,8.4,"floor furnace (red-tagged)",8,False,"#555")
+    label(4.5,14.7,"BATH",13); label(11.2,12.4,"HALL",11)
 
     if not proposed:
         # bedroom 2 rear-left with slider; bedroom 1 rear-right; kitchen front-right (per Keith, Sept 9)
-        door(15,0.4,2.5,'e'); door(20,0,2.5,'n')          # door to the back room is in the rear corner (photo 18)
+        door(13.5,0.4,2.5,'e'); door(20,0,2.5,'n')          # door to the back room is in the rear corner (photo 18)
         line(5,0,10,0,stroke="#fbfaf7",sw=6); line(5,0,10,0,stroke="#3a7bd5",sw=5); label(7.5,-0.6,"sliding glass door",8,False,"#3a7bd5")
-        label(6,5.5,"BEDROOM 2",14); label(6,7,"≈ 15' × 12'",11,False,"#555")
-        label(20.5,5.5,"BEDROOM 1",14); label(20.5,7,"≈ 11' × 12' · door to rear porch",10,False,"#555")
+        label(6.5,5.5,"BEDROOM 2",14); label(6.5,7,"≈ 13' × 12'",11,False,"#555")
+        label(20,5.5,"BEDROOM 1",14); label(20,7,"≈ 12' × 12' · door to rear porch",10,False,"#555")
         # kitchen fixtures, front-right room
         rect(24,15,26,24,fill="#eee",stroke="#222",sw=1); label(25,22.2,"tile",8,False); label(25,23.1,"counter",8,False)
         rect(24,17.5,26,20.5,fill="#ddd",stroke="#222",sw=1); label(25,19.2,"sink",8,False)
@@ -106,15 +106,15 @@ def build(variant):
         rect(0.2,5.5,2,8,fill="#ddd",stroke="#222",sw=1); label(1.1,6.9,"sink",7,False)
         rect(0.2,9,2.2,11.5,fill="#ddd",stroke="#222",sw=1); label(1.2,10.4,"range",7,False)
         rect(5,4,10,7,fill="#f4e9d0",stroke="#8a6a3a",sw=1); label(7.5,5.8,"table / island",8,False,"#555")
-        label(7.5,9.6,"KITCHEN (eat-in)",14); label(7.5,11,"≈ 15' × 12' · opens to deck",10,False,"#555")
+        label(7,9.6,"KITCHEN (eat-in)",14); label(7,11,"≈ 13' × 12' · opens to deck",10,False,"#555")
         # bedroom 2 (was bedroom 1; gains a closet)
-        door(15,0.4,2.5,'e')                                    # kitchen -> bedroom 2, existing corner door
-        line(15,9,18,9); line(18,9,18,12); opening(18,9.3,18,11.7); label(16.5,10.7,"closet",8,False)
+        door(13.5,0.4,2.5,'e')                                  # kitchen -> bedroom 2, existing corner door
+        line(13.5,9,16.5,9); line(16.5,9,16.5,12); opening(16.5,9.3,16.5,11.7); label(15,10.7,"closet",8,False)
         door(22,0,2.5,'n')                                      # bedroom 2 -> laundry/mudroom
-        label(21,6,"BEDROOM 2",13); label(21,7.4,"≈ 11' × 12' · closet added",10,False,"#555")
+        label(20,6,"BEDROOM 2",13); label(20,7.4,"≈ 12' × 12' · closet added",10,False,"#555")
         label(23.8,-0.7,"WH moves here",7,False,"#a33")
     # shared: bedroom 1, living room, doors
-    door(9,13.5,2.5,'w'); door(15,13,2.5,'e'); opening(22,14.5,25,14.5); opening(10.5,17,13.2,17); door(15,27,2.5,'e')
+    door(9,13.5,2.5,'w'); door(13.5,13,2.5,'e'); opening(22,14.5,25,14.5); opening(10.5,17,13.2,17); door(15,27,2.5,'e')
     window(0,3,0,7); window(0,13,0,15.5); window(0,19,0,22); window(3,30,9,30); window(26,17,26,21); window(26,8,26,10)
     if proposed:
         label(19.5,18.5,"BEDROOM 1",14); label(19.5,20,"≈ 11' × 12' · former kitchen",10,False,"#555"); label(23.5,13.4,"closet",8,False)
