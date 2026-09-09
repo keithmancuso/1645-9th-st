@@ -55,8 +55,8 @@
 <line x1="350" y1="516" x2="350" y2="768" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="458" y1="516" x2="458" y2="561.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="458" y1="561.0" x2="548" y2="561.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<rect x="335.6" y="678" width="43.19999999999999" height="63.0" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
-<text x="357.2" y="715.8" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
+<rect x="310.4" y="678" width="39.60000000000002" height="63.0" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
+<text x="330.20000000000005" y="715.8" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
 <rect x="339.2" y="624" width="10.800000000000011" height="45.0" fill="#ddd" stroke="#222" stroke-width="1"/>
 <text x="319.4" y="651.0" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">built-in</text>
 <rect x="80" y="570" width="90" height="36" fill="#eee" stroke="#222" stroke-width="1"/>

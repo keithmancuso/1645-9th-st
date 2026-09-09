@@ -71,7 +71,7 @@ def build(variant):
     line(15,12,15,26)
     line(21,12,21,14.5); line(21,14.5,26,14.5)
     # fireplace / built-in
-    rect(14.2,21,16.6,24.5,fill="#c0553f",stroke="#222",sw=1.5); label(15.4,23.1,"FP",9,True,"#fff")
+    rect(12.8,21,15,24.5,fill="#c0553f",stroke="#222",sw=1.5); label(13.9,23.1,"FP",9,True,"#fff")   # brick fireplace sits in the living room; the far wall is flush
     rect(14.4,18,15,20.5,fill="#ddd",stroke="#222",sw=1); label(13.3,19.5,"built-in",8,False,"#555")
     # bath
     rect(0,15,5,17,fill="#eee",stroke="#222",sw=1); label(2.5,16.2,"tub",9,False)
