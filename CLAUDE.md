@@ -28,10 +28,10 @@ Photos: `photos/1645-9th-st/` (21 images, Zillow gallery order, ~1440x960).
 Rough photo index:
 - 01–03 front exterior, 05 side yard, 21 backyard and deck
 - 04, 06, 07, 09 living room (brick fireplace, built-ins, picture rail)
-- 08, 10, 12 kitchen (galley, tile counter, water heater in kitchen)
+- 08, 10, 12 kitchen (front-right room behind the porch; tile counter, water heater in kitchen)
 - 11 rear enclosed porch (unfinished)
 - 13, 14 bathroom
-- 15, 16, 17 bedroom 1 (front, east side)
+- 15, 16, 17 bedroom 1 (rear-right, door to the rear porch)
 - 18, 19, 20 bedroom 2 (rear, sliding door to deck)
 
 ## Floor plans
@@ -41,15 +41,19 @@ Rough photo index:
 - `floor-plan/generate.py` — generates both SVGs; edit this, run it, then re-export PNGs with headless Chrome (see below)
 - `index.html` — shareable page with an existing/proposed toggle and both photo galleries, published at https://keithmancuso.github.io/1645-9th-st/
 
-The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and bedroom 1; enclosed front porch front-right; bedroom 1 behind the porch; small central hall with a floor furnace; bathroom on the left; galley kitchen rear-right; bedroom 2 rear-left with a slider to the deck; unfinished enclosed rear porch off the kitchen. Bathroom position and bedroom 1 door placement are the least certain parts.
+The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and the kitchen; enclosed front porch front-right; **kitchen behind the porch (front-right, ≈11×12)**; small central hall with a floor furnace; bathroom on the left; **bedroom 1 rear-right (≈9×12) with a door to the rear porch**; bedroom 2 rear-left with a slider to the deck; unfinished enclosed rear porch off bedroom 1. Bathroom position and door placements are the least certain parts.
 
-### Proposed changes (as of Sept 5, 2026)
+Correction, Sept 9: the first draft had the kitchen and bedroom 1 swapped (kitchen rear-right, bedroom 1 front-right). Keith confirmed after the walkthrough that the front-right room is the kitchen today. Room sizes still need checking against a real plan; none was found in the listing or the disclosure package.
 
-1. **Swap kitchen and bedroom 2.** Kitchen moves to the rear-left room with the slider so it opens directly onto the deck (eat-in, ≈15×12). Bedroom 2 takes the old galley kitchen space (≈9×11) with a closet added. Reason: don't want to walk through a bedroom to reach the yard.
-2. **Rear porch becomes laundry / mudroom**, still opening onto the deck; water heater relocates there. Open question: entered from bedroom 2, the deck only, or both.
-3. Living room, bedroom 1, bath, hall, front porch unchanged in this pass.
+### Proposed changes (as of Sept 9, 2026)
 
-Open questions: plumbing run for the relocated kitchen; verify bathroom position and bedroom 1 door on a walkthrough; confirm whether the termite report's "rear half bathroom" means there is a second sink/half bath in the rear porch area. The floor furnace is red-tagged by PG&E (Aug 2026) and comes out; heating will be mini-splits (see `BUDGET.md`).
+1. **Kitchen moves to the rear-left room with the slider** so it opens directly onto the deck (eat-in, ≈15×12). Reason: don't want to walk through a bedroom to reach the yard. The new kitchen shares its south wall with the bathroom, so the wet wall is shared.
+2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1.** Its plumbing gets abandoned.
+3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈9×11) with a closet added.
+4. **Rear porch becomes laundry / mudroom**, still opening onto the deck; water heater relocates there. Open question: entered from bedroom 2, the deck only, or both.
+5. Living room, bath, hall, front porch unchanged in this pass.
+
+Open questions: verify room sizes and door placements on the next visit (no measured plan exists); confirm whether the termite report's "rear half bathroom" means there is a second sink/half bath in the rear porch area, which now sits off bedroom 1. The floor furnace is red-tagged by PG&E (Aug 2026) and comes out; heating will be mini-splits (see `BUDGET.md`).
 
 ## Renovation reference — 2435 Valley St, Berkeley, CA 94702
 
@@ -76,4 +80,10 @@ Photos: `photos/2435-valley-st-reference/` (87 images, Zillow gallery order, 153
   cd floor-plan && python3 generate.py
   for v in existing proposed; do "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1046 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
   ```
+- On Linux (Claude Code on the web), export PNGs with Playwright's headless shell instead; the `chromium --headless=new` binary there clips the bottom ~90 px of the sheet:
+
+  ```
+  for v in existing proposed; do /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1046 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
+  ```
+
 - `index.html` galleries are static lists; regenerate if photos are added.
