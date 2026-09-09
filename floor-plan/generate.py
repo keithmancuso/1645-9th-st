@@ -53,12 +53,12 @@ def build(variant):
     for i in range(1,6): line(0,-8+i,3,-8+i,stroke="#8a6a3a",sw=1)
     label(1.5,-0.8,"stairs",9,False,"#555")
     # rear porch bump-out
-    rect(17,-6,26,0,fill="#f3efe6",stroke="#222",sw=3)
+    rect(17,-8,26,0,fill="#f3efe6",stroke="#222",sw=3)   # same depth as the deck
     if proposed:
-        label(21.5,-3.8,"LAUNDRY / MUDROOM",10); label(21.5,-2.4,"existing rear porch · ≈ 9' × 6'",9,False,"#555")
+        label(21.5,-4.6,"LAUNDRY / MUDROOM",10); label(21.5,-3.2,"existing rear porch · ≈ 9' × 8'",9,False,"#555")
     else:
-        label(21.5,-3.8,"REAR PORCH",11); label(21.5,-2.4,"enclosed · ≈ 9' × 6'",10,False,"#555")
-    window(19,-6,24,-6); door(17,-4.5,2.5,'e'); window(26,-4.5,26,-1.5)
+        label(21.5,-4.6,"REAR PORCH",11); label(21.5,-3.2,"enclosed · ≈ 9' × 8'",10,False,"#555")
+    window(19,-8,24,-8); door(17,-5.5,2.5,'e'); window(26,-5.5,26,-2.5)
     # main house
     rect(0,0,26,30,fill="#fff",stroke="#222",sw=4)
     rect(16,26,26,34,fill="#f3efe6",stroke="#222",sw=3)
