@@ -62,13 +62,13 @@ def build(variant):
     label(9,39.6,"FRONT YARD",10); label(9,41,"gravel beds · ≈ 10' to sidewalk",9,False,"#555")
     rect(19,36.6,22,44,fill="#ddd",stroke="#999",sw=1)   # front walk
     label(10,45.6,"sidewalk · 9th Street",9,False,"#555")
-    # deck (photo 21): between the rear porch and the slider; stairs off its west end step down westward toward the side gate
-    rect(6,-8,17,0,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
-    for i in range(1,11): line(6+i,-8,6+i,0,stroke="#c9b48f",sw=1)
-    label(11.5,-4.2,"DECK",12); label(11.5,-2.6,"≈ 11' × 8'",11,False,"#555")
-    rect(2,-8,6,-4.5,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
-    for i in range(1,4): line(2+i,-8,2+i,-4.5,stroke="#8a6a3a",sw=1)
-    label(4,-3.4,"stairs down",7,False,"#555"); label(4,-2.4,"to side gate",7,False,"#555")
+    # deck: full width from the rear porch to the west edge of the house; stairs off its west end drop into the side yard, in line with the back wall (Keith)
+    rect(0,-8,17,0,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
+    for i in range(1,17): line(i,-8,i,0,stroke="#c9b48f",sw=1)
+    label(8.5,-4.2,"DECK",12); label(8.5,-2.6,"≈ 17' × 8'",11,False,"#555")
+    rect(-4,-3.5,0,0,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
+    for i in range(1,4): line(-i,-3.5,-i,0,stroke="#8a6a3a",sw=1)
+    label(-2,-4.3,"stairs down",7,False,"#555")
     # rear porch bump-out
     rect(17,-8,26,0,fill="#f3efe6",stroke="#222",sw=3)   # same depth as the deck
     if proposed:
