@@ -41,19 +41,19 @@ Rough photo index:
 - `floor-plan/generate.py` — generates both SVGs; edit this, run it, then re-export PNGs with headless Chrome (see below)
 - `index.html` — shareable page with an existing/proposed toggle and both photo galleries, published at https://keithmancuso.github.io/1645-9th-st/
 
-The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and the kitchen; enclosed front porch front-right; **kitchen behind the porch (front-right, ≈11×12)**; small central hall with a floor furnace; bathroom on the left; **bedroom 1 rear-right (≈9×12) with a door to the rear porch**; bedroom 2 rear-left with a slider to the deck; unfinished enclosed rear porch off bedroom 1. Bathroom position and door placements are the least certain parts.
+The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and the kitchen; enclosed front porch front-right; **kitchen behind the porch (front-right, ≈11×12)**; small central hall with a floor furnace; bathroom on the left; **bedroom 1 rear-right (≈11×12) with a door to the rear porch, reached through bedroom 2**; bedroom 2 rear-left with a slider to the deck; unfinished enclosed rear porch off bedroom 1. Bathroom position and door placements are the least certain parts.
 
-Correction, Sept 9: the first draft had the kitchen and bedroom 1 swapped (kitchen rear-right, bedroom 1 front-right). Keith confirmed after the walkthrough that the front-right room is the kitchen today. Room sizes still need checking against a real plan; none was found in the listing or the disclosure package.
+Correction, Sept 9: the first draft had the kitchen and bedroom 1 swapped (kitchen rear-right, bedroom 1 front-right). Keith confirmed after the walkthrough that the front-right room is the kitchen today. Room sizes still need checking against a real plan; none was found in the listing or the disclosure package. The first draft also drew a 2 ft double wall between the two rear rooms; there was no evidence for it, so it is now one wall with a single door.
 
 ### Proposed changes (as of Sept 9, 2026)
 
 1. **Kitchen moves to the rear-left room with the slider** so it opens directly onto the deck (eat-in, ≈15×12). Reason: don't want to walk through a bedroom to reach the yard. The new kitchen shares its south wall with the bathroom, so the wet wall is shared.
 2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1.** Its plumbing gets abandoned.
-3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈9×11) with a closet added.
+3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈11×12) with a closet added. As drawn its only door is from the kitchen; a door from the hall would need the hall's east wall opened.
 4. **Rear porch becomes laundry / mudroom**, still opening onto the deck; water heater relocates there. Open question: entered from bedroom 2, the deck only, or both.
 5. Living room, bath, hall, front porch unchanged in this pass.
 
-Open questions: verify room sizes and door placements on the next visit (no measured plan exists); confirm whether the termite report's "rear half bathroom" means there is a second sink/half bath in the rear porch area, which now sits off bedroom 1. The floor furnace is red-tagged by PG&E (Aug 2026) and comes out; heating will be mini-splits (see `BUDGET.md`).
+Open questions: verify room sizes and door placements on the next visit (no measured plan exists); confirm whether the termite report's "rear half bathroom" means there is a second sink/half bath in the rear porch area, which now sits off bedroom 1. The floor furnace is red-tagged by PG&E (Aug 2026) and comes out; heating will be mini-splits (see `BUDGET.md`). The proposed sheet omits the furnace for that reason.
 
 ## Renovation reference — 2435 Valley St, Berkeley, CA 94702
 

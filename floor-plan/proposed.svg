@@ -3,7 +3,7 @@
 <text x="80" y="44" font-size="22" font-weight="bold" fill="#222">1645 9th St, Berkeley — Proposed Layout</text>
 <text x="80" y="68" font-size="13" fill="#555">2 bed · 1 bath · 734 sq ft · built 1919 · 2,613 sq ft lot · single-story bungalow</text>
 <text x="80" y="86" font-size="12" fill="#1a7a3c">Change: kitchen moves from the front-right room to the rear-left room with the slider, opening onto the deck.</text>
-<text x="80" y="102" font-size="12" fill="#1a7a3c">Old kitchen becomes bedroom 1. Rear-right bedroom stays (now bedroom 2) and gains a closet.</text>
+<text x="80" y="102" font-size="12" fill="#1a7a3c">Old kitchen → bedroom 1. Rear-right stays a bedroom (now 2) with a closet added. Floor furnace out, mini-splits in.</text>
 <rect x="134" y="156" width="252" height="144" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
 <line x1="152" y1="156" x2="152" y2="300" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
 <line x1="170" y1="156" x2="170" y2="300" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
@@ -48,7 +48,6 @@
 <line x1="494" y1="912" x2="539.0" y2="912" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <text x="458" y="937.1999999999999" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">concrete steps</text>
 <line x1="350" y1="300" x2="350" y2="516" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="386" y1="300" x2="386" y2="516" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="350" y1="516" x2="548" y2="516" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="80" y1="516" x2="242" y2="516" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="80" y1="606" x2="350" y2="606" stroke="#222" stroke-width="3" stroke-linecap="square"/>
@@ -65,15 +64,12 @@
 <rect x="152" y="516" width="90" height="27.0" fill="#eee" stroke="#222" stroke-width="1"/>
 <text x="197.0" y="534" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">vanity</text>
 <ellipse cx="107.0" cy="537.6" rx="12.6" ry="18" fill="#fff" stroke="#222" stroke-width="1"/>
-<rect x="278" y="534" width="36" height="23.40000000000009" fill="#888" stroke="#222" stroke-width="1"/>
-<text x="296" y="575.4000000000001" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">floor furnace</text>
+<text x="296" y="575.4000000000001" font-size="8" text-anchor="middle" fill="#1a7a3c" font-weight="normal">furnace out · mini-splits</text>
 <text x="161.0" y="564.5999999999999" font-size="13" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
 <text x="296" y="523.2" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">HALL</text>
 <line x1="152" y1="300" x2="278" y2="300" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="152" y1="300" x2="278" y2="300" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
 <text x="215.0" y="289.2" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding / French door to deck</text>
-<line x1="350" y1="444" x2="350" y2="507.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="350" y1="444" x2="350" y2="507.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <rect x="83.6" y="303.6" width="45.0" height="45.0" fill="#ddd" stroke="#222" stroke-width="1"/>
 <text x="106.1" y="330.6" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">fridge</text>
 <rect x="83.6" y="354" width="32.400000000000006" height="153.0" fill="#eee" stroke="#222" stroke-width="1"/>
@@ -87,18 +83,17 @@
 <text x="215.0" y="404.4" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">table / island</text>
 <text x="215.0" y="472.79999999999995" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN (eat-in)</text>
 <text x="215.0" y="498" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 15' × 12' · opens to deck</text>
-<line x1="386" y1="462" x2="386" y2="507.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M386,462 L431.0,462 A45.0,45.0 0 0 1 386,507.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="386" y1="300" x2="386" y2="354" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="386" y1="354" x2="440" y2="354" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="440" y1="300" x2="440" y2="354" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="391.40000000000003" y1="354" x2="434.59999999999997" y2="354" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="391.40000000000003" y1="354" x2="434.59999999999997" y2="354" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
-<text x="413.0" y="332.4" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">closet</text>
+<line x1="350" y1="462" x2="350" y2="507.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M350,462 L395.0,462 A45.0,45.0 0 0 1 350,507.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="350" y1="354" x2="404" y2="354" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="404" y1="300" x2="404" y2="354" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="355.40000000000003" y1="354" x2="398.59999999999997" y2="354" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="355.40000000000003" y1="354" x2="398.59999999999997" y2="354" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
+<text x="377.0" y="332.4" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">closet</text>
 <line x1="476" y1="300" x2="521.0" y2="300" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M476,300 L476,255.0 A45.0,45.0 0 0 1 521.0,300" fill="none" stroke="#666" stroke-width="1.5"/>
-<text x="476" y="408" font-size="13" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
-<text x="476" y="433.20000000000005" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 9' × 11'</text>
+<text x="449.0" y="408" font-size="13" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
+<text x="449.0" y="433.20000000000005" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 12' · closet added</text>
 <text x="508.40000000000003" y="287.4" font-size="7" text-anchor="middle" fill="#a33" font-weight="normal">WH moves here</text>
 <line x1="242" y1="543.0" x2="242" y2="588.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M242,543.0 L197.0,543.0 A45.0,45.0 0 0 0 242,588.0" fill="none" stroke="#666" stroke-width="1.5"/>
