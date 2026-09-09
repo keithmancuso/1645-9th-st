@@ -32,7 +32,7 @@ Rough photo index:
 - 11 rear enclosed porch (unfinished)
 - 13, 14 bathroom
 - 15, 16, 17 bedroom 1 (rear-right, door to the rear porch)
-- 18, 19, 20 bedroom 2 (rear, sliding door to deck)
+- 18, 19, 20 bedroom 2 (rear, sliding door to deck; door to bedroom 1 in the rear-east corner; floor furnace grate by the east wall)
 
 ## Floor plans
 
@@ -41,15 +41,15 @@ Rough photo index:
 - `floor-plan/generate.py` — generates both SVGs; edit this, run it, then re-export PNGs with headless Chrome (see below)
 - `index.html` — shareable page with an existing/proposed toggle and both photo galleries, published at https://keithmancuso.github.io/1645-9th-st/
 
-The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and the kitchen; enclosed front porch front-right; **kitchen behind the porch (front-right, ≈11×12)**; small central hall with a floor furnace; bathroom on the left; **bedroom 1 rear-right (≈11×12) with a door to the rear porch, reached through bedroom 2**; bedroom 2 rear-left with a slider to the deck; unfinished enclosed rear porch off bedroom 1. Bathroom position and door placements are the least certain parts.
+The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left with fireplace on the wall shared with the front porch and the kitchen; enclosed front porch front-right; **kitchen behind the porch (front-right, ≈11×12)**; small central hall; bathroom on the left; **bedroom 1 rear-right (≈11×12) with a door to the rear porch, reached through a door in the rear corner of bedroom 2** (photo 18); bedroom 2 rear-left with a slider to the deck and the floor furnace grate near its east wall; unfinished enclosed rear porch off bedroom 1. Bathroom position and door placements are the least certain parts.
 
-Correction, Sept 9: the first draft had the kitchen and bedroom 1 swapped (kitchen rear-right, bedroom 1 front-right). Keith confirmed after the walkthrough that the front-right room is the kitchen today. Room sizes still need checking against a real plan; none was found in the listing or the disclosure package. The first draft also drew a 2 ft double wall between the two rear rooms; there was no evidence for it, so it is now one wall with a single door.
+Correction, Sept 9: the first draft had the kitchen and bedroom 1 swapped (kitchen rear-right, bedroom 1 front-right). Keith confirmed after the walkthrough that the front-right room is the kitchen today. Room sizes still need checking against a real plan; none was found in the listing or the disclosure package. The first draft also drew a 2 ft double wall between the two rear rooms; there was no evidence for it, so it is now one wall with a single door in the rear corner, where photo 18 shows it. The same photo shows no closet in that corner, so the bedroom 2 closet from the first draft is gone.
 
 ### Proposed changes (as of Sept 9, 2026)
 
 1. **Kitchen moves to the rear-left room with the slider** so it opens directly onto the deck (eat-in, ≈15×12). Reason: don't want to walk through a bedroom to reach the yard. The new kitchen shares its south wall with the bathroom, so the wet wall is shared.
 2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1.** Its plumbing gets abandoned.
-3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈11×12) with a closet added. As drawn its only door is from the kitchen; a door from the hall would need the hall's east wall opened.
+3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈11×12) with a closet added on the hall wall. It keeps the existing corner door, which now opens from the kitchen; a door from the hall would need the hall's east wall opened. Range goes on the west wall with the sink; the corner door rules out a run on the back wall.
 4. **Rear porch becomes laundry / mudroom**, still opening onto the deck; water heater relocates there. Open question: entered from bedroom 2, the deck only, or both.
 5. Living room, bath, hall, front porch unchanged in this pass.
 
