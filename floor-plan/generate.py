@@ -2,7 +2,7 @@
 """Generate floor-plan SVGs for 1645 9th St. Run: python3 generate.py
 Produces existing.svg and proposed.svg. Units are feet; y grows toward the street (south on the drawing)."""
 S = 18
-OX, OY = 80, 300
+OX, OY = 80, 390
 
 def build(variant):
     out = []
@@ -46,12 +46,13 @@ def build(variant):
         out.append(f'<text x="{OX}" y="86" font-size="12" fill="#a33">From the listing photos; room positions corrected after the walkthrough. Sizes are estimates (±2 ft), not measured.</text>')
 
     # deck + stairs
-    rect(3,-8,17,0,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
-    for i in range(1,14): line(3+i,-8,3+i,0,stroke="#c9b48f",sw=1)
-    label(10,-4.2,"DECK",12); label(10,-2.6,"≈ 14' × 8'",11,False,"#555")
-    rect(0,-8,3,-2,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
-    for i in range(1,6): line(0,-8+i,3,-8+i,stroke="#8a6a3a",sw=1)
-    label(1.5,-0.8,"stairs",9,False,"#555")
+    # deck (photo 21): sits between the rear porch and the slider, stairs off its west end run out into the yard
+    rect(6,-8,17,0,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
+    for i in range(1,11): line(6+i,-8,6+i,0,stroke="#c9b48f",sw=1)
+    label(11.5,-4.2,"DECK",12); label(11.5,-2.6,"≈ 11' × 8'",11,False,"#555")
+    rect(6,-12,9,-8,fill="#e8dcc8",stroke="#8a6a3a",sw=2)
+    for i in range(1,4): line(6,-8-i,9,-8-i,stroke="#8a6a3a",sw=1)
+    label(7.5,-12.7,"stairs to yard",8,False,"#555")
     # rear porch bump-out
     rect(17,-8,26,0,fill="#f3efe6",stroke="#222",sw=3)   # same depth as the deck
     if proposed:
@@ -89,7 +90,7 @@ def build(variant):
     if not proposed:
         # bedroom 2 rear-left with slider; bedroom 1 rear-right; kitchen front-right (per Keith, Sept 9)
         door(12.5,0.4,2.5,'e'); door(20,0,2.5,'n')          # door to the back room is in the rear corner (photo 18)
-        line(5,0,10,0,stroke="#fbfaf7",sw=6); line(5,0,10,0,stroke="#3a7bd5",sw=5); label(7.5,-0.6,"sliding glass door",8,False,"#3a7bd5")
+        line(7.5,0,12,0,stroke="#fbfaf7",sw=6); line(7.5,0,12,0,stroke="#3a7bd5",sw=5); label(9.75,-0.6,"sliding glass door",8,False,"#3a7bd5"); window(1.5,0,3.5,0)
         label(6.25,5.5,"BEDROOM 2",14); label(6.25,7,"≈ 12' × 12'",11,False,"#555")
         label(19.5,5.5,"BEDROOM 1",14); label(19.5,7,"≈ 13' × 12' · door to rear porch",10,False,"#555")
         # kitchen fixtures, front-right room
@@ -100,13 +101,13 @@ def build(variant):
         circle(24.9,25,0.8); label(24.9,25.3,"WH",7,False)
     else:
         # kitchen rear-left, eat-in, opens to deck; bedroom 2 rear-right
-        line(4,0,11,0,stroke="#fbfaf7",sw=6); line(4,0,11,0,stroke="#3a7bd5",sw=5); label(7.5,-0.6,"sliding / French door to deck",8,False,"#3a7bd5")
-        rect(0.2,0.2,2.7,2.7,fill="#ddd",stroke="#222",sw=1); label(1.45,1.7,"fridge",8,False)
-        rect(0.2,3,2,11.5,fill="#eee",stroke="#222",sw=1); label(1.1,4.6,"counter",7,False)
-        rect(0.2,5.5,2,8,fill="#ddd",stroke="#222",sw=1); label(1.1,6.9,"sink",7,False)
-        rect(0.2,9,2.2,11.5,fill="#ddd",stroke="#222",sw=1); label(1.2,10.4,"range",7,False)
-        rect(4.5,4,9.5,7,fill="#f4e9d0",stroke="#8a6a3a",sw=1); label(7,5.8,"table / island",8,False,"#555")
-        label(6.5,9.6,"KITCHEN (eat-in)",14); label(6.5,11,"≈ 12' × 12' · opens to deck",10,False,"#555")
+        line(7,0,12,0,stroke="#fbfaf7",sw=6); line(7,0,12,0,stroke="#3a7bd5",sw=5); label(9.5,-0.6,"sliding / French door to deck",8,False,"#3a7bd5"); window(1.5,0,3.5,0)
+        rect(0.2,1.5,2,11.8,fill="#eee",stroke="#222",sw=1); label(1.1,3.4,"counter",7,False)
+        rect(0.2,4.5,2,7,fill="#ddd",stroke="#222",sw=1); label(1.1,5.9,"sink",7,False)
+        rect(0.2,8,2.2,10.5,fill="#ddd",stroke="#222",sw=1); label(1.2,9.4,"range",7,False)
+        rect(3,9.5,5.5,11.8,fill="#ddd",stroke="#222",sw=1); label(4.25,10.8,"fridge",8,False)
+        rect(4.5,2.5,9.5,5.5,fill="#f4e9d0",stroke="#8a6a3a",sw=1); label(7,4.3,"table / island",8,False,"#555")
+        label(7.2,7.6,"KITCHEN (eat-in)",14); label(7.2,9,"≈ 12' × 12' · opens to deck",10,False,"#555")
         # bedroom 2 (was bedroom 1; gains a closet)
         door(12.5,0.4,2.5,'e')                                  # kitchen -> bedroom 2, existing corner door
         line(12.5,9,15.5,9); line(15.5,9,15.5,12); opening(15.5,9.3,15.5,11.7); label(14,10.7,"closet",8,False)
@@ -124,8 +125,8 @@ def build(variant):
     # dims / north / street / legend
     line(-1.5,0,-1.5,30,stroke="#777",sw=1); p=P(-2.1,15)
     out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="10" text-anchor="middle" fill="#555">≈ 30 ft</text>')
-    line(0,-9.5,26,-9.5,stroke="#777",sw=1); label(13,-10,"≈ 26 ft",10,False,"#555")
-    p=P(24,-9.6); out.append(f'<g transform="translate({p[0]},{p[1]})"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>')
+    line(0,-13.5,26,-13.5,stroke="#777",sw=1); label(13,-14,"≈ 26 ft",10,False,"#555")
+    p=P(24,-13.6); out.append(f'<g transform="translate({p[0]},{p[1]})"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>')
     label(8,32,'9th Street (front) — "N" is drawn as away from the street, not true north',10,False,"#555")
     ly=OY+36.5*S
     out.append(f'<line x1="{OX}" y1="{ly}" x2="{OX+30}" y2="{ly}" stroke="#3a7bd5" stroke-width="2.5"/><text x="{OX+38}" y="{ly+4}" font-size="11" fill="#555">window / glass</text>')
