@@ -29,10 +29,10 @@ Rough photo index:
 - 01–03 front exterior, 05 side yard, 21 backyard and deck
 - 04, 06, 07, 09 living room (brick fireplace, built-ins, picture rail)
 - 08, 10, 12 kitchen (front-right room behind the porch; tile counter, water heater in kitchen)
-- 11 rear enclosed porch (unfinished)
-- 13, 14 bathroom (14 looks east out the bath door: furnace grate in the hall, cased opening into the front-right room beyond)
-- 15, 16, 17 bedroom 1 (rear-right, door to the rear porch)
-- 18, 19, 20 bedroom 2 (rear, sliding door to deck; door to bedroom 1 in the rear-east corner; the furnace grate in the foreground is in the hall, which is open to this room)
+- 11 rear enclosed porch (shelves, plywood floor, small high window, glass door from bedroom 1)
+- 13, 14 bathroom (14 looks east out the bath door: furnace grate in the passage, kitchen door beyond)
+- 15, 16, 17 bedroom 1 (rear-right; closet, door to the rear porch, door to the passage)
+- 18, 19, 20 bedroom 2 (rear, sliding door to deck; door in the rear-east corner into the rear porch; 20 looks south at the passage opening with the furnace grate)
 
 ## Floor plans
 
@@ -41,21 +41,30 @@ Rough photo index:
 - `floor-plan/generate.py` — generates both SVGs; edit this, run it, then re-export PNGs with headless Chrome (see below)
 - `index.html` — shareable page with an existing/proposed toggle and both photo galleries, published at https://keithmancuso.github.io/1645-9th-st/
 
-The existing plan was reconstructed from the listing photos only, not measured. Treat room sizes as ±2 ft. Layout as drawn: living room front-left, with the built-in, the brick fireplace (flush on the far side) and the door to the front porch along its east wall; the living room connects to the hall through an inset cased doorway in an alcove at its north-east corner (photos 04, 07); the hall's west end is the bath door with the floor furnace grate right outside it (photo 14), and a cased opening on the hall's east side leads into the front-right room; enclosed front porch front-right; **kitchen behind the porch (front-right, ≈11×12)**, entered from the hall through a cased opening; small central hall open to the rear-left room; narrow bathroom on the left (door at the east end; from it, vanity on the south wall, tub on the north wall with its end at the door, toilet under the west window); **bedroom 1 rear-right (≈13×12) with a door to the rear porch, reached through a door in the rear corner of bedroom 2** (photo 18); bedroom 2 rear-left (≈12×12) with a slider at the east end of its back wall onto the deck (≈17×8, full width from the rear porch to the west edge of the house; stairs off its west end drop into the side yard in line with the back wall) and a small window west of the slider; unfinished enclosed rear porch off bedroom 1. Bathroom position and door placements are the least certain parts.
+The existing plan was reconstructed from the listing photos and Keith's walkthrough notes, not measured. Treat room sizes as ±2 ft.
 
-The lot is drawn from photos 01, 05 and 21 and the listed 2,613 sq ft: about 37.5 ft wide (an 8 ft dirt driveway on the west running from the curb to a gate near the house's rear corner, a 3.5 ft gravel side yard on the east with its own gate at the back of the porch) by 70 ft deep, with roughly 18 ft of bare backyard behind the deck and 10 ft of gravel front yard to the sidewalk. None of that is measured.
+Layout as drawn (Sept 9 revision, from photos 04–20):
 
-Correction, Sept 9: the first draft had the kitchen and bedroom 1 swapped (kitchen rear-right, bedroom 1 front-right). Keith confirmed after the walkthrough that the front-right room is the kitchen today. Room sizes still need checking against a real plan; none was found in the listing or the disclosure package. The first draft also drew a 2 ft double wall between the two rear rooms; there was no evidence for it, so it is now one wall with a single door in the rear corner, where photo 18 shows it. The same photo shows no closet in that corner, so the bedroom 2 closet from the first draft is gone.
+- **Living room** front-left, ≈15×13. East wall, north to south: built-in, brick fireplace (flush on the far side), door to the enclosed front porch. Its north wall has an inset cased doorway at the east end (a short return wall makes the alcove) that opens into the passage.
+- **Passage**, ≈5×5, between the living room and the rear rooms: bath door on the west, kitchen door on the east, cased opening north into bedroom 2, door north-east into bedroom 1. The red-tagged floor furnace grate is in its floor.
+- **Bath** ≈9×5 on the west: door at the east end; from it, vanity on the south wall, tub on the north wall with its end at the door, toilet under the west window.
+- **Kitchen** front-right, ≈11×12, behind the porch: tile counter and sink under the east window, range and water heater on the porch wall with a small high window into the porch, fridge beside them, pantry shelves at the north end.
+- **Bedroom 2** rear-left, ≈12×12: slider onto the deck, door in the rear-east corner into the rear porch, no closet.
+- **Bedroom 1** rear-right, ≈13×12: door from the passage, door into the rear porch, closet inside the porch bump-out. The partition between the rear rooms lines up with the alcove return.
+- **Rear porch** ≈17×8, enclosed, shelves, plywood floor, across the back of both rear rooms, flush with the deck edge; door to the deck.
+- **Deck** ≈9×8 from the porch to the west edge of the house; stairs off its west end drop into the side yard in line with the back wall.
+
+The lot is drawn from photos 01, 03, 05 and 21 and the listed 2,613 sq ft: about 37.5 ft wide (an 8 ft dirt driveway on the west running from the curb to a gate near the house's rear corner, a 3.5 ft gravel side yard on the east with its own gate at the back of the porch) by 70 ft deep, with roughly 18 ft of bare backyard behind the deck and 10 ft of gravel front yard to the sidewalk. None of that is measured.
 
 ### Proposed changes (as of Sept 9, 2026)
 
 1. **Kitchen moves to the rear-left room with the slider** so it opens directly onto the deck (eat-in, ≈12×12). Reason: don't want to walk through a bedroom to reach the yard. The new kitchen shares its south wall with the bathroom, so the wet wall is shared.
-2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1.** Its plumbing gets abandoned.
-3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈13×12) with a closet added on the hall wall. It keeps the existing corner door, which now opens from the kitchen; a door from the hall would need the hall's east wall opened. Range goes on the west wall with the sink; the corner door rules out a run on the back wall.
-4. **Rear porch becomes laundry / mudroom**, still opening onto the deck; water heater relocates there. Open question: entered from bedroom 2, the deck only, or both.
-5. Living room, bath, hall, front porch unchanged in this pass. Bedroom 1 (old kitchen) is entered from the hall through the existing cased opening; hang a door there.
+2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1**, entered from the passage through the existing kitchen door. Its plumbing gets abandoned.
+3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈13×12). It already has a closet and a door into the rear porch.
+4. **Rear porch becomes laundry / mudroom** (≈17×8), reached from the kitchen's rear-corner door and from bedroom 2, opening onto the deck; washer, dryer and water heater along the back wall.
+5. Living room, bath, passage, front porch unchanged. Floor furnace comes out; mini-splits.
 
-Open questions: verify room sizes and door placements on the next visit (no measured plan exists); confirm whether the termite report's "rear half bathroom" means there is a second sink/half bath in the rear porch area, which now sits off bedroom 1. The floor furnace is red-tagged by PG&E (Aug 2026) and comes out; heating will be mini-splits (see `BUDGET.md`). The proposed sheet omits the furnace for that reason.
+Open questions: verify room sizes and door placements on the next visit (no measured plan exists); confirm whether the termite report's "rear half bathroom" means there is a second sink/half bath in the rear porch area, which now sits off bedroom 1. The floor furnace is red-tagged by PG&E (Aug 2026) and comes out; heating will be mini-splits (see `BUDGET.md`). 
 
 ## Renovation reference — 2435 Valley St, Berkeley, CA 94702
 
