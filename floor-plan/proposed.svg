@@ -101,9 +101,9 @@
 <ellipse cx="184.6" cy="744.4" rx="14" ry="9.799999999999999" fill="#fff" stroke="#222" stroke-width="1"/>
 <text x="242.0" y="752.8" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
 <text x="319" y="769.5999999999999" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">PASSAGE</text>
-<line x1="200.0" y1="540" x2="277" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="200.0" y1="540" x2="277" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
-<text x="238.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding / French door to deck</text>
+<line x1="221" y1="540" x2="284.0" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="221" y1="540" x2="284.0" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
+<text x="252.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding / French door to deck</text>
 <rect x="167.8" y="561.0" width="25.19999999999999" height="144.20000000000005" fill="#eee" stroke="#222" stroke-width="1"/>
 <text x="180.4" y="587.6" font-size="7" text-anchor="middle" fill="#222" font-weight="normal">counter</text>
 <rect x="167.8" y="603.0" width="25.19999999999999" height="35.0" fill="#ddd" stroke="#222" stroke-width="1"/>
@@ -124,8 +124,6 @@
 <line x1="473" y1="743.0" x2="515" y2="743.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <line x1="375" y1="911.0" x2="375" y2="946.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M375,911.0 L410.0,911.0 A35.0,35.0 0 0 1 375,946.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="186.0" y1="540" x2="200.0" y2="540" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="186.0" y1="540" x2="200.0" y2="540" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="165" y1="722" x2="165" y2="757.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>

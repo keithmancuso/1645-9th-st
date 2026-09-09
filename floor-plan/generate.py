@@ -108,7 +108,7 @@ def build(variant):
 
     if not proposed:
         # existing: bedroom 2 rear-left, bedroom 1 rear-right, kitchen front-right (Keith)
-        line(3,0,7.5,0,stroke="#fbfaf7",sw=6); line(3,0,7.5,0,stroke="#3a7bd5",sw=5); label(5.25,-0.6,"sliding glass door",8,False,"#3a7bd5")
+        line(4,0,8.5,0,stroke="#fbfaf7",sw=6); line(4,0,8.5,0,stroke="#3a7bd5",sw=5); label(6.25,-0.6,"sliding glass door, centered",8,False,"#3a7bd5")
         label(6.25,5.5,"BEDROOM 2",14); label(6.25,7,"≈ 12' × 12'",11,False,"#555")
         label(19.5,5.5,"BEDROOM 1",14); label(19.5,7,"≈ 13' × 12' · closet + door to rear porch",9,False,"#555")
         # kitchen (photos 08, 10, 12): tile counter and sink under the east window, range + WH + small window on the porch wall, fridge beside, pantry shelves at the north end
@@ -120,7 +120,7 @@ def build(variant):
         line(21.5,26,23.5,26,stroke="#fbfaf7",sw=6); line(21.5,26,23.5,26,stroke="#3a7bd5",sw=2.5); label(22.5,26.9,"small window to porch",7,False,"#3a7bd5")
     else:
         # proposed: kitchen rear-left (eat-in, opens to the deck, door to the mudroom); bedroom 2 rear-right; bedroom 1 front-right
-        line(2.5,0,8,0,stroke="#fbfaf7",sw=6); line(2.5,0,8,0,stroke="#3a7bd5",sw=5); label(5.25,-0.6,"sliding / French door to deck",8,False,"#3a7bd5")
+        line(4,0,8.5,0,stroke="#fbfaf7",sw=6); line(4,0,8.5,0,stroke="#3a7bd5",sw=5); label(6.25,-0.6,"sliding / French door to deck",8,False,"#3a7bd5")
         rect(0.2,1.5,2,11.8,fill="#eee",stroke="#222",sw=1); label(1.1,3.4,"counter",7,False)
         rect(0.2,4.5,2,7,fill="#ddd",stroke="#222",sw=1); label(1.1,5.9,"sink",7,False)
         rect(0.2,8,2.2,10.5,fill="#ddd",stroke="#222",sw=1); label(1.2,9.4,"range",7,False)
@@ -130,7 +130,6 @@ def build(variant):
         label(19.5,6,"BEDROOM 2",13); label(19.5,7.4,"≈ 13' × 12' · existing closet",10,False,"#555")
     # shared: doors, windows, labels
     door(9.5,14.5,2.5,'w'); opening(22,14.5,25,14.5); door(15,26.5,2.5,'e')
-    window(1.5,0,2.5,0)
     window(0,3,0,7); window(0,13,0,15.5); window(0,19,0,22); window(0,25,0,28); window(3,30,9,30); window(26,17,26,21); window(26,6,26,9)
     if proposed:
         label(19.5,18.5,"BEDROOM 1",14); label(19.5,20,"≈ 11' × 12' · former kitchen",10,False,"#555"); label(23.5,13.4,"closet",8,False)

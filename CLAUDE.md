@@ -49,7 +49,7 @@ Layout as drawn (Sept 9 revision, from photos 04–20):
 - **Passage**, ≈5×5, between the living room and the rear rooms: bath door on the west, kitchen door on the east, cased opening north into bedroom 2, door north-east into bedroom 1. The red-tagged floor furnace grate is in its floor.
 - **Bath** ≈9×5 on the west: door at the east end; from it, vanity on the south wall, tub on the north wall with its end at the door, toilet under the west window.
 - **Kitchen** front-right, ≈11×12, behind the porch: tile counter and sink under the east window, range and water heater on the porch wall with a small high window into the porch, fridge beside them, pantry shelves at the north end.
-- **Bedroom 2** rear-left, ≈12×12: slider onto the deck, door in the rear-east corner into the rear porch, no closet.
+- **Bedroom 2** rear-left, ≈12×12: slider centered on the back wall onto the deck (no other opening on that wall), window on the west wall, door in the rear-east corner into the rear porch, no closet.
 - **Bedroom 1** rear-right, ≈13×12: door from the passage, door into the rear porch, closet inside the porch bump-out. The partition between the rear rooms lines up with the alcove return.
 - **Rear porch** ≈17×8, enclosed, shelves, plywood floor, across the back of both rear rooms, flush with the deck edge; door to the deck.
 - **Deck** ≈9×8 from the porch to the west edge of the house; stairs off its west end drop into the side yard in line with the back wall.

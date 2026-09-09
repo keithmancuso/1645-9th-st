@@ -101,9 +101,9 @@
 <text x="319" y="769.5999999999999" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">PASSAGE</text>
 <rect x="307.79999999999995" y="716.4" width="28.0" height="19.600000000000023" fill="#888" stroke="#222" stroke-width="1"/>
 <text x="321.79999999999995" y="750" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">floor furnace</text>
-<line x1="207" y1="540" x2="270.0" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="207" y1="540" x2="270.0" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
-<text x="238.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding glass door</text>
+<line x1="221" y1="540" x2="284.0" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="221" y1="540" x2="284.0" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
+<text x="252.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding glass door, centered</text>
 <text x="252.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
 <text x="252.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 12' × 12'</text>
 <text x="438.0" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
@@ -128,8 +128,6 @@
 <line x1="473" y1="743.0" x2="515" y2="743.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <line x1="375" y1="911.0" x2="375" y2="946.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M375,911.0 L410.0,911.0 A35.0,35.0 0 0 1 375,946.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="186.0" y1="540" x2="200.0" y2="540" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="186.0" y1="540" x2="200.0" y2="540" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="165" y1="722" x2="165" y2="757.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
