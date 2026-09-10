@@ -25,7 +25,7 @@
 <text x="291" y="1114" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">gravel beds · ≈ 10' to sidewalk</text>
 <rect x="431" y="1052.4" width="42" height="103.59999999999991" fill="#ddd" stroke="#999" stroke-width="1"/>
 <text x="305" y="1178.4" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">sidewalk · 9th Street</text>
-<rect x="165" y="428" width="126" height="112" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
+<rect x="165" y="428" width="252" height="112" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
 <line x1="179" y1="428" x2="179" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
 <line x1="193" y1="428" x2="193" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
 <line x1="207" y1="428" x2="207" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
@@ -34,34 +34,34 @@
 <line x1="249" y1="428" x2="249" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
 <line x1="263" y1="428" x2="263" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
 <line x1="277" y1="428" x2="277" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<text x="228.0" y="481.2" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">DECK</text>
-<text x="228.0" y="503.6" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 9' × 8'</text>
+<line x1="291" y1="428" x2="291" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="305" y1="428" x2="305" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="319" y1="428" x2="319" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="333" y1="428" x2="333" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="347" y1="428" x2="347" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="361" y1="428" x2="361" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="375" y1="428" x2="375" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="389" y1="428" x2="389" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="403" y1="428" x2="403" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<text x="291" y="475.6" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">DECK</text>
+<text x="291" y="498" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 18' × 8'</text>
 <rect x="109" y="491.0" width="56" height="49.0" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
 <line x1="151" y1="491.0" x2="151" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
 <line x1="137" y1="491.0" x2="137" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
 <line x1="123" y1="491.0" x2="123" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
 <text x="137" y="479.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">stairs down</text>
-<rect x="291" y="428" width="238" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
-<line x1="417" y1="498" x2="466.0" y2="498" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="417" y1="498" x2="417" y2="540" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="466.0" y1="498" x2="466.0" y2="540" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="421.2" y1="540" x2="461.8" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="421.2" y1="540" x2="461.8" y2="540" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
-<text x="441.5" y="517.6" font-size="7" text-anchor="middle" fill="#222" font-weight="normal">closet</text>
-<text x="375" y="467.2" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">REAR PORCH</text>
-<text x="375" y="486.8" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">enclosed · ≈ 17' × 8' · shelves, plywood floor</text>
-<line x1="319" y1="428" x2="375" y2="428" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="319" y1="428" x2="375" y2="428" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="459" y1="428" x2="515" y2="428" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="459" y1="428" x2="515" y2="428" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<rect x="417" y="428" width="112" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
+<text x="473" y="470" font-size="9" text-anchor="middle" fill="#222" font-weight="bold">REAR PORCH</text>
+<text x="473" y="486.8" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">enclosed · ≈ 8' × 8'</text>
+<text x="473" y="502.2" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">shelves</text>
+<line x1="445" y1="428" x2="501" y2="428" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="445" y1="428" x2="501" y2="428" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="529" y1="456" x2="529" y2="498" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
 <line x1="529" y1="456" x2="529" y2="498" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="291" y1="442" x2="291" y2="477.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M291,442 L256.0,442 A35.0,35.0 0 0 0 291,477.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="298.0" y1="540" x2="328.79999999999995" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M298.0,540 L298.0,509.2 A30.800000000000004,30.800000000000004 0 0 1 328.79999999999995,540" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="354.0" y1="540" x2="389.0" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M354.0,540 L354.0,505.0 A35.0,35.0 0 0 1 389.0,540" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="417" y1="442" x2="417" y2="477.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M417,442 L382.0,442 A35.0,35.0 0 0 0 417,477.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="445" y1="540" x2="480.0" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M445,540 L445,505.0 A35.0,35.0 0 0 1 480.0,540" fill="none" stroke="#666" stroke-width="1.5"/>
 <rect x="165" y="540" width="364" height="420" fill="#fff" stroke="#222" stroke-width="4"/>
 <rect x="389" y="904" width="140" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
 <text x="459" y="950.2" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">FRONT PORCH</text>
@@ -75,19 +75,23 @@
 <text x="459" y="1035.6" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">concrete steps</text>
 <line x1="340.0" y1="540" x2="340.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="340.0" y1="708" x2="529" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="165" y1="708" x2="300.79999999999995" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="165" y1="708" x2="298.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="298.0" y1="708" x2="298.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="165" y1="778" x2="340.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="340.0" y1="757.0" x2="340.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="340.0" y1="757.0" x2="375" y2="757.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="340.0" y1="757.0" x2="375" y2="757.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
-<line x1="375" y1="708" x2="375" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="300.79999999999995" y1="708" x2="337.20000000000005" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="300.79999999999995" y1="708" x2="337.20000000000005" y2="708" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
-<line x1="344.20000000000005" y1="708" x2="375.0" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M344.20000000000005,708 L344.20000000000005,677.2 A30.800000000000004,30.800000000000004 0 0 1 375.0,708" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="375" y1="719.2" x2="375" y2="754.2" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M375,719.2 L410.0,719.2 A35.0,35.0 0 0 1 375,754.2" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="340.0" y1="708" x2="340.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="165" y1="778" x2="298.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="340.0" y1="778" x2="375" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="298.0" y1="778" x2="340.0" y2="778" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="298.0" y1="778" x2="340.0" y2="778" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
+<line x1="298.0" y1="708" x2="340.0" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="298.0" y1="708" x2="340.0" y2="708" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
+<line x1="375" y1="778" x2="375" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="340.0" y1="582" x2="382.0" y2="582" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="382.0" y1="540" x2="382.0" y2="582" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<text x="361" y="565.2" font-size="7" text-anchor="middle" fill="#222" font-weight="normal">closet</text>
+<line x1="340.0" y1="545.6" x2="340.0" y2="576.4" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M340.0,545.6 L370.79999999999995,545.6 A30.800000000000004,30.800000000000004 0 0 1 340.0,576.4" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="382.0" y1="545.6" x2="382.0" y2="576.4" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="382.0" y1="545.6" x2="382.0" y2="576.4" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <rect x="344.20000000000005" y="820" width="30.799999999999955" height="44.799999999999955" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
 <text x="359.6" y="845.2" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
 <rect x="366.6" y="786.4000000000001" width="8.399999999999977" height="28.0" fill="#ddd" stroke="#222" stroke-width="1"/>
@@ -98,16 +102,22 @@
 <text x="256.0" y="771.0" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">vanity</text>
 <ellipse cx="184.6" cy="744.4" rx="14" ry="9.799999999999999" fill="#fff" stroke="#222" stroke-width="1"/>
 <text x="242.0" y="752.8" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
-<text x="319" y="769.5999999999999" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">PASSAGE</text>
-<rect x="307.79999999999995" y="716.4" width="28.0" height="19.600000000000023" fill="#888" stroke="#222" stroke-width="1"/>
-<text x="321.79999999999995" y="750" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">floor furnace</text>
+<line x1="298.0" y1="743.0" x2="298.0" y2="778.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M298.0,743.0 L263.0,743.0 A35.0,35.0 0 0 0 298.0,778.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<rect x="307.79999999999995" y="719.2" width="22.40000000000009" height="19.59999999999991" fill="#888" stroke="#222" stroke-width="1"/>
+<text x="319" y="752.8" font-size="6" text-anchor="middle" fill="#555" font-weight="normal">furnace</text>
+<text x="319" y="768.2" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">HALL</text>
+<line x1="340.0" y1="722" x2="340.0" y2="757.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M340.0,722 L375.0,722 A35.0,35.0 0 0 1 340.0,757.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="396.0" y1="708" x2="431.0" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M396.0,708 L396.0,673.0 A35.0,35.0 0 0 1 431.0,708" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="221" y1="540" x2="284.0" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="221" y1="540" x2="284.0" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
 <text x="252.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding glass door, centered</text>
 <text x="252.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
 <text x="252.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 12' × 12'</text>
-<text x="438.0" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
-<text x="438.0" y="638" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 13' × 12' · closet + door to rear porch</text>
+<text x="445" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
+<text x="445" y="638" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 13' × 12' · closet, door to rear porch</text>
 <rect x="501" y="750" width="28" height="126" fill="#eee" stroke="#222" stroke-width="1"/>
 <text x="515" y="850.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">tile</text>
 <text x="515" y="863.4000000000001" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">counter</text>
@@ -122,12 +132,15 @@
 <line x1="466.0" y1="904" x2="494.0" y2="904" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="466.0" y1="904" x2="494.0" y2="904" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <text x="480.0" y="916.5999999999999" font-size="7" text-anchor="middle" fill="#3a7bd5" font-weight="normal">small window to porch</text>
-<line x1="298.0" y1="743.0" x2="298.0" y2="778.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M298.0,743.0 L263.0,743.0 A35.0,35.0 0 0 0 298.0,778.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<text x="435.2" y="799.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
+<text x="435.2" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 12' + strip · galley</text>
+<text x="494.0" y="727.6" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">pantry</text>
 <line x1="473" y1="743.0" x2="515" y2="743.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="473" y1="743.0" x2="515" y2="743.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <line x1="375" y1="911.0" x2="375" y2="946.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M375,911.0 L410.0,911.0 A35.0,35.0 0 0 1 375,946.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="459" y1="708" x2="459" y2="743.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="459" y1="743.0" x2="529" y2="743.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="165" y1="722" x2="165" y2="757.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
@@ -142,9 +155,6 @@
 <line x1="529" y1="778" x2="529" y2="834" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="529" y1="624" x2="529" y2="666" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
 <line x1="529" y1="624" x2="529" y2="666" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<text x="435.2" y="799.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
-<text x="435.2" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 12' · galley</text>
-<text x="494.0" y="727.6" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">pantry</text>
 <text x="270.0" y="862" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">LIVING ROOM</text>
 <text x="270.0" y="884.4000000000001" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 15' × 13' · fireplace + built-ins</text>
 <line x1="34.79999999999998" y1="540" x2="34.79999999999998" y2="960" stroke="#777" stroke-width="1" stroke-linecap="square"/>
