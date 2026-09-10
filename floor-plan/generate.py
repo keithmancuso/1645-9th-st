@@ -90,7 +90,7 @@ def build(variant):
     line(13.5,12,13.5,17)                        # hall's east wall = kitchen's west wall
     line(0,17,10.5,17); line(13.5,17,15,17)      # living room north wall, with the hall opening between
     opening(10.5,17,13.5,17); opening(10.5,12,13.5,12)   # hall: straight, cased both ends, living room -> rear-left room (photo 09)
-    line(15,17,15,26)                            # fireplace wall
+    line(15,12,15,26)                            # front-right room's west wall: passage side (with the door) and the fireplace wall
     door(13.5,0.4,2.2,'e')                                # rear-left room -> rear-right room, in the rear corner: the rear-right room's only entrance (Keith)
     # fireplace / built-in on the living room's east wall (photo 07): built-in, fireplace, porch door
     rect(13.8,20,15,23.2,fill="#c0553f",stroke="#222",sw=1.5); label(14.4,21.8,"FP",8,True,"#fff")
@@ -103,7 +103,8 @@ def build(variant):
     if not proposed:
         rect(11.2,12.8,12.8,14.2,fill="#888",stroke="#222",sw=1); label(12,15.2,"furnace",6,False,"#555")   # floor furnace grate in the hall (photos 09, 12, 14, 20)
         label(12,16.3,"HALL",7)
-        opening(13.5,12.6,13.5,16.4); door(15,13.5,2.5,'e')  # hall -> short passage -> kitchen door (photos 12, 14); passage bounded by the living room wall and bedroom 2's wall
+        opening(13.5,12.6,13.5,16.4); door(15,13.5,2.5,'e')  # hall -> short passage -> kitchen door (photos 12, 14)
+        door(26,12.8,2.7,'e')                                # kitchen side door out to the east side yard (Keith)
         # existing: bedroom 2 rear-left, bedroom 1 rear-right, kitchen front-right (L-shaped: the strip beside the hall plus the room behind the porch)
         line(4.5,0,9,0,stroke="#fbfaf7",sw=6); line(4.5,0,9,0,stroke="#3a7bd5",sw=5); label(6.75,-0.6,"sliding glass door, centered",8,False,"#3a7bd5")
         label(6.75,5.5,"BEDROOM 2",14); label(6.75,7,"≈ 13' × 12'",11,False,"#555")
@@ -120,6 +121,7 @@ def build(variant):
         label(12,15.6,"HALL",7)
         # the old kitchen's strip beside the hall is bedroom 1's entry; the old kitchen door is the opening
         opening(13.5,12.6,13.5,16.4); door(15,13.5,2.5,'e')
+        door(26,12.8,2.7,'e')                                # existing side door to the east side yard
         # kitchen rear-left (eat-in, opens to the deck); its old corner door into the closet gets closed
         line(4.5,0,9,0,stroke="#fbfaf7",sw=6); line(4.5,0,9,0,stroke="#3a7bd5",sw=5); label(6.75,-0.6,"sliding / French door to deck",8,False,"#3a7bd5")
         rect(0.2,1.5,2,11.8,fill="#eee",stroke="#222",sw=1); label(1.1,3.4,"counter",7,False)

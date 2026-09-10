@@ -82,7 +82,7 @@
 <line x1="354.0" y1="778" x2="375" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="312.0" y1="778" x2="354.0" y2="778" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="312.0" y1="708" x2="354.0" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="375" y1="778" x2="375" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="375" y1="708" x2="375" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="354.0" y1="545.6" x2="354.0" y2="576.4" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M354.0,545.6 L384.79999999999995,545.6 A30.800000000000004,30.800000000000004 0 0 1 354.0,576.4" fill="none" stroke="#666" stroke-width="1.5"/>
 <rect x="358.20000000000005" y="820" width="16.799999999999955" height="44.799999999999955" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
@@ -101,6 +101,8 @@
 <line x1="354.0" y1="716.4" x2="354.0" y2="769.5999999999999" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="375" y1="729.0" x2="375" y2="764.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M375,729.0 L410.0,729.0 A35.0,35.0 0 0 1 375,764.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="529" y1="719.2" x2="529" y2="757.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M529,719.2 L566.8,719.2 A37.800000000000004,37.800000000000004 0 0 1 529,757.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="228.0" y1="540" x2="291" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="228.0" y1="540" x2="291" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
 <text x="259.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding glass door, centered</text>
