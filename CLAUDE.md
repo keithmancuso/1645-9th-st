@@ -59,8 +59,8 @@ The lot is drawn from photos 01, 03, 05 and 21 and the listed 2,613 sq ft: about
 ### Proposed changes (as of Sept 9, 2026)
 
 1. **Kitchen moves to the rear-left room with the slider** so it opens directly onto the deck (eat-in, ≈12×12). Reason: don't want to walk through a bedroom to reach the yard. The new kitchen shares its south wall with the bathroom, so the wet wall is shared.
-2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1.** Its strip beside the hall becomes a short hall of its own, entered through the old kitchen door, with a door east into bedroom 1 and a new door north into bedroom 2, so bedroom 2 is no longer reached only through the kitchen. Its plumbing gets abandoned.
-3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈13×12). It keeps its door into the rear porch. Its existing corner door from the new kitchen can stay or be closed. Neither bedroom has a closet; both need one.
+2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1.** Its strip beside the hall becomes its entry vestibule, through the old kitchen door. No door between the bedrooms. Its plumbing gets abandoned.
+3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈13×12). It keeps its door into the rear porch and is entered through its existing corner door from the new kitchen. Neither bedroom has a closet; both need one.
 4. **Rear porch becomes laundry / mudroom** (≈8×8), reached from bedroom 2 and from the deck; washer, dryer and water heater in it.
 5. Living room, bath, hall, front porch unchanged. Floor furnace comes out; mini-splits.
 

@@ -40,8 +40,8 @@ def build(variant):
     out.append(f'<text x="40" y="44" font-size="22" font-weight="bold" fill="#222">1645 9th St, Berkeley — {title}</text>')
     out.append(f'<text x="40" y="68" font-size="13" fill="#555">2 bed · 1 bath · 734 sq ft · built 1919 · 2,613 sq ft lot · single-story bungalow</text>')
     if proposed:
-        out.append(f'<text x="40" y="86" font-size="12" fill="#1a7a3c">Change: kitchen moves from the front-right room to the rear-left room with the slider, opening onto the deck.</text>')
-        out.append(f'<text x="40" y="102" font-size="12" fill="#1a7a3c">Old kitchen → bedroom 1; its strip beside the hall gets a new door into bedroom 2. Rear porch → mudroom. Furnace out.</text>')
+        out.append(f'<text x="40" y="86" font-size="12" fill="#555">Change: kitchen moves from the front-right room to the rear-left room with the slider, opening onto the deck.</text>')
+        out.append(f'<text x="40" y="102" font-size="12" fill="#555">Old kitchen → bedroom 1, entered through its strip beside the hall. Rear porch → mudroom. Furnace out.</text>')
     else:
         out.append(f'<text x="40" y="86" font-size="12" fill="#a33">From the listing photos; room positions corrected after the walkthrough. Sizes are estimates (±2 ft), not measured.</text>')
 
@@ -118,10 +118,9 @@ def build(variant):
         line(21.5,26,23.5,26,stroke="#fbfaf7",sw=6); line(21.5,26,23.5,26,stroke="#3a7bd5",sw=2.5); label(22.5,26.9,"small window to porch",7,False,"#3a7bd5")
         label(19.3,18.5,"KITCHEN",14); label(19.3,20,"≈ 11' × 12' + strip · galley",10,False,"#555"); label(23.5,13.4,"pantry",8,False)
     else:
-        label(11,15.6,"HALL",7); label(11,13.5,"furnace",6,False,"#1a7a3c"); label(11,14.3,"out",6,False,"#1a7a3c")
-        # the old kitchen's strip beside the hall becomes a short hall serving both bedrooms; the old kitchen door is the entry
-        opening(12.5,13,12.5,15.5); door(12.8,12,2.4,'n'); door(15,13,2.5,'e')
-        label(13.75,16.3,"hall",6,False,"#1a7a3c"); label(14.6,11.2,"new door",6,False,"#1a7a3c")
+        label(11,15.6,"HALL",7)
+        # the old kitchen's strip beside the hall is bedroom 1's entry; the old kitchen door is the opening
+        opening(12.5,13,12.5,15.5); door(15,13,2.5,'e')
         # kitchen rear-left (eat-in, opens to the deck); its old corner door into the closet gets closed
         line(4,0,8.5,0,stroke="#fbfaf7",sw=6); line(4,0,8.5,0,stroke="#3a7bd5",sw=5); label(6.25,-0.6,"sliding / French door to deck",8,False,"#3a7bd5")
         rect(0.2,1.5,2,11.8,fill="#eee",stroke="#222",sw=1); label(1.1,3.4,"counter",7,False)
