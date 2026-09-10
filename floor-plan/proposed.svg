@@ -79,8 +79,6 @@
 <line x1="165" y1="708" x2="312.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="312.0" y1="708" x2="312.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="354.0" y1="708" x2="354.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="354.0" y1="722" x2="375" y2="722" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="354.0" y1="757.0" x2="375" y2="757.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="165" y1="778" x2="312.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="354.0" y1="778" x2="375" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="312.0" y1="778" x2="354.0" y2="778" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
@@ -99,9 +97,9 @@
 <line x1="312.0" y1="743.0" x2="312.0" y2="778.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M312.0,743.0 L277.0,743.0 A35.0,35.0 0 0 0 312.0,778.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <text x="333" y="758.4" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">HALL</text>
-<line x1="354.0" y1="722" x2="354.0" y2="757.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="375" y1="722" x2="375" y2="757.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M375,722 L410.0,722 A35.0,35.0 0 0 1 375,757.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="354.0" y1="716.4" x2="354.0" y2="769.5999999999999" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="375" y1="729.0" x2="375" y2="764.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<path d="M375,729.0 L410.0,729.0 A35.0,35.0 0 0 1 375,764.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="228.0" y1="540" x2="291" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="228.0" y1="540" x2="291" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
 <text x="259.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding / French door to deck</text>
