@@ -85,30 +85,29 @@ def build(variant):
     door(19,34,3,'n'); window(16,30.5,16,33.5); window(23,34,25.5,34)
     label(21,35.4,"concrete steps",9,False,"#555")
     # interior walls
-    line(12.5,0,12.5,12); line(12.5,12,26,12)   # partition between the rear rooms, in line with the hall's east wall (Keith)
-    line(0,12,9.5,12); line(9.5,12,9.5,17)      # bath: 0-9.5 × 12-17
-    line(12.5,12,12.5,17)                        # hall's east wall = kitchen's west wall
-    line(0,17,9.5,17); line(12.5,17,15,17)       # living room north wall, with the hall opening between
-    opening(9.5,17,12.5,17); opening(9.5,12,12.5,12)   # hall: straight, cased both ends, living room -> rear-left room (photo 09)
+    line(13.5,0,13.5,12); line(13.5,12,26,12)   # partition between the rear rooms, in line with the hall's east wall; rear-left a little wider than rear-right (Keith)
+    line(0,12,10.5,12); line(10.5,12,10.5,17)   # bath: 0-10.5 × 12-17
+    line(13.5,12,13.5,17)                        # hall's east wall = kitchen's west wall
+    line(0,17,10.5,17); line(13.5,17,15,17)      # living room north wall, with the hall opening between
+    opening(10.5,17,13.5,17); opening(10.5,12,13.5,12)   # hall: straight, cased both ends, living room -> rear-left room (photo 09)
     line(15,17,15,26)                            # fireplace wall
-    door(12.5,0.4,2.2,'e')                                # rear-left room -> rear-right room, in the rear corner: the rear-right room's only entrance (Keith)
+    door(13.5,0.4,2.2,'e')                                # rear-left room -> rear-right room, in the rear corner: the rear-right room's only entrance (Keith)
     # fireplace / built-in on the living room's east wall (photo 07): built-in, fireplace, porch door
-    rect(12.8,20,15,23.2,fill="#c0553f",stroke="#222",sw=1.5); label(13.9,21.8,"FP",9,True,"#fff")
-    rect(14.4,17.6,15,19.6,fill="#ddd",stroke="#222",sw=1); label(12.8,18.8,"built-in",8,False,"#555")
+    rect(13.8,20,15,23.2,fill="#c0553f",stroke="#222",sw=1.5); label(14.4,21.8,"FP",8,True,"#fff")
     # bath (photos 13, 14): from the east-end door, vanity left (south wall), tub right (north wall, end at the door), toilet under the west window
-    rect(4.5,12,9.5,14.5,fill="#eee",stroke="#222",sw=1); label(7,13.5,"tub",9,False)
-    rect(3.5,15.5,9.5,17,fill="#eee",stroke="#222",sw=1); label(6.5,16.5,"vanity",8,False)
+    rect(5.5,12,10.5,14.5,fill="#eee",stroke="#222",sw=1); label(8,13.5,"tub",9,False)
+    rect(4.5,15.5,10.5,17,fill="#eee",stroke="#222",sw=1); label(7.5,16.5,"vanity",8,False)
     e=P(1.4,14.6); out.append(f'<ellipse cx="{e[0]}" cy="{e[1]}" rx="{1*S}" ry="{0.7*S}" fill="#fff" stroke="#222" stroke-width="1"/>')
-    label(5.5,15.2,"BATH",11)
-    door(9.5,14.5,2.5,'w')                                # bath door, off the hall
+    label(6.5,15.2,"BATH",11)
+    door(10.5,14.5,2.5,'w')                                # bath door, off the hall
     if not proposed:
-        rect(10.2,12.8,11.8,14.2,fill="#888",stroke="#222",sw=1); label(11,15.2,"furnace",6,False,"#555")   # floor furnace grate in the hall (photos 09, 12, 14, 20)
-        label(11,16.3,"HALL",7)
-        door(12.5,13,2.5,'e')                               # hall -> kitchen (photos 12, 14)
+        rect(11.2,12.8,12.8,14.2,fill="#888",stroke="#222",sw=1); label(12,15.2,"furnace",6,False,"#555")   # floor furnace grate in the hall (photos 09, 12, 14, 20)
+        label(12,16.3,"HALL",7)
+        door(13.5,13,2.5,'e')                               # hall -> kitchen (photos 12, 14)
         # existing: bedroom 2 rear-left, bedroom 1 rear-right, kitchen front-right (L-shaped: the strip beside the hall plus the room behind the porch)
-        line(4,0,8.5,0,stroke="#fbfaf7",sw=6); line(4,0,8.5,0,stroke="#3a7bd5",sw=5); label(6.25,-0.6,"sliding glass door, centered",8,False,"#3a7bd5")
-        label(6.25,5.5,"BEDROOM 2",14); label(6.25,7,"≈ 12' × 12'",11,False,"#555")
-        label(20,5.5,"BEDROOM 1",14); label(20,7,"≈ 13' × 12' · entered from bedroom 2 · door to rear porch",9,False,"#555")
+        line(4.5,0,9,0,stroke="#fbfaf7",sw=6); line(4.5,0,9,0,stroke="#3a7bd5",sw=5); label(6.75,-0.6,"sliding glass door, centered",8,False,"#3a7bd5")
+        label(6.75,5.5,"BEDROOM 2",14); label(6.75,7,"≈ 13' × 12'",11,False,"#555")
+        label(19.75,5.5,"BEDROOM 1",14); label(19.75,7,"≈ 12' × 12'",11,False,"#555"); label(19.75,8.3,"entered from bedroom 2 · door to porch",8,False,"#555")
         # kitchen (photos 08, 10, 12): tile counter and sink under the east window, range + WH + small window on the porch wall, fridge beside, pantry shelves at the north end
         rect(24,15,26,24,fill="#eee",stroke="#222",sw=1); label(25,22.2,"tile",8,False); label(25,23.1,"counter",8,False)
         rect(24,17.5,26,20.5,fill="#ddd",stroke="#222",sw=1); label(25,19.2,"sink",8,False)
@@ -118,24 +117,24 @@ def build(variant):
         line(21.5,26,23.5,26,stroke="#fbfaf7",sw=6); line(21.5,26,23.5,26,stroke="#3a7bd5",sw=2.5); label(22.5,26.9,"small window to porch",7,False,"#3a7bd5")
         label(19.3,18.5,"KITCHEN",14); label(19.3,20,"≈ 11' × 12' + strip · galley",10,False,"#555"); label(23.5,13.4,"pantry",8,False)
     else:
-        label(11,15.6,"HALL",7)
+        label(12,15.6,"HALL",7)
         # the old kitchen's strip beside the hall is bedroom 1's entry; the old kitchen door is the opening
-        opening(12.5,13,12.5,15.5); door(15,13,2.5,'e')
+        opening(13.5,13,13.5,15.5); door(15,13,2.5,'e')
         # kitchen rear-left (eat-in, opens to the deck); its old corner door into the closet gets closed
-        line(4,0,8.5,0,stroke="#fbfaf7",sw=6); line(4,0,8.5,0,stroke="#3a7bd5",sw=5); label(6.25,-0.6,"sliding / French door to deck",8,False,"#3a7bd5")
+        line(4.5,0,9,0,stroke="#fbfaf7",sw=6); line(4.5,0,9,0,stroke="#3a7bd5",sw=5); label(6.75,-0.6,"sliding / French door to deck",8,False,"#3a7bd5")
         rect(0.2,1.5,2,11.8,fill="#eee",stroke="#222",sw=1); label(1.1,3.4,"counter",7,False)
         rect(0.2,4.5,2,7,fill="#ddd",stroke="#222",sw=1); label(1.1,5.9,"sink",7,False)
         rect(0.2,8,2.2,10.5,fill="#ddd",stroke="#222",sw=1); label(1.2,9.4,"range",7,False)
         rect(3,9.5,5.5,11.8,fill="#ddd",stroke="#222",sw=1); label(4.25,10.8,"fridge",8,False)
-        rect(4.5,2.5,9.5,5.5,fill="#f4e9d0",stroke="#8a6a3a",sw=1); label(7,4.3,"table / island",8,False,"#555")
-        label(7.2,7.6,"KITCHEN (eat-in)",14); label(7.2,9,"≈ 12' × 12' · opens to deck",10,False,"#555")
-        label(20,6,"BEDROOM 2",13); label(20,7.4,"≈ 13' × 12' · door to mudroom · no closet",9,False,"#555")
+        rect(5,2.5,10,5.5,fill="#f4e9d0",stroke="#8a6a3a",sw=1); label(7.5,4.3,"table / island",8,False,"#555")
+        label(7.5,7.6,"KITCHEN (eat-in)",14); label(7.5,9,"≈ 13' × 12' · opens to deck",10,False,"#555")
+        label(19.75,6,"BEDROOM 2",13); label(19.75,7.4,"≈ 12' × 12' · door to mudroom · no closet",9,False,"#555")
         label(19.3,18.5,"BEDROOM 1",14); label(19.3,20,"≈ 11' × 12' · former kitchen · no closet",10,False,"#555"); label(23.5,13.4,"old pantry",8,False)
     # shared: doors, windows, labels
     opening(22,14.5,25,14.5); door(15,26.5,2.5,'e')
     line(21,12,21,14.5); line(21,14.5,26,14.5)   # pantry / closet nook
     window(0,3,0,7); window(0,13,0,15.5); window(0,19,0,22); window(0,25,0,28); window(3,30,9,30); window(26,17,26,21); window(26,6,26,9)
-    label(7.5,23,"LIVING ROOM",15); label(7.5,24.6,"≈ 15' × 13' · fireplace + built-ins",10,False,"#555")
+    label(7.5,23,"LIVING ROOM",15); label(7.5,24.6,"≈ 15' × 13' · brick fireplace",10,False,"#555")
     # dims / north / street / legend
     line(-9.3,0,-9.3,30,stroke="#777",sw=1); p=P(-10.1,15)
     out.append(f'<text transform="translate({p[0]},{p[1]}) rotate(-90)" font-size="10" text-anchor="middle" fill="#555">house ≈ 30 ft</text>')
