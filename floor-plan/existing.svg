@@ -85,13 +85,8 @@
 <line x1="298.0" y1="708" x2="340.0" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="298.0" y1="708" x2="340.0" y2="708" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <line x1="375" y1="778" x2="375" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="340.0" y1="582" x2="382.0" y2="582" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="382.0" y1="540" x2="382.0" y2="582" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<text x="361" y="565.2" font-size="7" text-anchor="middle" fill="#222" font-weight="normal">closet</text>
 <line x1="340.0" y1="545.6" x2="340.0" y2="576.4" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M340.0,545.6 L370.79999999999995,545.6 A30.800000000000004,30.800000000000004 0 0 1 340.0,576.4" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="382.0" y1="545.6" x2="382.0" y2="576.4" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="382.0" y1="545.6" x2="382.0" y2="576.4" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <rect x="344.20000000000005" y="820" width="30.799999999999955" height="44.799999999999955" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
 <text x="359.6" y="845.2" font-size="9" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
 <rect x="366.6" y="786.4000000000001" width="8.399999999999977" height="28.0" fill="#ddd" stroke="#222" stroke-width="1"/>
@@ -109,15 +104,13 @@
 <text x="319" y="768.2" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">HALL</text>
 <line x1="340.0" y1="722" x2="340.0" y2="757.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M340.0,722 L375.0,722 A35.0,35.0 0 0 1 340.0,757.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="396.0" y1="708" x2="431.0" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<path d="M396.0,708 L396.0,673.0 A35.0,35.0 0 0 1 431.0,708" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="221" y1="540" x2="284.0" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="221" y1="540" x2="284.0" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
 <text x="252.5" y="531.6" font-size="8" text-anchor="middle" fill="#3a7bd5" font-weight="normal">sliding glass door, centered</text>
 <text x="252.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
 <text x="252.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 12' × 12'</text>
 <text x="445" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
-<text x="445" y="638" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 13' × 12' · closet, door to rear porch</text>
+<text x="445" y="638" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 13' × 12' · entered from bedroom 2 · door to rear porch</text>
 <rect x="501" y="750" width="28" height="126" fill="#eee" stroke="#222" stroke-width="1"/>
 <text x="515" y="850.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">tile</text>
 <text x="515" y="863.4000000000001" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">counter</text>
