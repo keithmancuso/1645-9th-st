@@ -78,6 +78,8 @@
 <line x1="165" y1="708" x2="312.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="312.0" y1="708" x2="312.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="354.0" y1="708" x2="354.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="354.0" y1="722" x2="375" y2="722" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="354.0" y1="757.0" x2="375" y2="757.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="165" y1="778" x2="312.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="354.0" y1="778" x2="375" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="312.0" y1="778" x2="354.0" y2="778" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>

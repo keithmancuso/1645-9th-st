@@ -88,6 +88,7 @@ def build(variant):
     line(13.5,0,13.5,12); line(13.5,12,26,12)   # partition between the rear rooms, in line with the hall's east wall; rear-left a little wider than rear-right (Keith)
     line(0,12,10.5,12); line(10.5,12,10.5,17)   # bath: 0-10.5 × 12-17
     line(13.5,12,13.5,17)                        # hall's east wall = kitchen's west wall
+    line(13.5,13,15,13); line(13.5,15.5,15,15.5) # side walls of the short passage from the hall to the front-right room's door (Keith)
     line(0,17,10.5,17); line(13.5,17,15,17)      # living room north wall, with the hall opening between
     opening(10.5,17,13.5,17); opening(10.5,12,13.5,12)   # hall: straight, cased both ends, living room -> rear-left room (photo 09)
     line(15,17,15,26)                            # fireplace wall
