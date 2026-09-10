@@ -19,17 +19,17 @@ def build(variant):
         out.append(f'<text x="{p[0]}" y="{p[1]}" font-size="{size}" text-anchor="middle" fill="{fill}" font-weight="{"bold" if bold else "normal"}">{t}</text>')
     def window(x1,y1,x2,y2):
         line(x1,y1,x2,y2,stroke="#fbfaf7",sw=5); line(x1,y1,x2,y2,stroke="#3a7bd5",sw=2.5)
-    def door(x,y,w,dir):
+    def door(x,y,w,dir,gap="#fff"):
         if dir in 'ns':
-            line(x,y,x+w,y,stroke="#fbfaf7",sw=6); s=-1 if dir=='n' else 1
+            line(x,y,x+w,y,stroke=gap,sw=6); s=-1 if dir=='n' else 1
             a=P(x,y); b=P(x+w,y); c=P(x,y+s*w)
             out.append(f'<path d="M{a[0]},{a[1]} L{c[0]},{c[1]} A{w*S},{w*S} 0 0 {1 if s<0 else 0} {b[0]},{b[1]}" fill="none" stroke="#666" stroke-width="1.5"/>')
         else:
-            line(x,y,x,y+w,stroke="#fbfaf7",sw=6); s=1 if dir=='e' else -1
+            line(x,y,x,y+w,stroke=gap,sw=6); s=1 if dir=='e' else -1
             a=P(x,y); b=P(x,y+w); c=P(x+s*w,y)
             out.append(f'<path d="M{a[0]},{a[1]} L{c[0]},{c[1]} A{w*S},{w*S} 0 0 {1 if s>0 else 0} {b[0]},{b[1]}" fill="none" stroke="#666" stroke-width="1.5"/>')
-    def opening(x1,y1,x2,y2):
-        line(x1,y1,x2,y2,stroke="#fbfaf7",sw=6)
+    def opening(x1,y1,x2,y2,gap="#fff"):
+        line(x1,y1,x2,y2,stroke=gap,sw=6)
     def circle(x,y,r,fill="#ddd"):
         c=P(x,y); out.append(f'<circle cx="{c[0]}" cy="{c[1]}" r="{r*S}" fill="{fill}" stroke="#222" stroke-width="1"/>')
 
@@ -76,13 +76,13 @@ def build(variant):
     else:
         label(22,-5,"REAR PORCH",9); label(22,-3.8,"enclosed · ≈ 8' × 8'",8,False,"#555"); label(22,-2.7,"shelves",7,False,"#555")
     window(20,-8,24,-8); window(26,-6,26,-3)
-    door(18,-7,2.5,'w')                                     # porch -> deck
+    door(18,-7,2.5,'w',gap="#f3efe6")                       # porch -> deck
     door(20,0,2.5,'n')                                      # bedroom 1 -> porch (photo 16)
     # main house
     rect(0,0,26,30,fill="#fff",stroke="#222",sw=4)
     rect(16,26,26,34,fill="#f3efe6",stroke="#222",sw=3)
     label(21,29.3,"FRONT PORCH",11); label(21,30.7,"enclosed entry · ≈ 10' × 8'",10,False,"#555")
-    door(19,34,3,'n'); window(16,30.5,16,33.5); window(23,34,25.5,34)
+    door(19,34,3,'n',gap="#f3efe6"); window(16,30.5,16,33.5); window(23,34,25.5,34)
     label(21,35.4,"concrete steps",9,False,"#555")
     # interior walls
     line(13.5,0,13.5,12); line(13.5,12,26,12)   # partition between the rear rooms, in line with the hall's east wall; rear-left a little wider than rear-right (Keith)
@@ -101,8 +101,7 @@ def build(variant):
     label(6.5,15.2,"BATH",11)
     door(10.5,14.5,2.5,'w')                                # bath door, off the hall
     if not proposed:
-        rect(11.2,12.8,12.8,14.2,fill="#888",stroke="#222",sw=1); label(12,15.2,"furnace",6,False,"#555")   # floor furnace grate in the hall (photos 09, 12, 14, 20)
-        label(12,16.3,"HALL",7)
+        label(12,14.8,"HALL",7)   # the red-tagged floor furnace grate is in this hall (photos 09, 12, 14, 20); not drawn
         opening(13.5,12.6,13.5,16.4); door(15,13.5,2.5,'e')  # hall -> short passage -> kitchen door (photos 12, 14)
         door(26,12.8,2.7,'e')                                # kitchen side door out to the east side yard (Keith)
         # existing: bedroom 2 rear-left, bedroom 1 rear-right, kitchen front-right (L-shaped: the strip beside the hall plus the room behind the porch)
@@ -118,7 +117,7 @@ def build(variant):
         line(21.5,26,23.5,26,stroke="#fbfaf7",sw=6); line(21.5,26,23.5,26,stroke="#3a7bd5",sw=2.5); label(22.5,26.9,"small window to porch",7,False,"#3a7bd5")
         label(20.5,18.5,"KITCHEN",14); label(20.5,20,"≈ 11' × 14' · galley",10,False,"#555")
     else:
-        label(12,15.6,"HALL",7)
+        label(12,14.8,"HALL",7)
         # the old kitchen's strip beside the hall is bedroom 1's entry; the old kitchen door is the opening
         opening(13.5,12.6,13.5,16.4); door(15,13.5,2.5,'e')
         door(26,12.8,2.7,'e')                                # existing side door to the east side yard
