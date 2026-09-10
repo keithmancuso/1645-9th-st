@@ -81,9 +81,7 @@
 <line x1="165" y1="778" x2="312.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="354.0" y1="778" x2="375" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="312.0" y1="778" x2="354.0" y2="778" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="312.0" y1="778" x2="354.0" y2="778" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <line x1="312.0" y1="708" x2="354.0" y2="708" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="312.0" y1="708" x2="354.0" y2="708" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
 <line x1="375" y1="778" x2="375" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="354.0" y1="545.6" x2="354.0" y2="576.4" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M354.0,545.6 L384.79999999999995,545.6 A30.800000000000004,30.800000000000004 0 0 1 354.0,576.4" fill="none" stroke="#666" stroke-width="1.5"/>
@@ -124,15 +122,10 @@
 <line x1="466.0" y1="904" x2="494.0" y2="904" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="466.0" y1="904" x2="494.0" y2="904" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <text x="480.0" y="916.5999999999999" font-size="7" text-anchor="middle" fill="#3a7bd5" font-weight="normal">small window to porch</text>
-<text x="435.2" y="799.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
-<text x="435.2" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 12' + strip · galley</text>
-<text x="494.0" y="727.6" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">pantry</text>
-<line x1="473" y1="743.0" x2="515" y2="743.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="473" y1="743.0" x2="515" y2="743.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,4"/>
+<text x="452.0" y="799.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
+<text x="452.0" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 14' · galley</text>
 <line x1="375" y1="911.0" x2="375" y2="946.0" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <path d="M375,911.0 L410.0,911.0 A35.0,35.0 0 0 1 375,946.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="459" y1="708" x2="459" y2="743.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="459" y1="743.0" x2="529" y2="743.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
 <line x1="165" y1="582" x2="165" y2="638" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="165" y1="722" x2="165" y2="757.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
@@ -158,6 +151,5 @@
 <g transform="translate(655,246)"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>
 <text x="305" y="1200.8000000000002" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">"N" is drawn as away from the street, not true north · lot edges are estimates from photos</text>
 <line x1="40" y1="1220.4" x2="70" y2="1220.4" stroke="#3a7bd5" stroke-width="2.5"/><text x="78" y="1224.4" font-size="11" fill="#555">window / glass</text>
-<line x1="190" y1="1220.4" x2="220" y2="1220.4" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/><text x="228" y="1224.4" font-size="11" fill="#555">cased opening</text>
-<text x="340" y="1224.4" font-size="11" fill="#555">arc = door swing · FP = brick fireplace · WH = water heater</text>
+<text x="190" y="1224.4" font-size="11" fill="#555">gap in wall = open doorway · arc = door swing · FP = brick fireplace · WH = water heater</text>
 </svg>

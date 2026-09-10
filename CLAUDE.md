@@ -48,7 +48,7 @@ Layout as drawn (Sept 10 revision, from all 21 photos and Keith's notes):
 - **Living room** front-left, ≈15×13. East wall, north to south: shallow brick fireplace (flush on the far side), door to the enclosed front porch. A cased opening at the east end of its north wall is the start of the hall.
 - **Hall**: a straight 3 ft corridor from the living room north into the rear-left room, cased at both ends. Bath door on its west side, kitchen door on its east side, the red-tagged floor furnace grate in its floor (photos 09, 12, 14, 20).
 - **Bath** ≈10.5×5 on the west of the hall: door at the east end; from it, vanity on the south wall, tub on the north wall with its end at the door, toilet under the west window.
-- **Kitchen** front-right, L-shaped: the ≈11×12 room behind the porch plus the ≈1.5×5 strip east of the hall. Tile counter and sink under the east window, range and water heater on the porch wall with a small high window into the porch, fridge beside them, pantry nook at the north end. No door into bedroom 1.
+- **Kitchen** front-right, L-shaped: the ≈11×14 room behind the porch plus the ≈1.5×5 strip east of the hall. Tile counter and sink under the east window, range and water heater on the porch wall with a small high window into the porch, fridge beside them. No door into bedroom 1.
 - **Bedroom 2** rear-left, ≈13×12: slider centered on the back wall onto the deck, window on the west wall, no closet. Its rear-east corner door is the only way into bedroom 1.
 - **Bedroom 1** rear-right, ≈12×12: entered only through bedroom 2's corner door; door into the rear porch, east window, no closet. The partition between the rear rooms lines up with the hall's east wall; the rear-left room is a little wider than the rear-right one.
 - **Rear porch** ≈8×8, enclosed, narrow, on the east end of the back wall, flush with the deck edge; shelves, plywood floor, small high window, door to the deck.
@@ -59,7 +59,7 @@ The lot is drawn from photos 01, 03, 05 and 21 and the listed 2,613 sq ft: about
 ### Proposed changes (as of Sept 9, 2026)
 
 1. **Kitchen moves to the rear-left room with the slider** so it opens directly onto the deck (eat-in, ≈13×12). Reason: don't want to walk through a bedroom to reach the yard. The new kitchen shares its south wall with the bathroom, so the wet wall is shared.
-2. **Old kitchen (front-right, ≈11×12) becomes bedroom 1.** Its strip beside the hall becomes its entry vestibule, through the old kitchen door. No door between the bedrooms. Its plumbing gets abandoned.
+2. **Old kitchen (front-right, ≈11×14) becomes bedroom 1.** Its strip beside the hall becomes its entry vestibule, through the old kitchen door. No door between the bedrooms. Its plumbing gets abandoned.
 3. **Rear-right bedroom stays a bedroom** and becomes bedroom 2 (≈12×12). It keeps its door into the rear porch and is entered through its existing corner door from the new kitchen. Neither bedroom has a closet; both need one.
 4. **Rear porch becomes laundry / mudroom** (≈8×8), reached from bedroom 2 and from the deck; washer, dryer and water heater in it.
 5. Living room, bath, hall, front porch unchanged. Floor furnace comes out; mini-splits.

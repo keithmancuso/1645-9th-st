@@ -29,7 +29,7 @@ def build(variant):
             a=P(x,y); b=P(x,y+w); c=P(x+s*w,y)
             out.append(f'<path d="M{a[0]},{a[1]} L{c[0]},{c[1]} A{w*S},{w*S} 0 0 {1 if s>0 else 0} {b[0]},{b[1]}" fill="none" stroke="#666" stroke-width="1.5"/>')
     def opening(x1,y1,x2,y2):
-        line(x1,y1,x2,y2,stroke="#fbfaf7",sw=6); line(x1,y1,x2,y2,stroke="#999",sw=1,dash="4,4")
+        line(x1,y1,x2,y2,stroke="#fbfaf7",sw=6)
     def circle(x,y,r,fill="#ddd"):
         c=P(x,y); out.append(f'<circle cx="{c[0]}" cy="{c[1]}" r="{r*S}" fill="{fill}" stroke="#222" stroke-width="1"/>')
 
@@ -115,7 +115,7 @@ def build(variant):
         circle(19.2,24.9,0.8); label(19.2,25.2,"WH",7,False)
         rect(20.3,23.3,22.8,25.8,fill="#ddd",stroke="#222",sw=1); label(21.55,24.7,"fridge",8,False)
         line(21.5,26,23.5,26,stroke="#fbfaf7",sw=6); line(21.5,26,23.5,26,stroke="#3a7bd5",sw=2.5); label(22.5,26.9,"small window to porch",7,False,"#3a7bd5")
-        label(19.3,18.5,"KITCHEN",14); label(19.3,20,"≈ 11' × 12' + strip · galley",10,False,"#555"); label(23.5,13.4,"pantry",8,False)
+        label(20.5,18.5,"KITCHEN",14); label(20.5,20,"≈ 11' × 14' · galley",10,False,"#555")
     else:
         label(12,15.6,"HALL",7)
         # the old kitchen's strip beside the hall is bedroom 1's entry; the old kitchen door is the opening
@@ -129,10 +129,9 @@ def build(variant):
         rect(5,2.5,10,5.5,fill="#f4e9d0",stroke="#8a6a3a",sw=1); label(7.5,4.3,"table / island",8,False,"#555")
         label(7.5,7.6,"KITCHEN (eat-in)",14); label(7.5,9,"≈ 13' × 12' · opens to deck",10,False,"#555")
         label(19.75,6,"BEDROOM 2",13); label(19.75,7.4,"≈ 12' × 12' · door to mudroom · no closet",9,False,"#555")
-        label(19.3,18.5,"BEDROOM 1",14); label(19.3,20,"≈ 11' × 12' · former kitchen · no closet",10,False,"#555"); label(23.5,13.4,"old pantry",8,False)
+        label(20.5,18.5,"BEDROOM 1",14); label(20.5,20,"≈ 11' × 14' · former kitchen · no closet",10,False,"#555")
     # shared: doors, windows, labels
-    opening(22,14.5,25,14.5); door(15,26.5,2.5,'e')
-    line(21,12,21,14.5); line(21,14.5,26,14.5)   # pantry / closet nook
+    door(15,26.5,2.5,'e')
     window(0,3,0,7); window(0,13,0,15.5); window(0,19,0,22); window(0,25,0,28); window(3,30,9,30); window(26,17,26,21); window(26,6,26,9)
     label(7.5,23,"LIVING ROOM",15); label(7.5,24.6,"≈ 15' × 13' · brick fireplace",10,False,"#555")
     # dims / north / street / legend
@@ -145,8 +144,7 @@ def build(variant):
     label(10,47.2,'"N" is drawn as away from the street, not true north · lot edges are estimates from photos',8,False,"#555")
     ly=OY+48.6*S
     out.append(f'<line x1="40" y1="{ly}" x2="70" y2="{ly}" stroke="#3a7bd5" stroke-width="2.5"/><text x="78" y="{ly+4}" font-size="11" fill="#555">window / glass</text>')
-    out.append(f'<line x1="190" y1="{ly}" x2="220" y2="{ly}" stroke="#999" stroke-width="1" stroke-dasharray="4,4"/><text x="228" y="{ly+4}" font-size="11" fill="#555">cased opening</text>')
-    out.append(f'<text x="340" y="{ly+4}" font-size="11" fill="#555">arc = door swing · FP = brick fireplace · WH = water heater</text>')
+    out.append(f'<text x="190" y="{ly+4}" font-size="11" fill="#555">gap in wall = open doorway · arc = door swing · FP = brick fireplace · WH = water heater</text>')
     out.append('</svg>')
     return '\n'.join(out), W, H
 
