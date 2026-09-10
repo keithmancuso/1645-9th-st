@@ -54,7 +54,7 @@ Layout as drawn (Sept 10 revision, from all 21 photos and Keith's notes):
 - **Rear porch** ≈8×8, enclosed, narrow, on the east end of the back wall, flush with the deck edge; shelves, plywood floor, small high window, door to the deck.
 - **Deck** ≈18×8 from the west edge of the house to the porch, so it runs past bedroom 2 and along part of bedroom 1's back wall; stairs off its west end drop into the side yard in line with the back wall.
 
-The lot is drawn from photos 01, 03, 05 and 21 and the listed 2,613 sq ft: about 37.5 ft wide (an 8 ft dirt driveway on the west running from the curb to a gate near the house's rear corner, a 3.5 ft gravel side yard on the east with its own gate at the back of the porch) by 70 ft deep, with roughly 18 ft of bare backyard behind the deck and 10 ft of gravel front yard to the sidewalk. None of that is measured.
+The lot is drawn from photos 01, 03, 05 and 21 and the listed 2,613 sq ft: about 41.5 ft wide (a 12 ft dirt driveway on the west running from the curb to a gate near the house's rear corner, a 3.5 ft gravel side yard on the east with its own gate at the back of the porch) by roughly 70 ft deep (that is more area than the listed 2,613 sq ft, so one of the two is off), with roughly 18 ft of bare backyard behind the deck and 10 ft of gravel front yard to the sidewalk. None of that is measured.
 
 ### Proposed changes (as of Sept 9, 2026)
 
@@ -89,12 +89,12 @@ Photos: `photos/2435-valley-st-reference/` (87 images, Zillow gallery order, 153
 
   ```
   cd floor-plan && python3 generate.py
-  for v in existing proposed; do "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1237 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
+  for v in existing proposed; do "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=720,1237 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
   ```
 - On Linux (Claude Code on the web), export PNGs with Playwright's headless shell instead; the `chromium --headless=new` binary there clips the bottom ~90 px of the sheet:
 
   ```
-  for v in existing proposed; do /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=688,1237 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
+  for v in existing proposed; do /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=720,1237 --screenshot="$PWD/$v.png" "file://$PWD/$v.svg"; done
   ```
 
 - `index.html` galleries are static lists; regenerate if photos are added.

@@ -1,150 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="688" height="1237" viewBox="0 0 688 1237" font-family="Helvetica, Arial, sans-serif">
-<rect width="688" height="1237" fill="#fbfaf7"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1237" viewBox="0 0 720 1237" font-family="Helvetica, Arial, sans-serif">
+<rect width="720" height="1237" fill="#fbfaf7"/>
 <text x="40" y="44" font-size="22" font-weight="bold" fill="#222">1645 9th St, Berkeley — Existing Layout (as listed)</text>
 <text x="40" y="68" font-size="13" fill="#555">2 bed · 1 bath · 734 sq ft · built 1919 · 2,613 sq ft lot · single-story bungalow</text>
 <text x="40" y="86" font-size="12" fill="#a33">From the listing photos; room positions corrected after the walkthrough. Sizes are estimates (±2 ft), not measured.</text>
-<rect x="53" y="176" width="525.0" height="980" fill="#f1eee6" stroke="#8a6a3a" stroke-width="2"/>
-<line x1="53" y1="176" x2="578.0" y2="176" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="53" y1="176" x2="53" y2="1156" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="578.0" y1="176" x2="578.0" y2="1156" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="53" y1="1156" x2="578.0" y2="1156" stroke="#999" stroke-width="1.5" stroke-linecap="square"/>
-<rect x="531.8" y="176" width="46.200000000000045" height="980" fill="#e9e4d8" stroke="none" stroke-width="0"/>
-<line x1="529" y1="904" x2="544.4000000000001" y2="904" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="562.5999999999999" y1="904" x2="578.0" y2="904" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<text x="554.2" y="890" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">gate</text>
-<text transform="translate(558.4000000000001,1016) rotate(-90)" font-size="7" text-anchor="middle" fill="#555">side yard ≈ 3.5 ft</text>
-<line x1="53" y1="624" x2="120.19999999999999" y2="624" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<line x1="162.2" y1="624" x2="165" y2="624" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
-<text x="109" y="607.2" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">gate</text>
-<text x="305" y="281.0" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BACKYARD</text>
-<text x="305" y="303.40000000000003" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 37' × 18'</text>
-<rect x="53" y="626.8" width="107.80000000000001" height="529.2" fill="#e4dfd3" stroke="#b8ad98" stroke-width="1"/>
-<text transform="translate(107.60000000000001,918) rotate(-90)" font-size="10" font-weight="bold" text-anchor="middle" fill="#222">DRIVEWAY</text>
-<text transform="translate(124.4,918) rotate(-90)" font-size="8" text-anchor="middle" fill="#555">≈ 8 × 40 ft</text>
-<text x="291" y="1094.4" font-size="10" text-anchor="middle" fill="#222" font-weight="bold">FRONT YARD</text>
-<text x="291" y="1114" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 10' deep</text>
-<rect x="431" y="1052.4" width="42" height="103.59999999999991" fill="#ddd" stroke="#999" stroke-width="1"/>
-<text x="305" y="1178.4" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">sidewalk · 9th Street</text>
-<rect x="165" y="428" width="252" height="112" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
-<line x1="179" y1="428" x2="179" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="193" y1="428" x2="193" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="207" y1="428" x2="207" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="221" y1="428" x2="221" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="235" y1="428" x2="235" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="249" y1="428" x2="249" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="263" y1="428" x2="263" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="277" y1="428" x2="277" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="291" y1="428" x2="291" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="305" y1="428" x2="305" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="319" y1="428" x2="319" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="333" y1="428" x2="333" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="347" y1="428" x2="347" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="361" y1="428" x2="361" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="375" y1="428" x2="375" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="389" y1="428" x2="389" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<line x1="403" y1="428" x2="403" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
-<text x="291" y="475.6" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">DECK</text>
-<text x="291" y="498" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 18' × 8'</text>
-<rect x="109" y="491.0" width="56" height="49.0" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
-<line x1="151" y1="491.0" x2="151" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
-<line x1="137" y1="491.0" x2="137" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
-<line x1="123" y1="491.0" x2="123" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
-<text x="137" y="479.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">stairs</text>
-<rect x="417" y="428" width="112" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
-<text x="473" y="475.6" font-size="9" text-anchor="middle" fill="#222" font-weight="bold">REAR PORCH</text>
-<text x="473" y="493.8" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">≈ 8' × 8'</text>
-<line x1="445" y1="428" x2="501" y2="428" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="445" y1="428" x2="501" y2="428" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="529" y1="456" x2="529" y2="498" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="529" y1="456" x2="529" y2="498" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="417" y1="442" x2="417" y2="477.0" stroke="#f3efe6" stroke-width="6" stroke-linecap="square"/>
-<path d="M417,442 L382.0,442 A35.0,35.0 0 0 0 417,477.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="445" y1="540" x2="480.0" y2="540" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M445,540 L445,505.0 A35.0,35.0 0 0 1 480.0,540" fill="none" stroke="#666" stroke-width="1.5"/>
-<rect x="165" y="540" width="364" height="420" fill="#fff" stroke="#222" stroke-width="4"/>
-<rect x="389" y="904" width="140" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
-<text x="459" y="950.2" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">FRONT PORCH</text>
-<text x="459" y="969.8" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 10' × 8'</text>
-<line x1="431" y1="1016" x2="473" y2="1016" stroke="#f3efe6" stroke-width="6" stroke-linecap="square"/>
-<path d="M431,1016 L431,974 A42,42 0 0 1 473,1016" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="389" y1="967.0" x2="389" y2="1009.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="389" y1="967.0" x2="389" y2="1009.0" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="487" y1="1016" x2="522.0" y2="1016" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="487" y1="1016" x2="522.0" y2="1016" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="354.0" y1="540" x2="354.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="354.0" y1="708" x2="529" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="165" y1="708" x2="312.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="312.0" y1="708" x2="312.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="354.0" y1="708" x2="354.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="165" y1="778" x2="312.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="354.0" y1="778" x2="375" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="312.0" y1="778" x2="354.0" y2="778" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<line x1="312.0" y1="708" x2="354.0" y2="708" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<line x1="375" y1="708" x2="375" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="354.0" y1="545.6" x2="354.0" y2="576.4" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M354.0,545.6 L384.79999999999995,545.6 A30.800000000000004,30.800000000000004 0 0 1 354.0,576.4" fill="none" stroke="#666" stroke-width="1.5"/>
-<rect x="358.20000000000005" y="820" width="16.799999999999955" height="44.799999999999955" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
-<text x="366.6" y="845.2" font-size="8" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
-<rect x="242.0" y="708" width="70.0" height="35.0" fill="#eee" stroke="#222" stroke-width="1"/>
-<text x="277" y="729.0" font-size="9" text-anchor="middle" fill="#222" font-weight="normal">tub</text>
-<rect x="228.0" y="757.0" width="84.0" height="21.0" fill="#eee" stroke="#222" stroke-width="1"/>
-<text x="270.0" y="771.0" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">vanity</text>
-<ellipse cx="184.6" cy="744.4" rx="14" ry="9.799999999999999" fill="#fff" stroke="#222" stroke-width="1"/>
-<text x="256.0" y="752.8" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
-<line x1="312.0" y1="743.0" x2="312.0" y2="778.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M312.0,743.0 L277.0,743.0 A35.0,35.0 0 0 0 312.0,778.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="354.0" y1="716.4" x2="354.0" y2="769.5999999999999" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<line x1="375" y1="729.0" x2="375" y2="764.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M375,729.0 L410.0,729.0 A35.0,35.0 0 0 1 375,764.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="529" y1="719.2" x2="529" y2="757.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M529,719.2 L566.8,719.2 A37.800000000000004,37.800000000000004 0 0 1 529,757.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="228.0" y1="540" x2="291" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="228.0" y1="540" x2="291" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
-<text x="259.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
-<text x="259.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 13' × 12'</text>
-<text x="441.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
-<text x="441.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 12' × 12'</text>
-<rect x="501" y="750" width="28" height="126" fill="#eee" stroke="#222" stroke-width="1"/>
-<text x="515" y="850.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">tile</text>
-<text x="515" y="863.4000000000001" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">counter</text>
-<rect x="501" y="785.0" width="28" height="42.0" fill="#ddd" stroke="#222" stroke-width="1"/>
-<text x="515" y="808.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">sink</text>
-<rect x="382.0" y="870.4000000000001" width="35.0" height="30.799999999999955" fill="#ddd" stroke="#222" stroke-width="1"/>
-<text x="399.5" y="888.5999999999999" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">range</text>
-<circle cx="433.8" cy="888.5999999999999" r="11.200000000000001" fill="#ddd" stroke="#222" stroke-width="1"/>
-<text x="433.8" y="892.8" font-size="7" text-anchor="middle" fill="#222" font-weight="normal">WH</text>
-<rect x="449.2" y="866.2" width="35.0" height="35.0" fill="#ddd" stroke="#222" stroke-width="1"/>
-<text x="466.7" y="885.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">fridge</text>
-<line x1="466.0" y1="904" x2="494.0" y2="904" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
-<line x1="466.0" y1="904" x2="494.0" y2="904" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<text x="452.0" y="799.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
-<text x="452.0" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 14'</text>
-<line x1="375" y1="911.0" x2="375" y2="946.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M375,911.0 L410.0,911.0 A35.0,35.0 0 0 1 375,946.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="165" y1="582" x2="165" y2="638" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="165" y1="582" x2="165" y2="638" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="165" y1="722" x2="165" y2="757.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="165" y1="722" x2="165" y2="757.0" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="165" y1="806" x2="165" y2="848" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="165" y1="806" x2="165" y2="848" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="165" y1="890" x2="165" y2="932" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="165" y1="890" x2="165" y2="932" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="207" y1="960" x2="291" y2="960" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="207" y1="960" x2="291" y2="960" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="529" y1="778" x2="529" y2="834" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="529" y1="778" x2="529" y2="834" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="529" y1="624" x2="529" y2="666" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="529" y1="624" x2="529" y2="666" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<text x="270.0" y="862" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">LIVING ROOM</text>
-<text x="270.0" y="884.4000000000001" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 15' × 13'</text>
-<line x1="34.79999999999998" y1="540" x2="34.79999999999998" y2="960" stroke="#777" stroke-width="1" stroke-linecap="square"/>
-<text transform="translate(23.599999999999994,750) rotate(-90)" font-size="10" text-anchor="middle" fill="#555">house ≈ 30 ft</text>
-<line x1="606.0" y1="176" x2="606.0" y2="1156" stroke="#777" stroke-width="1" stroke-linecap="square"/>
-<text transform="translate(618.5999999999999,666) rotate(90)" font-size="10" text-anchor="middle" fill="#555">lot ≈ 70 ft (2,613 sq ft ÷ 37.5 ft, assumed)</text>
-<line x1="53" y1="141.0" x2="578.0" y2="141.0" stroke="#777" stroke-width="1" stroke-linecap="square"/>
-<text x="315.5" y="131.2" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">lot ≈ 37.5 ft</text>
-<g transform="translate(655,246)"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>
-<text x="305" y="1200.8000000000002" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">"N" is drawn as away from the street, not true north · lot edges are estimates from photos</text>
+<rect x="42" y="176" width="581.0" height="980" fill="#f1eee6" stroke="#8a6a3a" stroke-width="2"/>
+<line x1="42" y1="176" x2="623.0" y2="176" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="42" y1="176" x2="42" y2="1156" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="623.0" y1="176" x2="623.0" y2="1156" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="42" y1="1156" x2="623.0" y2="1156" stroke="#999" stroke-width="1.5" stroke-linecap="square"/>
+<rect x="576.8" y="176" width="46.200000000000045" height="980" fill="#e9e4d8" stroke="none" stroke-width="0"/>
+<line x1="574" y1="904" x2="589.4000000000001" y2="904" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="607.5999999999999" y1="904" x2="623.0" y2="904" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<text x="599.2" y="890" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">gate</text>
+<text transform="translate(603.4000000000001,1016) rotate(-90)" font-size="7" text-anchor="middle" fill="#555">side yard ≈ 3.5 ft</text>
+<line x1="42" y1="624" x2="165.2" y2="624" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<line x1="207.2" y1="624" x2="210" y2="624" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
+<text x="126" y="607.2" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">gate</text>
+<text x="336" y="281.0" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BACKYARD</text>
+<text x="336" y="303.40000000000003" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 41' × 18'</text>
+<rect x="42" y="626.8" width="163.8" height="529.2" fill="#e4dfd3" stroke="#b8ad98" stroke-width="1"/>
+<text transform="translate(116.2,918) rotate(-90)" font-size="10" font-weight="bold" text-anchor="middle" fill="#222">DRIVEWAY</text>
+<text transform="translate(133.0,918) rotate(-90)" font-size="8" text-anchor="middle" fill="#555">≈ 12 × 40 ft</text>
+<text x="336" y="1094.4" font-size="10" text-anchor="middle" fill="#222" font-weight="bold">FRONT YARD</text>
+<text x="336" y="1114" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">≈ 10' deep</text>
+<rect x="476" y="1052.4" width="42" height="103.59999999999991" fill="#ddd" stroke="#999" stroke-width="1"/>
+<text x="332.5" y="1178.4" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">sidewalk · 9th Street</text>
+<rect x="210" y="428" width="252" height="112" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
+<line x1="224" y1="428" x2="224" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="238" y1="428" x2="238" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="252" y1="428" x2="252" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="266" y1="428" x2="266" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="280" y1="428" x2="280" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="294" y1="428" x2="294" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="308" y1="428" x2="308" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="322" y1="428" x2="322" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="336" y1="428" x2="336" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="350" y1="428" x2="350" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="364" y1="428" x2="364" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="378" y1="428" x2="378" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="392" y1="428" x2="392" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="406" y1="428" x2="406" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="420" y1="428" x2="420" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="434" y1="428" x2="434" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<line x1="448" y1="428" x2="448" y2="540" stroke="#c9b48f" stroke-width="1" stroke-linecap="square"/>
+<text x="336" y="475.6" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">DECK</text>
+<text x="336" y="498" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 18' × 8'</text>
+<rect x="154" y="491.0" width="56" height="49.0" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="2"/>
+<line x1="196" y1="491.0" x2="196" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="182" y1="491.0" x2="182" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="168" y1="491.0" x2="168" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<text x="182" y="479.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">stairs</text>
+<rect x="462" y="428" width="112" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
+<text x="518" y="475.6" font-size="9" text-anchor="middle" fill="#222" font-weight="bold">REAR PORCH</text>
+<text x="518" y="493.8" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">≈ 8' × 8'</text>
+<line x1="490" y1="428" x2="546" y2="428" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="490" y1="428" x2="546" y2="428" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="574" y1="456" x2="574" y2="498" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="574" y1="456" x2="574" y2="498" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="462" y1="442" x2="462" y2="477.0" stroke="#f3efe6" stroke-width="6" stroke-linecap="square"/>
+<path d="M462,442 L427.0,442 A35.0,35.0 0 0 0 462,477.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="490" y1="540" x2="525.0" y2="540" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M490,540 L490,505.0 A35.0,35.0 0 0 1 525.0,540" fill="none" stroke="#666" stroke-width="1.5"/>
+<rect x="210" y="540" width="364" height="420" fill="#fff" stroke="#222" stroke-width="4"/>
+<rect x="434" y="904" width="140" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
+<text x="504" y="950.2" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">FRONT PORCH</text>
+<text x="504" y="969.8" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 10' × 8'</text>
+<line x1="476" y1="1016" x2="518" y2="1016" stroke="#f3efe6" stroke-width="6" stroke-linecap="square"/>
+<path d="M476,1016 L476,974 A42,42 0 0 1 518,1016" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="434" y1="967.0" x2="434" y2="1009.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="434" y1="967.0" x2="434" y2="1009.0" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="532" y1="1016" x2="567.0" y2="1016" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="532" y1="1016" x2="567.0" y2="1016" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="399.0" y1="540" x2="399.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="399.0" y1="708" x2="574" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="210" y1="708" x2="357.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="357.0" y1="708" x2="357.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="399.0" y1="708" x2="399.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="210" y1="778" x2="357.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="399.0" y1="778" x2="420" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="357.0" y1="778" x2="399.0" y2="778" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<line x1="357.0" y1="708" x2="399.0" y2="708" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<line x1="420" y1="708" x2="420" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="399.0" y1="545.6" x2="399.0" y2="576.4" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M399.0,545.6 L429.79999999999995,545.6 A30.800000000000004,30.800000000000004 0 0 1 399.0,576.4" fill="none" stroke="#666" stroke-width="1.5"/>
+<rect x="403.20000000000005" y="820" width="16.799999999999955" height="44.799999999999955" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
+<text x="411.6" y="845.2" font-size="8" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
+<rect x="287.0" y="708" width="70.0" height="35.0" fill="#eee" stroke="#222" stroke-width="1"/>
+<text x="322" y="729.0" font-size="9" text-anchor="middle" fill="#222" font-weight="normal">tub</text>
+<rect x="273.0" y="757.0" width="84.0" height="21.0" fill="#eee" stroke="#222" stroke-width="1"/>
+<text x="315.0" y="771.0" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">vanity</text>
+<ellipse cx="229.6" cy="744.4" rx="14" ry="9.799999999999999" fill="#fff" stroke="#222" stroke-width="1"/>
+<text x="301.0" y="752.8" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
+<line x1="357.0" y1="743.0" x2="357.0" y2="778.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M357.0,743.0 L322.0,743.0 A35.0,35.0 0 0 0 357.0,778.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="399.0" y1="716.4" x2="399.0" y2="769.5999999999999" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<line x1="420" y1="729.0" x2="420" y2="764.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M420,729.0 L455.0,729.0 A35.0,35.0 0 0 1 420,764.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="574" y1="719.2" x2="574" y2="757.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M574,719.2 L611.8,719.2 A37.800000000000004,37.800000000000004 0 0 1 574,757.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="273.0" y1="540" x2="336" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="273.0" y1="540" x2="336" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
+<text x="304.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
+<text x="304.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 13' × 12'</text>
+<text x="486.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
+<text x="486.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 12' × 12'</text>
+<rect x="546" y="750" width="28" height="126" fill="#eee" stroke="#222" stroke-width="1"/>
+<text x="560" y="850.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">tile</text>
+<text x="560" y="863.4000000000001" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">counter</text>
+<rect x="546" y="785.0" width="28" height="42.0" fill="#ddd" stroke="#222" stroke-width="1"/>
+<text x="560" y="808.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">sink</text>
+<rect x="427.0" y="870.4000000000001" width="35.0" height="30.799999999999955" fill="#ddd" stroke="#222" stroke-width="1"/>
+<text x="444.5" y="888.5999999999999" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">range</text>
+<circle cx="478.8" cy="888.5999999999999" r="11.200000000000001" fill="#ddd" stroke="#222" stroke-width="1"/>
+<text x="478.8" y="892.8" font-size="7" text-anchor="middle" fill="#222" font-weight="normal">WH</text>
+<rect x="494.2" y="866.2" width="35.00000000000006" height="35.0" fill="#ddd" stroke="#222" stroke-width="1"/>
+<text x="511.7" y="885.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">fridge</text>
+<line x1="511.0" y1="904" x2="539.0" y2="904" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
+<line x1="511.0" y1="904" x2="539.0" y2="904" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<text x="497.0" y="799.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
+<text x="497.0" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 14'</text>
+<line x1="420" y1="911.0" x2="420" y2="946.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M420,911.0 L455.0,911.0 A35.0,35.0 0 0 1 420,946.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="210" y1="582" x2="210" y2="638" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="210" y1="582" x2="210" y2="638" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="210" y1="722" x2="210" y2="757.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="210" y1="722" x2="210" y2="757.0" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="210" y1="806" x2="210" y2="848" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="210" y1="806" x2="210" y2="848" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="210" y1="890" x2="210" y2="932" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="210" y1="890" x2="210" y2="932" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="252" y1="960" x2="336" y2="960" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="252" y1="960" x2="336" y2="960" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="574" y1="778" x2="574" y2="834" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="574" y1="778" x2="574" y2="834" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="574" y1="624" x2="574" y2="666" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="574" y1="624" x2="574" y2="666" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<text x="315.0" y="862" font-size="15" text-anchor="middle" fill="#222" font-weight="bold">LIVING ROOM</text>
+<text x="315.0" y="884.4000000000001" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 15' × 13'</text>
+<line x1="23.799999999999983" y1="540" x2="23.799999999999983" y2="960" stroke="#777" stroke-width="1" stroke-linecap="square"/>
+<text transform="translate(12.599999999999994,750) rotate(-90)" font-size="10" text-anchor="middle" fill="#555">house ≈ 30 ft</text>
+<line x1="651.0" y1="176" x2="651.0" y2="1156" stroke="#777" stroke-width="1" stroke-linecap="square"/>
+<text transform="translate(663.5999999999999,666) rotate(90)" font-size="10" text-anchor="middle" fill="#555">lot ≈ 70 ft drawn (41.5 × 70 is more than the 2,613 sq ft listed)</text>
+<line x1="42" y1="141.0" x2="623.0" y2="141.0" stroke="#777" stroke-width="1" stroke-linecap="square"/>
+<text x="332.5" y="131.2" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">lot ≈ 41.5 ft</text>
+<g transform="translate(700,246)"><polygon points="0,-18 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text></g>
+<text x="332.5" y="1200.8000000000002" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">"N" is drawn as away from the street, not true north · lot edges are estimates from photos</text>
 <line x1="40" y1="1220.4" x2="70" y2="1220.4" stroke="#3a7bd5" stroke-width="2.5"/><text x="78" y="1224.4" font-size="11" fill="#555">window / glass</text>
 <text x="190" y="1224.4" font-size="11" fill="#555">gap in wall = open doorway · arc = door swing · FP = brick fireplace · WH = water heater</text>
 </svg>
