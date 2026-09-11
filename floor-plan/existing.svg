@@ -2,7 +2,7 @@
 <rect width="720" height="1237" fill="#fbfaf7"/>
 <text x="40" y="44" font-size="22" font-weight="bold" fill="#222">1645 9th St, Berkeley — Existing Layout (as listed)</text>
 <text x="40" y="68" font-size="13" fill="#555">2 bed · 1 bath · 734 sq ft · built 1919 · 2,613 sq ft lot · single-story bungalow</text>
-<text x="40" y="86" font-size="12" fill="#a33">From the listing photos; room positions corrected after the walkthrough. Sizes are estimates (±2 ft), not measured.</text>
+<text x="40" y="86" font-size="12" fill="#a33">From the listing photos and two walkthroughs. Sizes are estimates (±2 ft), not measured, except the closets (3'5" × 4'11").</text>
 <rect x="42" y="176" width="581.0" height="980" fill="#f1eee6" stroke="#8a6a3a" stroke-width="2"/>
 <line x1="42" y1="176" x2="623.0" y2="176" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
 <line x1="42" y1="176" x2="42" y2="1156" stroke="#8a6a3a" stroke-width="3" stroke-linecap="square"/>
@@ -51,16 +51,22 @@
 <line x1="168" y1="491.0" x2="168" y2="540" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
 <text x="182" y="479.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">stairs</text>
 <rect x="462" y="428" width="112" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
-<text x="518" y="475.6" font-size="9" text-anchor="middle" fill="#222" font-weight="bold">REAR PORCH</text>
-<text x="518" y="493.8" font-size="8" text-anchor="middle" fill="#555" font-weight="normal">≈ 8' × 8'</text>
-<line x1="490" y1="428" x2="546" y2="428" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="490" y1="428" x2="546" y2="428" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
-<line x1="574" y1="456" x2="574" y2="498" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
-<line x1="574" y1="456" x2="574" y2="498" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<text x="493.5" y="464.4" font-size="8" text-anchor="middle" fill="#222" font-weight="bold">REAR</text>
+<text x="493.5" y="479.8" font-size="8" text-anchor="middle" fill="#222" font-weight="bold">PORCH</text>
+<text x="493.5" y="496.6" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">≈ 4.5' × 8'</text>
+<line x1="476" y1="428" x2="532" y2="428" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="476" y1="428" x2="532" y2="428" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
+<line x1="574" y1="435.0" x2="574" y2="463.0" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
+<line x1="574" y1="435.0" x2="574" y2="463.0" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <line x1="462" y1="442" x2="462" y2="477.0" stroke="#f3efe6" stroke-width="6" stroke-linecap="square"/>
 <path d="M462,442 L427.0,442 A35.0,35.0 0 0 0 462,477.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="490" y1="540" x2="525.0" y2="540" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M490,540 L490,505.0 A35.0,35.0 0 0 1 525.0,540" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="477.40000000000003" y1="540" x2="509.6" y2="540" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M477.40000000000003,540 L477.40000000000003,507.8 A32.199999999999996,32.199999999999996 0 0 1 509.6,540" fill="none" stroke="#666" stroke-width="1.5"/>
+<rect x="525.0" y="470" width="49.0" height="70" fill="#fff" stroke="#222" stroke-width="3"/>
+<text x="549.5" y="488.2" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">closet</text>
+<text x="549.5" y="502.2" font-size="6" text-anchor="middle" fill="#555" font-weight="normal">≈ 3.5' × 5'</text>
+<line x1="533.4000000000001" y1="540" x2="565.6" y2="540" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M533.4000000000001,540 L533.4000000000001,507.8 A32.199999999999996,32.199999999999996 0 0 1 565.6,540" fill="none" stroke="#666" stroke-width="1.5"/>
 <rect x="210" y="540" width="364" height="420" fill="#fff" stroke="#222" stroke-width="4"/>
 <rect x="434" y="904" width="140" height="112" fill="#f3efe6" stroke="#222" stroke-width="3"/>
 <text x="504" y="950.2" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">FRONT PORCH</text>
@@ -75,14 +81,22 @@
 <line x1="399.0" y1="708" x2="574" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="210" y1="708" x2="357.0" y2="708" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="357.0" y1="708" x2="357.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="399.0" y1="708" x2="399.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="210" y1="778" x2="357.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="399.0" y1="778" x2="420" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="399.0" y1="778" x2="441.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
 <line x1="357.0" y1="778" x2="399.0" y2="778" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
 <line x1="357.0" y1="708" x2="399.0" y2="708" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<line x1="420" y1="708" x2="420" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
-<line x1="399.0" y1="545.6" x2="399.0" y2="576.4" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M399.0,545.6 L429.79999999999995,545.6 A30.800000000000004,30.800000000000004 0 0 1 399.0,576.4" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="441.0" y1="708" x2="441.0" y2="778" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="420" y1="778" x2="420" y2="904" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="406" y1="708" x2="438.20000000000005" y2="708" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M406,708 L406,675.8 A32.199999999999996,32.199999999999996 0 0 1 438.20000000000005,708" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="441.0" y1="729.0" x2="441.0" y2="764.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M441.0,729.0 L476.0,729.0 A35.0,35.0 0 0 1 441.0,764.0" fill="none" stroke="#666" stroke-width="1.5"/>
+<line x1="399.0" y1="589.0" x2="469.0" y2="589.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<line x1="469.0" y1="540" x2="469.0" y2="589.0" stroke="#222" stroke-width="3" stroke-linecap="square"/>
+<text x="449.40000000000003" y="563.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">closet</text>
+<text x="449.40000000000003" y="577.8" font-size="6" text-anchor="middle" fill="#555" font-weight="normal">≈ 3.5' × 5'</text>
+<line x1="399.0" y1="548.4" x2="399.0" y2="579.2" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
+<path d="M399.0,548.4 L429.79999999999995,548.4 A30.800000000000004,30.800000000000004 0 0 1 399.0,579.2" fill="none" stroke="#666" stroke-width="1.5"/>
 <rect x="403.20000000000005" y="820" width="16.799999999999955" height="44.799999999999955" fill="#c0553f" stroke="#222" stroke-width="1.5"/>
 <text x="411.6" y="845.2" font-size="8" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
 <rect x="287.0" y="708" width="70.0" height="35.0" fill="#eee" stroke="#222" stroke-width="1"/>
@@ -93,17 +107,14 @@
 <text x="301.0" y="752.8" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
 <line x1="357.0" y1="743.0" x2="357.0" y2="778.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
 <path d="M357.0,743.0 L322.0,743.0 A35.0,35.0 0 0 0 357.0,778.0" fill="none" stroke="#666" stroke-width="1.5"/>
-<line x1="399.0" y1="716.4" x2="399.0" y2="769.5999999999999" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<line x1="420" y1="729.0" x2="420" y2="764.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
-<path d="M420,729.0 L455.0,729.0 A35.0,35.0 0 0 1 420,764.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="574" y1="719.2" x2="574" y2="757.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
 <path d="M574,719.2 L611.8,719.2 A37.800000000000004,37.800000000000004 0 0 1 574,757.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="273.0" y1="540" x2="336" y2="540" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="273.0" y1="540" x2="336" y2="540" stroke="#3a7bd5" stroke-width="5" stroke-linecap="square"/>
 <text x="304.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
 <text x="304.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 13' × 12'</text>
-<text x="486.5" y="617.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
-<text x="486.5" y="638" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 12' × 12'</text>
+<text x="493.5" y="631.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
+<text x="493.5" y="652" font-size="11" text-anchor="middle" fill="#555" font-weight="normal">≈ 12' × 12'</text>
 <rect x="546" y="750" width="28" height="126" fill="#eee" stroke="#222" stroke-width="1"/>
 <text x="560" y="850.8" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">tile</text>
 <text x="560" y="863.4000000000001" font-size="8" text-anchor="middle" fill="#222" font-weight="normal">counter</text>
@@ -118,7 +129,7 @@
 <line x1="511.0" y1="904" x2="539.0" y2="904" stroke="#fbfaf7" stroke-width="6" stroke-linecap="square"/>
 <line x1="511.0" y1="904" x2="539.0" y2="904" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="square"/>
 <text x="497.0" y="799.0" font-size="14" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
-<text x="497.0" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 11' × 14'</text>
+<text x="497.0" y="820" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">≈ 10' × 14'</text>
 <line x1="420" y1="911.0" x2="420" y2="946.0" stroke="#fff" stroke-width="6" stroke-linecap="square"/>
 <path d="M420,911.0 L455.0,911.0 A35.0,35.0 0 0 1 420,946.0" fill="none" stroke="#666" stroke-width="1.5"/>
 <line x1="210" y1="582" x2="210" y2="638" stroke="#fbfaf7" stroke-width="5" stroke-linecap="square"/>
