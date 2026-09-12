@@ -1,5 +1,7 @@
 # Budget — 1645 9th St
 
+> **Sept 12, 2026:** the current renovation number is in `ESTIMATE.md` (liveable scope on the measured plan: $280–425k, plan on $350k). The lean-scope tables below are the Sept 6 planning ranges and are superseded by it.
+
 Estimates as of Sept 6, 2026. Only the lines marked **bid** come from the seller's disclosure package; everything else is a planning estimate at typical Berkeley 2026 pricing for permitted work by a licensed GC. Treat every number as ±25% until we have our own bids.
 
 **Hard cap: $1,000,000 all-in (purchase + transaction + renovation).**

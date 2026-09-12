@@ -7,6 +7,7 @@ Working files for evaluating and planning a renovation of a 1919 bungalow in Nor
 - **Subject property (1645 9th St):** https://www.zillow.com/homedetails/1645-9th-St-Berkeley-CA-94710/24838128_zpid/
 - **Renovation reference (2435 Valley St):** https://www.zillow.com/homedetails/2435-Valley-St-Berkeley-CA-94702/24835270_zpid/
 - **Contractor brief:** `contractor-brief.html` — shareable walkthrough brief (disclosure summary, sequenced scope, questions, walkthrough checklist, both plans inlined). Planning estimates are hidden behind a toggle so the page can go to a contractor as-is. Floor plans are pasted in from `floor-plan/*.svg`; re-paste if the plans change.
+- **Renovation estimate:** `ESTIMATE.md` — liveable scope (disclosure-critical work + full kitchen and bath + refinished floors) priced on the measured plan: $280–425k, plan on $350k. Supersedes the lean-scope ranges in `BUDGET.md`.
 - **Budget and offer position:** `BUDGET.md` — hard cap $1M all-in; lean scope ~$330–485k; offer $650k (list) as of Sept 10, 2026, which only fits the cap at the low end of lean scope. Summarizes the seller's disclosure package (PDF is in the iCloud folder, not this repo).
 
 ## Subject property — 1645 9th St, Berkeley, CA 94710
