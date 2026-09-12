@@ -41,9 +41,9 @@ def build(variant):
     out.append(f'<text x="40" y="68" font-size="13" fill="#555">2 bed · 1 bath · 734 sq ft · built 1919 · 2,613 sq ft lot · single-story bungalow</text>')
     if proposed:
         out.append(f'<text x="40" y="86" font-size="12" fill="#555">Change: kitchen moves from the front-right room to the rear-left room with the slider, opening onto the deck.</text>')
-        out.append(f'<text x="40" y="102" font-size="12" fill="#555">Old kitchen → bedroom 1, entered through its strip beside the hall. Rear porch → mudroom. Furnace out.</text>')
+        out.append(f'<text x="40" y="102" font-size="12" fill="#555">Old kitchen → bedroom 1, through its door off the hall. Rear porch → mudroom. Furnace out.</text>')
     else:
-        out.append(f'<text x="40" y="86" font-size="12" fill="#a33">From the listing photos; room positions corrected after the walkthrough. Sizes are estimates (±2 ft), not measured.</text>')
+        out.append(f'<text x="40" y="86" font-size="12" fill="#a33">From the listing photos and two walkthroughs. Sizes are estimates (±2 ft), not measured, except the closets (3\'5" × 4\'11").</text>')
 
     # lot: 2,613 sq ft per listing. Width and depths are read from photos 01, 05, 21, not measured:
     # ≈8 ft driveway on the west, ≈3.5 ft gravel side yard on the east (photo 03), ≈18 ft backyard to the rear fence, ≈10 ft front yard to the sidewalk
@@ -72,12 +72,16 @@ def build(variant):
     # rear porch bump-out (Keith: narrow; photo 11: shelves, plywood floor, small high window), flush with the deck edge
     rect(18,-8,26,0,fill="#f3efe6",stroke="#222",sw=3)
     if proposed:
-        label(22,-5.2,"LAUNDRY /",9); label(22,-4.1,"MUDROOM",9); label(22,-2.9,"≈ 8' × 8'",8,False,"#555")
+        label(20.25,-5.4,"LAUNDRY",8); label(20.25,-4.3,"MUDROOM",8); label(20.25,-3.1,"≈ 4.5' × 8'",7,False,"#555")
     else:
-        label(22,-4.6,"REAR PORCH",9); label(22,-3.3,"≈ 8' × 8'",8,False,"#555")
-    window(20,-8,24,-8); window(26,-6,26,-3)
+        label(20.25,-5.4,"REAR",8); label(20.25,-4.3,"PORCH",8); label(20.25,-3.1,"≈ 4.5' × 8'",7,False,"#555")
+    window(19,-8,23,-8); window(26,-7.5,26,-5.5)
     door(18,-7,2.5,'w',gap="#f3efe6")                       # porch -> deck
-    door(20,0,2.5,'n')                                      # bedroom 1 -> porch (photo 16)
+    door(19.1,0,2.3,'n')                                    # rear-right room -> porch (photos 11, 16)
+    # rear-right room's closet (photos 15-17, Keith's walkthrough 2): recessed into the porch bay beside the porch door, ≈3.5 × 5 like the other one
+    rect(22.5,-5,26,0,fill="#fff",stroke="#222",sw=3)
+    label(24.25,-3.7,"closet",8,False); label(24.25,-2.7,"≈ 3.5' × 5'",6,False,"#555")
+    door(23.1,0,2.3,'n')
     # main house
     rect(0,0,26,30,fill="#fff",stroke="#222",sw=4)
     rect(16,26,26,34,fill="#f3efe6",stroke="#222",sw=3)
@@ -86,11 +90,15 @@ def build(variant):
     # interior walls
     line(13.5,0,13.5,12); line(13.5,12,26,12)   # partition between the rear rooms, in line with the hall's east wall; rear-left a little wider than rear-right (Keith)
     line(0,12,10.5,12); line(10.5,12,10.5,17)   # bath: 0-10.5 × 12-17
-    line(13.5,12,13.5,17)                        # hall's east wall = kitchen's west wall
-    line(0,17,10.5,17); line(13.5,17,15,17)      # living room north wall, with the hall opening between
-    opening(10.5,17,13.5,17); opening(10.5,12,13.5,12)   # hall: straight, cased both ends, living room -> rear-left room (photo 09)
-    line(15,12,15,26)                            # front-right room's west wall: passage side (with the door) and the fireplace wall
-    door(13.5,0.4,2.2,'e')                                # rear-left room -> rear-right room, in the rear corner: the rear-right room's only entrance (Keith)
+    line(0,17,10.5,17); line(13.5,17,16.5,17)    # living room north wall, with the hall opening between
+    opening(10.5,17,13.5,17); opening(10.5,12,13.5,12)   # hall: 3 ft corridor, cased both ends, living room -> rear-left room (photo 09)
+    line(16.5,12,16.5,17); line(15,17,15,26)     # the hall widens into a 3 ft bay on its east side (13.5-16.5 × 12-17); the kitchen's west wall jogs at the fireplace wall
+    door(14,12,2.3,'n')                                   # rear-right room's door, off the hall bay beside the rear-left opening (walkthrough 2; photos 01-02 of Sept 10)
+    door(16.5,13.5,2.5,'e')                               # kitchen door, on the bay's east wall opposite the bath (photos 12, 14)
+    # rear-left room's closet (photos 18, 19; measured 3'5" × 4'11"): door in the east wall beside the slider, closet runs east into the rear-right room's corner
+    line(13.5,3.5,18.5,3.5); line(18.5,0,18.5,3.5)
+    label(17.1,1.7,"closet",8,False); label(17.1,2.7,"≈ 3.5' × 5'",6,False,"#555")
+    door(13.5,0.6,2.2,'e')
     # fireplace / built-in on the living room's east wall (photo 07): built-in, fireplace, porch door
     rect(13.8,20,15,23.2,fill="#c0553f",stroke="#222",sw=1.5); label(14.4,21.8,"FP",8,True,"#fff")
     # bath (photos 13, 14): from the east-end door, vanity left (south wall), tub right (north wall, end at the door), toilet under the west window
@@ -101,12 +109,11 @@ def build(variant):
     door(10.5,14.5,2.5,'w')                                # bath door, off the hall
     if not proposed:
         # the red-tagged floor furnace grate is in this hall (photos 09, 12, 14, 20); not drawn
-        opening(13.5,12.6,13.5,16.4); door(15,13.5,2.5,'e')  # hall -> short passage -> kitchen door (photos 12, 14)
         door(26,12.8,2.7,'e')                                # kitchen side door out to the east side yard (Keith)
-        # existing: bedroom 2 rear-left, bedroom 1 rear-right, kitchen front-right (L-shaped: the strip beside the hall plus the room behind the porch)
+        # existing: bedroom 2 rear-left, bedroom 1 rear-right, kitchen front-right (the room behind the porch, ≈10 wide beside the hall bay)
         line(4.5,0,9,0,stroke="#fbfaf7",sw=6); line(4.5,0,9,0,stroke="#3a7bd5",sw=5)
         label(6.75,5.5,"BEDROOM 2",14); label(6.75,7,"≈ 13' × 12'",11,False,"#555")
-        label(19.75,5.5,"BEDROOM 1",14); label(19.75,7,"≈ 12' × 12'",11,False,"#555")
+        label(20.25,6.5,"BEDROOM 1",14); label(20.25,8,"≈ 12' × 12'",11,False,"#555")
         # kitchen (photos 08, 10, 12): tile counter and sink under the east window, range + WH + small window on the porch wall, fridge beside, pantry shelves at the north end
         rect(24,15,26,24,fill="#eee",stroke="#222",sw=1); label(25,22.2,"tile",8,False); label(25,23.1,"counter",8,False)
         rect(24,17.5,26,20.5,fill="#ddd",stroke="#222",sw=1); label(25,19.2,"sink",8,False)
@@ -114,12 +121,11 @@ def build(variant):
         circle(19.2,24.9,0.8); label(19.2,25.2,"WH",7,False)
         rect(20.3,23.3,22.8,25.8,fill="#ddd",stroke="#222",sw=1); label(21.55,24.7,"fridge",8,False)
         line(21.5,26,23.5,26,stroke="#fbfaf7",sw=6); line(21.5,26,23.5,26,stroke="#3a7bd5",sw=2.5)
-        label(20.5,18.5,"KITCHEN",14); label(20.5,20,"≈ 11' × 14'",10,False,"#555")
+        label(20.5,18.5,"KITCHEN",14); label(20.5,20,"≈ 10' × 14'",10,False,"#555")
     else:
-        # the old kitchen's strip beside the hall is bedroom 1's entry; the old kitchen door is the opening
-        opening(13.5,12.6,13.5,16.4); door(15,13.5,2.5,'e')
+        # bedroom 1 is entered through the old kitchen door off the hall bay
         door(26,12.8,2.7,'e')                                # existing side door to the east side yard
-        # kitchen rear-left (eat-in, opens to the deck); its old corner door into the closet gets closed
+        # kitchen rear-left (eat-in, opens to the deck); its corner closet stays as a pantry
         line(4.5,0,9,0,stroke="#fbfaf7",sw=6); line(4.5,0,9,0,stroke="#3a7bd5",sw=5)
         rect(0.2,1.5,2,11.8,fill="#eee",stroke="#222",sw=1); label(1.1,3.4,"counter",7,False)
         rect(0.2,4.5,2,7,fill="#ddd",stroke="#222",sw=1); label(1.1,5.9,"sink",7,False)
@@ -127,8 +133,8 @@ def build(variant):
         rect(3,9.5,5.5,11.8,fill="#ddd",stroke="#222",sw=1); label(4.25,10.8,"fridge",8,False)
         rect(5,2.5,10,5.5,fill="#f4e9d0",stroke="#8a6a3a",sw=1); label(7.5,4.3,"table / island",8,False,"#555")
         label(7.5,7.6,"KITCHEN (eat-in)",14); label(7.5,9,"≈ 13' × 12'",10,False,"#555")
-        label(19.75,6,"BEDROOM 2",13); label(19.75,7.4,"≈ 12' × 12'",10,False,"#555")
-        label(20.5,18.5,"BEDROOM 1",14); label(20.5,20,"≈ 11' × 14'",10,False,"#555")
+        label(20.25,6.5,"BEDROOM 2",13); label(20.25,8,"≈ 12' × 12'",10,False,"#555")
+        label(20.5,18.5,"BEDROOM 1",14); label(20.5,20,"≈ 10' × 14'",10,False,"#555")
     # shared: doors, windows, labels
     door(15,26.5,2.5,'e')
     window(0,3,0,7); window(0,13,0,15.5); window(0,19,0,22); window(0,25,0,28); window(3,30,9,30); window(26,17,26,21); window(26,6,26,9)
