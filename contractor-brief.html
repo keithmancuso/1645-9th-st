@@ -1,0 +1,830 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>9th St Contractor Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+</head><body>
+<style>
+:root{
+  --bg:#fbfaf7; --paper:#ffffff; --ink:#222222; --muted:#6b675f; --line:#e2ddd3; --line-strong:#c9c3b6;
+  --green:#1a7a3c; --green-soft:#e6f2ea; --blue:#1d5fb4; --red:#a33a2c; --red-soft:#f6e7e3; --amber:#8a5a00; --amber-soft:#f5ecd6;
+  --shade:#f3efe6; --focus:#3a7bd5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#1b1a17; --paper:#232220; --ink:#ece7dd; --muted:#a39d91; --line:#37342e; --line-strong:#4d4941;
+    --green:#5cc287; --green-soft:#1f3327; --blue:#83b0ee; --red:#e8877a; --red-soft:#3a2521; --amber:#e3b25a; --amber-soft:#36301f;
+    --shade:#2a2925; --focus:#83b0ee;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1b1a17; --paper:#232220; --ink:#ece7dd; --muted:#a39d91; --line:#37342e; --line-strong:#4d4941;
+  --green:#5cc287; --green-soft:#1f3327; --blue:#83b0ee; --red:#e8877a; --red-soft:#3a2521; --amber:#e3b25a; --amber-soft:#36301f;
+  --shade:#2a2925; --focus:#83b0ee;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;padding-block:0 64px;padding-inline:20px}
+a{color:var(--blue)}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.wrap{max-width:820px;margin:0 auto}
+h1,h2,h3{font-family:"Archivo","IBM Plex Sans",Helvetica,Arial,sans-serif;text-wrap:balance;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(30px,5vw,42px);font-weight:700;line-height:1.05}
+h2{font-size:24px;font-weight:700;line-height:1.15}
+h3{font-size:17px;font-weight:600;line-height:1.25}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;font-variant-numeric:tabular-nums}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+p{margin:0}
+.lede{font-size:18px;line-height:1.5;max-width:62ch}
+header{padding-block:44px 24px;border-bottom:2px solid var(--ink);display:grid;gap:14px}
+.facts{display:flex;flex-wrap:wrap;gap:6px 0;font-size:14px;color:var(--muted)}
+.facts span+span::before{content:"·";margin-inline:9px;color:var(--line-strong)}
+nav.toc{display:flex;flex-wrap:wrap;gap:4px 18px;padding-block:14px;border-bottom:1px solid var(--line);font-size:14px}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--line-strong)}
+nav.toc a:hover{border-color:var(--ink)}
+section{padding-block:40px 8px;scroll-margin-top:12px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 24px;margin-bottom:18px}
+.sec-head p{color:var(--muted);max-width:60ch}
+.stack{display:grid;gap:14px}
+ul{margin:0;padding-left:20px}
+li{margin:0}
+li+li{margin-top:6px}
+strong{font-weight:600}
+
+/* disclosure table */
+.tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-top:1px solid var(--line)}
+thead th{border-top:0;color:var(--muted);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;font-family:"IBM Plex Mono",monospace}
+td.rep{font-weight:600;min-width:130px}
+td.rep small{display:block;font-weight:400;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:12px}
+td.bid{font-family:"IBM Plex Mono",monospace;font-size:13.5px;width:170px}
+td.bid .note{font-family:"IBM Plex Sans",sans-serif;font-size:12.5px;line-height:1.35;display:block;margin-top:2px}
+.flag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:3px;margin-right:6px;vertical-align:1px}
+.flag.red{background:var(--red-soft);color:var(--red)}
+.flag.amber{background:var(--amber-soft);color:var(--amber)}
+.note{font-size:14px;color:var(--muted);max-width:70ch}
+
+/* phases */
+.phase{display:grid;grid-template-columns:56px 1fr;gap:0 16px;padding-block:18px;border-top:1px solid var(--line)}
+.phase:last-of-type{border-bottom:1px solid var(--line)}
+.phase .n{font-family:"Archivo",sans-serif;font-weight:700;font-size:30px;line-height:1;color:var(--muted);padding-top:2px}
+.phase .n small{display:block;font:11px/1.3 "IBM Plex Mono",monospace;letter-spacing:.06em;text-transform:uppercase;margin-top:6px}
+.phase h3{margin-bottom:8px}
+.phase.deferred .n,.phase.deferred h3{color:var(--muted)}
+.est{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--green);background:var(--green-soft);padding:1px 6px;border-radius:3px;white-space:nowrap;margin-left:6px}
+.bid{font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted);white-space:nowrap}
+body:not(.show-est) .est{display:none}
+.toggle{display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);cursor:pointer;user-select:none;white-space:nowrap}
+.toggle input{accent-color:var(--green);width:16px;height:16px;margin:0}
+.total{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 20px;padding-block:14px;font-size:15px}
+.total b{font-family:"IBM Plex Mono",monospace;font-weight:500}
+.callout{background:var(--shade);border-left:3px solid var(--green);padding:12px 16px;font-size:15px;border-radius:0 6px 6px 0;max-width:72ch}
+
+/* question checklists */
+.qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:20px 32px}
+.qgroup{break-inside:avoid}
+.qgroup h3{padding-bottom:6px;border-bottom:1px solid var(--line);margin-bottom:8px}
+.checks{list-style:none;padding:0;margin:0}
+.checks li{display:grid;grid-template-columns:18px 1fr;gap:10px;padding-block:6px;margin:0;font-size:15px;line-height:1.45;align-items:start}
+.checks li+li{border-top:1px solid var(--line)}
+.checks input{margin:4px 0 0;width:16px;height:16px;accent-color:var(--green)}
+.checks label{cursor:pointer}
+.checks input:checked+label{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line-strong)}
+.tools{display:flex;gap:16px;align-items:center;font-size:13px;color:var(--muted)}
+.tools button{font:inherit;color:var(--blue);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+
+/* plans */
+.plans .switch{display:inline-flex;border:1px solid var(--line-strong);border-radius:6px;overflow:hidden;margin-bottom:12px}
+.plans .switch button{font:600 14px "IBM Plex Sans",sans-serif;padding:7px 16px;border:0;background:var(--paper);color:var(--ink);cursor:pointer}
+.plans .switch button.on{background:var(--ink);color:var(--bg)}
+.plan{background:#fbfaf7;border:1px solid var(--line);border-radius:6px;padding:6px;max-width:700px}
+.plan svg{width:100%;height:auto;display:block}
+.plan[hidden]{display:none}
+
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 18px}
+@media (max-width:520px){
+  .phase{grid-template-columns:1fr}
+  .phase .n{font-size:20px;display:flex;gap:8px;align-items:baseline}
+  .phase .n small{margin:0}
+  .qgrid{grid-template-columns:1fr}
+  table{min-width:520px}
+}
+@media print{
+  body{background:#fff;color:#000;padding-inline:0}
+  nav.toc,.tools,.toggle,.plans .switch{display:none}
+  .plan[hidden]{display:block}
+  section{padding-block:22px 0}
+  .qgrid{grid-template-columns:1fr 1fr}
+  .est{display:none!important}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">1645 9th St, Berkeley CA 94710 · walkthrough brief · September 2026</p>
+  <h1>9th St Contractor Brief</h1>
+  <p class="lede">A 1919 single-story bungalow, listed as a fixer, that we want to buy and renovate in one coordinated job: make the house sound, move the kitchen to the deck side, good-not-fancy finishes. This is what we'd like to cover with a contractor before we're committed, and what we think the work is.</p>
+  <div class="facts"><span>2 bed / 1 bath</span><span>734 sq ft</span><span>2,613 sq ft lot</span><span>no garage, 1 off-street space</span><span>rear deck</span><span>no working heat</span><span>Home Energy Score 8/10</span></div>
+</header>
+<nav class="toc"><a href="#house">What the seller's package says</a><a href="#plan">What we think should happen</a><a href="#questions">Questions for the contractor</a><a href="#walk">On the walkthrough</a><a href="#plans">Floor plans</a></nav>
+
+<section id="house">
+  <div class="sec-head"><h2>What the seller's package says</h2><p>Seller-ordered reports, dated Aug 14 to Sept 3, 2026. Full PDFs available on request.</p></div>
+  <div class="stack">
+  <div class="tablewrap"><table>
+    <thead><tr><th>Report</th><th>Finding</th><th>Bid</th></tr></thead>
+    <tbody>
+    <tr><td class="rep">PG&amp;E service tag<small>Aug 14</small></td><td><span class="flag red">red-tagged</span>Floor furnace: exhaust pipe missing, gas disconnected and capped, hazard notice issued. The house has no working heat.</td><td class="bid">—</td></tr>
+    <tr><td class="rep">Three Counties termite<small>Aug 28</small></td><td><span class="flag red">active</span>Subterranean termites and powder post beetles in substructure and attic. Dry rot at mudsill, cripple walls, subfloor, joists, roof sheathing, rafters, eaves, siding, doors, deck, bath floor. Report is stamped "corrected"; we don't know why.</td><td class="bid">Section I $29,885<br><span class="note">deck, windows, gutters, paint left to other trades</span></td></tr>
+    <tr><td class="rep">BPG home inspection<small>Aug 28</small></td><td>Knob-and-tube spliced to Romex, improper tap at subpanel, no GFCI, small service (reported as 30, 60, and 100 A in different places). Galvanized supply with an active leak. Lead toilet drain, actively leaking. 2022 water heater leaking through the tank. No anchor bolts, no cripple-wall bracing. No gutters. Roof 30+ years. "Deferred maintenance and disrepair throughout."</td><td class="bid">—</td></tr>
+    <tr><td class="rep">Planchon roofing<small>Aug 28</small></td><td>"BAD. Replace at earliest convenience."</td><td class="bid">$14,800<br><span class="note">+ permit, gutters, dry rot at $95/hr</span></td></tr>
+    <tr><td class="rep">JB Plumbing<small>Sept 1</small></td><td>Main line backed up. No cleanout. Three leaking joints from root intrusion on the left side of the house. Cleared, not repaired.</td><td class="bid">—</td></tr>
+    <tr><td class="rep">Terra Nova sewer<small>Aug 17</small></td><td>Upper sewer lateral replacement, about 32 ft, for Berkeley compliance. Berkeley addendum puts the lateral on the buyer after close.</td><td class="bid">$5,500<br><span class="note">+ $4,500 city deposit</span></td></tr>
+    <tr><td class="rep">Home Energy Score<small>Aug 26</small></td><td>8/10, mostly because the house is small. Attic R-3, no floor or wall insulation, single-pane windows. Recommends heat pumps, induction, panel upgrade. 686 sq ft heated.</td><td class="bid">—</td></tr>
+    <tr><td class="rep">NHD<small></small></td><td>Liquefaction zone. Berryman Reservoir dam inundation area. Not in a fire or flood zone.</td><td class="bid">—</td></tr>
+    <tr><td class="rep">Seller disclosure<small></small></td><td>Trust sale, exempt from TDS. Seller knows nothing beyond the furnace. Every earthquake question answered "Don't Know". No permit history in the package.</td><td class="bid">—</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Disclosed bids come to about $50k and cover the roof, termite Section I, and the sewer lateral. The rewire, replumb, foundation work, and heating system have no bids yet.</p>
+  </div>
+</section>
+
+<section id="plan">
+  <div class="sec-head"><h2>What we think should happen</h2><label class="toggle"><input type="checkbox" id="est-toggle"> Show our planning estimates</label></div>
+  <div class="stack">
+  <p class="note">Our working scope, in the order we'd build it. Tell us where this is wrong, what's missing, and what you'd sequence differently. The finish reference is 2435 Valley St, a 1908 cottage renovated with refinished oak, coved ceilings, an eat-in kitchen, and added skylights. That's the taste, not the budget.</p>
+
+  <div>
+  <div class="phase"><div class="n">1<small>first</small></div><div>
+    <h3>Stop the water</h3>
+    <ul>
+      <li>Tear off and replace the roof. New gutters and downspouts, attic vents, rotted sheathing replaced as found. <span class="bid">Planchon bid $14.8k</span><span class="est">est. $18–20k</span></li>
+      <li>If we ever want skylights or a raised ceiling in the kitchen or living room, this is when. Worth pricing as an option.</li>
+    </ul>
+  </div></div>
+
+  <div class="phase"><div class="n">2<small>structure</small></div><div>
+    <h3>Structure, while the crawlspace is open</h3>
+    <ul>
+      <li>Termite and dry rot repairs per the Section I findings: mudsill, cripple walls, subfloor, joists, bath floor, plus whatever the report undercounts. <span class="bid">bid $29.9k</span><span class="est">est. $30–40k</span></li>
+      <li>Seismic: anchor bolts and plywood cripple-wall bracing. Berkeley refunds part of the transfer tax for this if done within a year of close. <span class="est">est. $12–17k net</span></li>
+      <li>Sewer: replace the upper lateral, add a cleanout, repair the three root-broken joints on the left side. <span class="bid">lateral bid $5.5k</span><span class="est">est. $7–10k total</span></li>
+    </ul>
+  </div></div>
+
+  <div class="phase"><div class="n">3<small>systems</small></div><div>
+    <h3>Systems, all at once</h3>
+    <ul>
+      <li>Full rewire. All knob-and-tube out, new 200 A panel, GFCI and AFCI where required, load sized for induction, heat pumps, and a future EV charger. <span class="est">est. $30–40k</span></li>
+      <li>Replumb supply and drains. Galvanized and the lead toilet drain both out. Rough-in for the kitchen in its new location and laundry in the rear porch. <span class="est">est. $20–28k</span></li>
+      <li>Heat: floor furnace removed and floor patched, mini-splits in. Water heater leaves the kitchen; a tankless unit goes in the laundry shed. <span class="est">est. $17–24k after rebates</span></li>
+      <li>Insulation and air sealing, attic and floor. Walls stay closed for now. <span class="est">est. $8–12k</span></li>
+    </ul>
+  </div></div>
+
+  <div class="phase"><div class="n">4<small>layout</small></div><div>
+    <h3>Layout changes</h3>
+    <ul>
+      <li><strong>Kitchen stays where it is</strong> (front-right, 8′-2″ × ≈12′-5″) and gets redone in place: the water-heater corner beside the range becomes counter. <span class="est">est. $35–55k with semi-custom or IKEA boxes, quartz, good appliances</span></li>
+            <li><strong>Rear porch stays the laundry and becomes a proper shed</strong>: washer, dryer, and the tankless water heater in it; its only door stays on the east side. <span class="est">est. $8–15k</span></li>
+      <li>Living room, bedroom 2 (the rear-right room, which keeps its hall door and closet), bathroom, hall, and front porch keep their footprints.</li>
+    </ul>
+    <p class="callout" style="margin-top:10px">Why the swap: we don't want to walk through a bedroom to get to the yard. It should cost little extra because every plumbing line is being replaced anyway and the sewer exits on the left side of the house. Tell us if that's wrong.</p>
+  </div></div>
+
+  <div class="phase"><div class="n">5<small>finishes</small></div><div>
+    <h3>Finishes</h3>
+    <ul>
+      <li>Bathroom full gut, same footprint unless the replumb makes a shift cheap. <span class="est">est. $25–35k</span></li>
+      <li>Plaster repair, interior doors, trim, paint throughout. <span class="est">est. $20–35k</span></li>
+      <li>Refinish the existing floors, patch where the furnace and walls come out, new floor in the kitchen and mudroom. <span class="est">est. $8–12k</span></li>
+      <li>Windows: repair, reglaze, and unstick only. No replacement in this pass. <span class="est">est. $6–12k</span></li>
+      <li>Deck: replace rotted members and stairs only. <span class="est">est. $5–8k</span></li>
+      <li>Drawings by a draftsperson plus a structural engineer, not a full architect. Berkeley permits and plan check. <span class="est">est. $20–35k combined</span></li>
+    </ul>
+  </div></div>
+
+  <div class="phase deferred"><div class="n">6<small>later</small></div><div>
+    <h3>Deferred to later years</h3>
+    <ul>
+      <li>Window replacement, exterior siding repair and paint, deck rebuild, yard, fence and driveway, fireplace and chimney work, wall insulation. If any of these can't wait, say so.</li>
+    </ul>
+  </div></div>
+  </div>
+
+  <div class="total est"><span>Lean scope, planning range, including 15% contingency</span><b>about $330–485k</b></div>
+  <p class="note est">Planning numbers at typical Berkeley 2026 pricing for permitted work by a licensed GC. Treat every one as ±25% until we have real bids.</p>
+  </div>
+</section>
+
+<section id="questions">
+  <div class="sec-head"><h2>Questions for the contractor</h2><div class="tools"><span id="check-count"></span><button type="button" id="check-reset">Clear checks</button></div></div>
+  <div class="qgrid">
+
+  <div class="qgroup"><h3>Working together</h3><ul class="checks">
+    <li><input type="checkbox" id="q-a1"><label for="q-a1">Licensed and insured? CSLB number, liability, workers' comp. Which trades are in-house and which are subbed?</label></li>
+    <li><input type="checkbox" id="q-a2"><label for="q-a2">How many 1910s and 20s Berkeley bungalows like this have you done? Can we see one or talk to the owner?</label></li>
+    <li><input type="checkbox" id="q-a3"><label for="q-a3">Design-build, or do we bring a draftsperson and structural engineer? Who do you like working with?</label></li>
+    <li><input type="checkbox" id="q-a4"><label for="q-a4">Who pulls permits with Berkeley? How long is plan check running right now for a job like this?</label></li>
+    <li><input type="checkbox" id="q-a5"><label for="q-a5">Fixed price or cost-plus? How do change orders and allowances work? Payment schedule?</label></li>
+    <li><input type="checkbox" id="q-a6"><label for="q-a6">When could you start, and how long from demo to done?</label></li>
+    <li><input type="checkbox" id="q-a7"><label for="q-a7">Can you, or someone you trust, walk the house during our 7 to 10 day inspection contingency? We need a real look at foundation, electrical, and sewer before we're committed.</label></li>
+    <li><input type="checkbox" id="q-a8"><label for="q-a8">What's the biggest risk in this house? What do these bungalows usually hide once the walls are open?</label></li>
+    <li><input type="checkbox" id="q-a9"><label for="q-a9">Ballpark for the whole scope, and where you'd cut first if it comes in high.</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Structure and foundation</h3><ul class="checks">
+    <li><input type="checkbox" id="q-b1"><label for="q-b1">What's under the house: full perimeter concrete, partial, or brick? Condition?</label></li>
+    <li><input type="checkbox" id="q-b2"><label for="q-b2">Is the termite Section I scope adequate or the usual minimum? What hidden-damage allowance would you carry?</label></li>
+    <li><input type="checkbox" id="q-b3"><label for="q-b3">Bolting and cripple-wall bracing: you or a foundation sub? Prescriptive (Plan Set A) or engineered?</label></li>
+    <li><input type="checkbox" id="q-b4"><label for="q-b4">Does the liquefaction zone change what you'd recommend?</label></li>
+    <li><input type="checkbox" id="q-b5"><label for="q-b5">Any floor sag or out-of-level that says the framing needs more than the report calls for?</label></li>
+    <li><input type="checkbox" id="q-b6"><label for="q-b6">Should the deck come off during the structural work, given the rot at the rear wall?</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Roof</h3><ul class="checks">
+    <li><input type="checkbox" id="q-c1"><label for="q-c1">Any concerns with the Planchon bid? Realistic sheathing and rafter replacement, given what the termite report found up there?</label></li>
+    <li><input type="checkbox" id="q-c2"><label for="q-c2">Skylights or a raised ceiling in the kitchen or living room while the roof is off. Rough add?</label></li>
+    <li><input type="checkbox" id="q-c3"><label for="q-c3">Where do the new downspouts drain? Site drainage away from the crawlspace.</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Electrical</h3><ul class="checks">
+    <li><input type="checkbox" id="q-d1"><label for="q-d1">What's the actual service size today? Is 200 A feasible here, and what's PG&amp;E's timeline?</label></li>
+    <li><input type="checkbox" id="q-d2"><label for="q-d2">Rewiring through lath and plaster: fish it or open walls? What does that do to the plaster and paint budget?</label></li>
+    <li><input type="checkbox" id="q-d3"><label for="q-d3">Load calc for induction range, mini-splits, dryer, tankless water heater if electric, and a future EV charger.</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Plumbing</h3><ul class="checks">
+    <li><input type="checkbox" id="q-e1"><label for="q-e1">Plan for the lead toilet drain and the galvanized supply. PEX or copper?</label></li>
+    <li><input type="checkbox" id="q-e2"><label for="q-e2">Kitchen relocation: sewer exits on the left side. Sink on the west wall, or on the wall shared with the bath to use one wet wall? Venting?</label></li>
+    <li><input type="checkbox" id="q-e3"><label for="q-e3">Gas: keep a line for a range, or go all-electric and cap it?</label></li>
+    <li><input type="checkbox" id="q-e4"><label for="q-e4">Sewer lateral: better to have the seller do it before close, or fold it into your job with the cleanout and joint repairs?</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Heating and hot water</h3><ul class="checks">
+    <li><input type="checkbox" id="q-f1"><label for="q-f1">Ductless heads in which rooms, or one small ducted unit in the attic? Where does the outdoor unit go on a tight lot with close neighbors?</label></li>
+    <li><input type="checkbox" id="q-f2"><label for="q-f2">Tankless water heater in the shed: gas (vent through the shed wall) or electric (big circuit)? Freeze protection in an unheated shed?</label></li>
+    <li><input type="checkbox" id="q-f3"><label for="q-f3">Rebates you've actually gotten for clients (BayREN, TECH Clean California, federal credits). Who files?</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Layout</h3><ul class="checks">
+    <li><input type="checkbox" id="q-g1"><label for="q-g1">Which wall is bearing under the hip roof? Nothing in this scope removes one, but the answer matters for future work.</label></li>
+        <li><input type="checkbox" id="q-g3"><label for="q-g3">Rear porch as laundry and mudroom: on foundation or piers? Floor level with the house? Insulate it?</label></li>
+    <li><input type="checkbox" id="q-g4"><label for="q-g4">Mudroom: keep both existing doors (bedroom 2 and deck), or deck only? Your take.</label></li>
+    <li><input type="checkbox" id="q-g5"><label for="q-g5">French door versus keeping the slider to the deck.</label></li>
+    <li><input type="checkbox" id="q-g6"><label for="q-g6">Bathroom: keep the footprint, or does the replumb make a better layout nearly free?</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Windows, hazmat, exterior</h3><ul class="checks">
+    <li><input type="checkbox" id="q-h1"><label for="q-h1">Repair and reglaze versus replace: your honest read on about 12 single-pane wood windows.</label></li>
+    <li><input type="checkbox" id="q-h2"><label for="q-h2">Lead paint (1919) and asbestos (floor furnace, ducts, flooring, plaster): who tests, who abates, what does it add?</label></li>
+    <li><input type="checkbox" id="q-h3"><label for="q-h3">Siding and exterior paint are deferred. Anything that can't wait?</label></li>
+    <li><input type="checkbox" id="q-h4"><label for="q-h4">Chimney: is the brick fireplace usable as-is, does it need a liner or insert, or should we seal it?</label></li>
+  </ul></div>
+
+  <div class="qgroup"><h3>Berkeley</h3><ul class="checks">
+    <li><input type="checkbox" id="q-i1"><label for="q-i1">What does this scope trigger: Title 24 energy, seismic, sewer compliance, anything else?</label></li>
+    <li><input type="checkbox" id="q-i2"><label for="q-i2">Seismic transfer-tax refund: have you filed it for clients? What paperwork does the city want?</label></li>
+    <li><input type="checkbox" id="q-i3"><label for="q-i3">Anything about this lot (setbacks, the rear porch, the deck, the front porch enclosure) that limits us or that was never permitted?</label></li>
+  </ul></div>
+
+  </div>
+</section>
+
+<section id="walk">
+  <div class="sec-head"><h2>On the walkthrough</h2><p>Things to physically check with the contractor. Our floor plan was drawn from the listing photos and two walkthroughs; only the two closets are measured.</p></div>
+  <div class="qgrid">
+  <div class="qgroup"><h3>Confirm the layout</h3><ul class="checks">
+    <li><input type="checkbox" id="w-1"><label for="w-1">Measure the hall, bath, living room, and kitchen; the plan's bedrooms are measured, the rest is scaled from a sketch.</label></li>
+    <li><input type="checkbox" id="w-2"><label for="w-2">Find the "rear half bathroom" vanity the termite report mentions. The listing says one bath.</label></li>
+    <li><input type="checkbox" id="w-3"><label for="w-3">Confirm the overall house width (we get ≈19′-9″ from the two bedrooms) and the front porch depth.</label></li>
+    <li><input type="checkbox" id="w-4"><label for="w-4">Rear porch: footing, floor level relative to the house, framing, any plumbing already there.</label></li>
+  </ul></div>
+  <div class="qgroup"><h3>Under and above</h3><ul class="checks">
+    <li><input type="checkbox" id="w-5"><label for="w-5">Crawlspace: access hatch, clearance, foundation type, standing water, what the termite tags mark.</label></li>
+    <li><input type="checkbox" id="w-6"><label for="w-6">Attic: access, framing, sheathing condition, knob-and-tube runs, the R-3 insulation.</label></li>
+    <li><input type="checkbox" id="w-7"><label for="w-7">Floors: level, soft spots, especially the bathroom floor the termite report flags.</label></li>
+    <li><input type="checkbox" id="w-8"><label for="w-8">Chimney: cracks, flashing, firebox, whether it's bolted to anything.</label></li>
+  </ul></div>
+  <div class="qgroup"><h3>Systems</h3><ul class="checks">
+    <li><input type="checkbox" id="w-9"><label for="w-9">Panel: label, main breaker size, service drop. Settle the 30 / 60 / 100 A question.</label></li>
+    <li><input type="checkbox" id="w-10"><label for="w-10">Water main and shutoff, gas meter, and where a sewer cleanout would go.</label></li>
+    <li><input type="checkbox" id="w-11"><label for="w-11">Water heater in the kitchen: how far the leak has traveled, floor under it.</label></li>
+    <li><input type="checkbox" id="w-12"><label for="w-12">Floor furnace: size of the floor patch once it's out.</label></li>
+    <li><input type="checkbox" id="w-13"><label for="w-13">Deck: ledger attachment, rot extent, stairs.</label></li>
+  </ul></div>
+  </div>
+  <p class="note" style="margin-top:16px">Bring: flashlight, tape measure, camera, the disclosure PDF.</p>
+</section>
+
+<section id="plans" class="plans">
+  <div class="sec-head"><h2>Floor plans</h2><p>Keith's sketch scaled to tape measurements of the two bedrooms, bedroom 2's closet, the slider and the deck (marked [M]); everything else is estimated. "N" on the drawing means away from the street.</p></div>
+  <div class="switch" role="tablist"><button type="button" class="on" data-plan="proposed" role="tab" aria-selected="true">Proposed</button><button type="button" data-plan="existing" role="tab" aria-selected="false">Existing</button></div>
+  <div class="plan" id="plan-proposed"><svg role="img" aria-label="proposed floor plan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 1296" font-family="Helvetica, Arial, sans-serif">
+<rect width="880" height="1296" fill="#fbfaf7"/>
+<text x="40" y="44" font-size="22" font-weight="bold" fill="#222">1645 9th St, Berkeley — Proposed Layout</text>
+<text x="40" y="66" font-size="12.5" fill="#555">same rooms · water heater out of the kitchen → tankless in the shed · floor furnace out → mini-splits · laundry stays in the shed</text>
+<text x="40" y="84" font-size="11.5" fill="#a33">Sept 12, 2026 · Keith's sketch scaled to the measured rooms [M]; the rest estimated</text>
+<text x="40" y="100" font-size="11.5" fill="#a33">walls 6″ exterior / 5″ interior · doors 2′-8″ (bath 2′-6″, closets 2′-0″ [M]) · front door 3′-0″ · slider 5′-5″ [M]</text>
+<rect x="170.0" y="160.0" width="202.5" height="120.0" fill="#e8dcc8" stroke="none" stroke-width="1"/>
+<line x1="180.0" y1="160.0" x2="180.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="200.0" y1="160.0" x2="200.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="220.0" y1="160.0" x2="220.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="240.0" y1="160.0" x2="240.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="260.0" y1="160.0" x2="260.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="280.0" y1="160.0" x2="280.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="300.0" y1="160.0" x2="300.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="320.0" y1="160.0" x2="320.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="340.0" y1="160.0" x2="340.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<rect x="60.0" y="180.0" width="100.0" height="60.0" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="1"/>
+<line x1="140.0" y1="180.0" x2="140.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="120.0" y1="180.0" x2="120.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="100.0" y1="180.0" x2="100.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="80.0" y1="180.0" x2="80.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<rect x="380.8" y="164.2" width="164.9" height="115.8" fill="#f1ede4" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="290.0" width="202.5" height="183.3" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="481.7" width="134.2" height="152.0" fill="#eef1f4" stroke="none" stroke-width="1"/>
+<rect x="312.5" y="481.7" width="60.0" height="152.0" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="642.0" width="202.5" height="254.0" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="290.0" width="98.3" height="68.3" fill="#f4f0e8" stroke="none" stroke-width="1"/>
+<rect x="487.5" y="290.0" width="56.7" height="68.3" fill="#f4f0e8" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="366.7" width="163.3" height="175.0" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="550.0" width="163.3" height="247.7" fill="#eef1f4" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="806.0" width="163.3" height="150.0" fill="#f1ede4" stroke="none" stroke-width="1"/>
+<rect x="388.8" y="169.0" width="46.0" height="46.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<rect x="438.8" y="169.0" width="46.0" height="46.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<rect x="496.8" y="169.0" width="24.0" height="15.0" fill="#1a7a3c" stroke="#444" stroke-width="0.8"/>
+<rect x="350.5" y="728.7" width="34.2" height="90.0" fill="#c0553f" stroke="#444" stroke-width="0.8"/>
+<rect x="334.5" y="728.7" width="16.0" height="90.0" fill="#d9b9a8" stroke="#444" stroke-width="0.8"/>
+<rect x="363.5" y="650.0" width="17.3" height="40.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<line x1="386.8" y1="352.3" x2="473.2" y2="352.3" stroke="#888" stroke-width="0.8" stroke-linecap="square" stroke-dasharray="2,2"/>
+<line x1="493.5" y1="306.0" x2="538.2" y2="306.0" stroke="#888" stroke-width="0.8" stroke-linecap="square" stroke-dasharray="2,2"/>
+<rect x="204.2" y="481.7" width="100.0" height="50.0" fill="#fff" stroke="#444" stroke-width="0.8"/>
+<rect x="244.2" y="597.7" width="60.0" height="36.0" fill="#e8e8e8" stroke="#444" stroke-width="0.8"/>
+<circle cx="191.0" cy="609.7" r="11.0" fill="#fff" stroke="#222" stroke-width="1"/>
+<rect x="170.0" y="596.7" width="13.0" height="26.0" fill="#fff" stroke="#444" stroke-width="0.8"/>
+<rect x="170.0" y="677.8" width="7.0" height="52.0" fill="#1a7a3c" stroke="#444" stroke-width="0.8"/>
+<rect x="537.2" y="494.5" width="7.0" height="40.0" fill="#1a7a3c" stroke="#444" stroke-width="0.8"/>
+<rect x="170.0" y="298.0" width="7.0" height="52.0" fill="#1a7a3c" stroke="#444" stroke-width="0.8"/>
+<rect x="504.2" y="613.8" width="40.0" height="177.8" fill="#e8e8e8" stroke="#444" stroke-width="0.8"/>
+<rect x="508.2" y="655.8" width="32.0" height="60.0" fill="#fff" stroke="#444" stroke-width="0.8"/>
+<rect x="380.8" y="618.0" width="56.0" height="56.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<rect x="380.8" y="678.0" width="50.0" height="50.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<rect x="380.8" y="732.0" width="40.0" height="61.7" fill="#e8e8e8" stroke="#444" stroke-width="0.8"/>
+<rect x="454.2" y="966.0" width="70.0" height="48.0" fill="#e0e0e0" stroke="#444" stroke-width="0.8"/>
+<line x1="454.2" y1="982.0" x2="524.2" y2="982.0" stroke="#999" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="454.2" y1="998.0" x2="524.2" y2="998.0" stroke="#999" stroke-width="0.8" stroke-linecap="square"/>
+<rect x="160.0" y="280.0" width="10.0" height="626.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="160.0" y="280.0" width="394.2" height="10.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="544.2" y="280.0" width="10.0" height="686.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="160.0" y="896.0" width="221.7" height="10.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="371.7" y="896.0" width="10.0" height="70.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="956.0" width="177.5" height="10.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="160.0" width="8.3" height="120.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="160.0" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="545.8" y="160.0" width="8.3" height="120.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="290.0" width="8.3" height="606.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="473.3" width="206.7" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="633.7" width="206.7" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="304.2" y="477.5" width="8.3" height="160.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="358.3" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="479.2" y="290.0" width="8.3" height="72.5" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="541.7" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="797.7" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="459.2" y="956.0" width="60.0" height="10.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="836.7" width="8.3" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="295.0" width="8.3" height="40.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="313.2" y="473.3" width="53.3" height="8.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="304.2" y="533.7" width="8.3" height="50.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="484.3" width="8.3" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="556.0" width="8.3" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="544.2" y="556.0" width="10.0" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="312.5" y="633.7" width="60.0" height="8.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="494.5" y="358.3" width="40.0" height="8.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="544.2" y="188.0" width="10.0" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="219.2" y="280.0" width="108.3" height="10.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="160.0" y="350.0" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="160.0" y="535.5" width="10.0" height="40.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="160.0" y="727.8" width="10.0" height="80.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="230.0" y="896.0" width="90.0" height="10.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="544.2" y="422.5" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="544.2" y="655.8" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="371.7" y="816.8" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="544.2" y="816.8" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="388.8" y="956.0" width="64.0" height="10.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="400.8" y="160.0" width="60.0" height="8.3" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="474.8" y="160.0" width="60.0" height="8.3" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="372.5" y="180.0" width="8.3" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="392.8" y="797.7" width="40.0" height="8.3" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<line x1="519.2" y1="961.0" x2="519.2" y2="901.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="519.2,901.0 513.3,901.3 507.5,902.2 501.7,903.6 496.2,905.6 490.9,908.1 485.8,911.1 481.1,914.6 476.7,918.6 472.8,922.9 469.3,927.7 466.3,932.7 463.7,938.0 461.8,943.6 460.3,949.3 459.5,955.1 459.2,961.0" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="890.0" x2="323.3" y2="890.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="323.3,890.0 323.6,884.8 324.4,879.6 325.6,874.5 327.4,869.6 329.6,864.9 332.3,860.4 335.4,856.2 339.0,852.3 342.8,848.8 347.0,845.7 351.5,843.0 356.3,840.7 361.2,839.0 366.3,837.7 371.4,836.9 376.7,836.7" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="295.0" x2="416.7" y2="295.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="416.7,295.0 416.5,298.9 415.9,302.8 414.9,306.6 413.6,310.3 411.9,313.9 409.9,317.2 407.6,320.4 405.0,323.3 402.0,325.9 398.9,328.3 395.5,330.3 392.0,332.0 388.3,333.3 384.5,334.2 380.6,334.8 376.7,335.0" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="366.5" y1="477.5" x2="366.5" y2="424.2" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="366.5,424.2 361.3,424.4 356.1,425.2 351.0,426.5 346.1,428.2 341.4,430.5 336.9,433.2 332.7,436.3 328.8,439.8 325.3,443.7 322.2,447.9 319.5,452.4 317.2,457.1 315.5,462.0 314.2,467.1 313.4,472.3 313.2,477.5" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="308.3" y1="533.7" x2="258.3" y2="533.7" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="258.3,533.7 258.6,538.6 259.3,543.4 260.5,548.2 262.1,552.8 264.2,557.2 266.8,561.4 269.7,565.4 273.0,569.0 276.6,572.3 280.6,575.2 284.8,577.8 289.2,579.9 293.8,581.5 298.6,582.7 303.4,583.4 308.3,583.7" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="537.7" x2="430.0" y2="537.7" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="430.0,537.7 429.7,532.4 429.0,527.3 427.7,522.2 425.9,517.3 423.7,512.5 421.0,508.0 417.9,503.8 414.4,500.0 410.5,496.4 406.3,493.3 401.8,490.6 397.1,488.4 392.1,486.6 387.1,485.4 381.9,484.6 376.7,484.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="556.0" x2="430.0" y2="556.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="430.0,556.0 429.7,561.2 429.0,566.4 427.7,571.5 425.9,576.4 423.7,581.1 421.0,585.6 417.9,589.8 414.4,593.7 410.5,597.2 406.3,600.3 401.8,603.0 397.1,605.3 392.1,607.0 387.1,608.3 381.9,609.1 376.7,609.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="549.2" y1="556.0" x2="495.8" y2="556.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="495.8,556.0 496.1,561.2 496.9,566.4 498.1,571.5 499.9,576.4 502.1,581.1 504.8,585.6 507.9,589.8 511.5,593.7 515.3,597.2 519.5,600.3 524.0,603.0 528.8,605.3 533.7,607.0 538.8,608.3 543.9,609.1 549.2,609.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="312.5" y1="637.8" x2="372.5" y2="637.8" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,3"/>
+<line x1="534.5" y1="362.5" x2="534.5" y2="322.5" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="534.5,322.5 530.6,322.7 526.7,323.3 522.9,324.2 519.2,325.5 515.6,327.2 512.3,329.2 509.1,331.6 506.2,334.2 503.6,337.1 501.2,340.3 499.2,343.6 497.5,347.2 496.2,350.9 495.3,354.7 494.7,358.6 494.5,362.5" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="549.2" y1="188.0" x2="495.8" y2="188.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="495.8,188.0 496.1,193.2 496.9,198.4 498.1,203.5 499.9,208.4 502.1,213.1 504.8,217.6 507.9,221.8 511.5,225.7 515.3,229.2 519.5,232.3 524.0,235.0 528.8,237.3 533.7,239.0 538.8,240.3 543.9,241.1 549.2,241.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="219.2" y1="283.0" x2="276.3" y2="283.0" stroke="#3a7bd5" stroke-width="2.2" stroke-linecap="square"/>
+<line x1="270.3" y1="287.0" x2="327.5" y2="287.0" stroke="#3a7bd5" stroke-width="2.2" stroke-linecap="square"/>
+<line x1="165.0" y1="350.0" x2="165.0" y2="410.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="165.0" y1="535.5" x2="165.0" y2="575.5" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="165.0" y1="727.8" x2="165.0" y2="807.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="230.0" y1="901.0" x2="320.0" y2="901.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="549.2" y1="422.5" x2="549.2" y2="482.5" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="549.2" y1="655.8" x2="549.2" y2="715.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="376.7" y1="816.8" x2="376.7" y2="876.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="549.2" y1="816.8" x2="549.2" y2="876.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="388.8" y1="961.0" x2="452.8" y2="961.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="400.8" y1="164.2" x2="460.8" y2="164.2" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="474.8" y1="164.2" x2="534.8" y2="164.2" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="376.7" y1="180.0" x2="376.7" y2="240.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="392.8" y1="801.8" x2="432.8" y2="801.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<text x="271.2" y="215.0" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">DECK</text>
+<text x="271.2" y="229.0" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">10′-2″ × 6′ · 61 sf</text>
+<text x="271.2" y="241.0" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">10′-2″ wide [M] · ≈2′ above grade</text>
+<text x="110.0" y="262.0" font-size="8" text-anchor="middle" fill="#666" font-weight="normal">stairs down</text>
+<text x="467.5" y="231.0" font-size="10" text-anchor="middle" fill="#222" font-weight="bold">LAUNDRY / SHED</text>
+<text x="467.5" y="245.0" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-3″ × 5′-9″ · 48 sf</text>
+<text x="467.5" y="257.0" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">W/D · tankless WH · east door only</text>
+<text x="411.8" y="195.0" font-size="8" text-anchor="middle" fill="#333" font-weight="normal">W</text>
+<text x="461.8" y="195.0" font-size="8" text-anchor="middle" fill="#333" font-weight="normal">D</text>
+<text x="508.8" y="196.0" font-size="6.5" text-anchor="middle" fill="#1a7a3c" font-weight="normal">tankless</text>
+<text x="508.8" y="207.0" font-size="6.5" text-anchor="middle" fill="#1a7a3c" font-weight="normal">WH</text>
+<text x="272.0" y="395.0" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
+<text x="272.0" y="409.0" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">10′-2″ × 9′-2″ · 93 sf</text>
+<text x="272.0" y="421.0" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">measured · slider · closet door on east wall</text>
+<text x="238.0" y="562.5" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
+<text x="238.0" y="576.5" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">6′-8″ × 7′-7″ · 51 sf</text>
+<text x="238.0" y="588.5" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">door past the tub</text>
+<text x="342.5" y="496.5" font-size="9" text-anchor="middle" fill="#222" font-weight="bold">HALL</text>
+<text x="342.5" y="511.5" font-size="7.5" text-anchor="middle" fill="#666" font-weight="normal">3′ wide</text>
+<text x="272.0" y="760.8" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">LIVING ROOM</text>
+<text x="272.0" y="774.8" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">10′-2″ × 12′-8″ · 129 sf</text>
+<text x="272.0" y="786.8" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">fireplace · built-in · picture rail</text>
+<text x="440.1" y="311.0" font-size="8" text-anchor="middle" fill="#222" font-weight="bold">closet</text>
+<text x="440.1" y="329.0" font-size="6.5" text-anchor="middle" fill="#666" font-weight="normal">bed 2 · 4′-11″ × 3′-5″ [M]</text>
+<text x="513.8" y="311.0" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">closet</text>
+<text x="513.8" y="329.0" font-size="6.5" text-anchor="middle" fill="#666" font-weight="normal">bed 1</text>
+<text x="462.5" y="441.5" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
+<text x="462.5" y="455.5" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-2″ × 8′-9″ · 71 sf</text>
+<text x="462.5" y="467.5" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">measured · closet above · window east</text>
+<text x="476.5" y="708.8" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
+<text x="476.5" y="722.8" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-2″ × 12′-5″ · 101 sf</text>
+<text x="476.5" y="734.8" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">same layout · WH → counter</text>
+<text x="462.5" y="874.8" font-size="10.5" text-anchor="middle" fill="#222" font-weight="bold">FRONT PORCH</text>
+<text x="462.5" y="888.8" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-2″ × 7′-6″ · 61 sf</text>
+<text x="462.5" y="900.8" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">enclosed entry · windows 3 sides</text>
+<text x="360.7" y="776.7" font-size="8" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
+<text x="344.5" y="672.0" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">built-in</text>
+<text x="254.2" y="509.7" font-size="8" text-anchor="middle" fill="#333" font-weight="normal">tub</text>
+<text x="298.2" y="506.7" font-size="6" text-anchor="middle" fill="#666" font-weight="normal" transform="rotate(-90 298.2 506.7)">shower</text>
+<text x="274.2" y="618.7" font-size="8" text-anchor="middle" fill="#333" font-weight="normal">vanity</text>
+<text x="342.5" y="601.7" font-size="6.5" text-anchor="middle" fill="#1a7a3c" font-weight="normal">furnace</text>
+<text x="342.5" y="613.7" font-size="6.5" text-anchor="middle" fill="#1a7a3c" font-weight="normal">removed</text>
+<text x="188.0" y="707.8" font-size="6.5" text-anchor="middle" fill="#1a7a3c" font-weight="normal">MS</text>
+<text x="555.2" y="524.5" font-size="6.5" text-anchor="middle" fill="#1a7a3c" font-weight="normal">MS</text>
+<text x="188.0" y="328.0" font-size="6.5" text-anchor="middle" fill="#1a7a3c" font-weight="normal">MS</text>
+<text x="524.2" y="688.8" font-size="7" text-anchor="middle" fill="#333" font-weight="normal">sink</text>
+<text x="524.2" y="751.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">tile</text>
+<text x="524.2" y="763.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">counter</text>
+<text x="408.8" y="649.0" font-size="7" text-anchor="middle" fill="#333" font-weight="normal">fridge</text>
+<text x="405.8" y="706.0" font-size="7" text-anchor="middle" fill="#333" font-weight="normal">range</text>
+<text x="400.8" y="771.7" font-size="6.5" text-anchor="middle" fill="#555" font-weight="normal">counter</text>
+<text x="489.2" y="1028.0" font-size="8" text-anchor="middle" fill="#666" font-weight="normal">concrete steps</text>
+<text x="357.1" y="1078.0" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">9th Street (front)</text>
+<line x1="160.0" y1="1054.0" x2="554.2" y2="1054.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="160.0" y1="1049.0" x2="160.0" y2="1059.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="554.2" y1="1049.0" x2="554.2" y2="1059.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="357.1" y="1048.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">19′-9″ (from the two bedrooms)</text>
+<line x1="170.0" y1="132.0" x2="372.5" y2="132.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="170.0" y1="127.0" x2="170.0" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="372.5" y1="127.0" x2="372.5" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="271.2" y="126.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">bedroom 2 + deck 10′-2″ [M]</text>
+<line x1="380.8" y1="132.0" x2="544.2" y2="132.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="380.8" y1="127.0" x2="380.8" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="544.2" y1="127.0" x2="544.2" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="462.5" y="126.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">bedroom 1 8′-2″ [M]</text>
+<line x1="112.0" y1="280.0" x2="112.0" y2="906.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="107.0" y1="280.0" x2="117.0" y2="280.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="107.0" y1="906.0" x2="117.0" y2="906.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="106.0" y="593.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 106.0 593.0)">31′-4″</text>
+<line x1="602.2" y1="160.0" x2="602.2" y2="966.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="597.2" y1="160.0" x2="607.2" y2="160.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="597.2" y1="966.0" x2="607.2" y2="966.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="596.2" y="563.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 596.2 563.0)">40′-4″</text>
+<line x1="146.0" y1="290.0" x2="146.0" y2="473.3" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="141.0" y1="290.0" x2="151.0" y2="290.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="141.0" y1="473.3" x2="151.0" y2="473.3" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="140.0" y="381.7" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 140.0 381.7)">bed 2 9′-2″ [M]</text>
+<line x1="576.2" y1="366.7" x2="576.2" y2="541.7" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="571.2" y1="366.7" x2="581.2" y2="366.7" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="571.2" y1="541.7" x2="581.2" y2="541.7" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="570.2" y="454.2" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 570.2 454.2)">bed 1 8′-9″ [M]</text>
+<g transform="translate(80,936)"><polygon points="0,-20 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text><text x="0" y="31" font-size="7.5" text-anchor="middle" fill="#666">away from street</text></g>
+<line x1="60.0" y1="996.0" x2="160.0" y2="996.0" stroke="#222" stroke-width="2" stroke-linecap="square"/>
+<line x1="60.0" y1="990.0" x2="60.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="80.0" y1="990.0" x2="80.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="100.0" y1="990.0" x2="100.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="120.0" y1="990.0" x2="120.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="140.0" y1="990.0" x2="140.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="160.0" y1="990.0" x2="160.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<text x="110.0" y="1014.0" font-size="8.5" text-anchor="middle" fill="#444" font-weight="normal">0        5 ft</text>
+<line x1="160.0" y1="1154.0" x2="190.0" y2="1154.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<text x="198.0" y="1157.0" font-size="8.5" text-anchor="start" fill="#555" font-weight="normal">window / glass</text>
+<line x1="270.0" y1="1154.0" x2="300.0" y2="1154.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,3"/>
+<text x="308.0" y="1157.0" font-size="8.5" text-anchor="start" fill="#555" font-weight="normal">cased opening</text>
+<text x="380.0" y="1157.0" font-size="8.5" text-anchor="start" fill="#555" font-weight="normal">[M] = measured by Keith, Sept 12</text>
+<rect x="580.0" y="1149.0" width="30.0" height="10.0" fill="#1a7a3c" stroke="none" stroke-width="1"/>
+<text x="618.0" y="1157.0" font-size="8.5" text-anchor="start" fill="#555" font-weight="normal">new / changed</text>
+<text x="40" y="1176" font-size="10.5" fill="#444">Same plan as existing — no rooms move and no walls change. Kitchen stays where it is.</text>
+<text x="40" y="1191" font-size="10.5" fill="#444">Water heater leaves the kitchen: a tankless unit goes on the wall in the laundry / shed (gas + vent + cold/hot lines run from there), and the freed</text>
+<text x="40" y="1206" font-size="10.5" fill="#444">corner by the range becomes counter. Washer and dryer stay in the shed; it keeps its outside-only east door.</text>
+<text x="40" y="1221" font-size="10.5" fill="#444">Floor furnace (red-tagged) comes out; the hall floor is patched. Heat by ductless mini-splits: heads marked MS in the living room and both bedrooms,</text>
+<text x="40" y="1236" font-size="10.5" fill="#444">outdoor unit on the east side by the shed.</text>
+<text x="40" y="1251" font-size="10.5" fill="#444">Not shown: 200 A panel and rewire, EV charger, driveway, finishes. Bearing: nothing is removed on the partition.</text>
+</svg></div>
+  <div class="plan" id="plan-existing" hidden><svg role="img" aria-label="existing floor plan" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 1341" font-family="Helvetica, Arial, sans-serif">
+<rect width="880" height="1341" fill="#fbfaf7"/>
+<text x="40" y="44" font-size="22" font-weight="bold" fill="#222">1645 9th St, Berkeley — Existing Layout</text>
+<text x="40" y="66" font-size="12.5" fill="#555">2 bed · 1 bath · 734 sq ft listed · built 1919 · 2,613 sq ft lot · single-story bungalow · drawn at 20 px/ft</text>
+<text x="40" y="84" font-size="11.5" fill="#a33">Sept 12, 2026 · Keith's sketch scaled to the measured rooms [M]; the rest estimated</text>
+<text x="40" y="100" font-size="11.5" fill="#a33">walls 6″ exterior / 5″ interior · doors 2′-8″ (bath 2′-6″, closets 2′-0″ [M]) · front door 3′-0″ · slider 5′-5″ [M]</text>
+<rect x="170.0" y="160.0" width="202.5" height="120.0" fill="#e8dcc8" stroke="none" stroke-width="1"/>
+<line x1="180.0" y1="160.0" x2="180.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="200.0" y1="160.0" x2="200.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="220.0" y1="160.0" x2="220.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="240.0" y1="160.0" x2="240.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="260.0" y1="160.0" x2="260.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="280.0" y1="160.0" x2="280.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="300.0" y1="160.0" x2="300.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="320.0" y1="160.0" x2="320.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="340.0" y1="160.0" x2="340.0" y2="280.0" stroke="#cfb98f" stroke-width="0.8" stroke-linecap="square"/>
+<rect x="60.0" y="180.0" width="100.0" height="60.0" fill="#e8dcc8" stroke="#8a6a3a" stroke-width="1"/>
+<line x1="140.0" y1="180.0" x2="140.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="120.0" y1="180.0" x2="120.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="100.0" y1="180.0" x2="100.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<line x1="80.0" y1="180.0" x2="80.0" y2="240.0" stroke="#8a6a3a" stroke-width="1" stroke-linecap="square"/>
+<rect x="380.8" y="164.2" width="164.9" height="115.8" fill="#f1ede4" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="290.0" width="202.5" height="183.3" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="481.7" width="134.2" height="152.0" fill="#eef1f4" stroke="none" stroke-width="1"/>
+<rect x="312.5" y="481.7" width="60.0" height="152.0" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="642.0" width="202.5" height="254.0" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="290.0" width="98.3" height="68.3" fill="#f4f0e8" stroke="none" stroke-width="1"/>
+<rect x="487.5" y="290.0" width="56.7" height="68.3" fill="#f4f0e8" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="366.7" width="163.3" height="175.0" fill="#f7f0e3" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="550.0" width="163.3" height="247.7" fill="#eef1f4" stroke="none" stroke-width="1"/>
+<rect x="380.8" y="806.0" width="163.3" height="150.0" fill="#f1ede4" stroke="none" stroke-width="1"/>
+<rect x="350.5" y="728.7" width="34.2" height="90.0" fill="#c0553f" stroke="#444" stroke-width="0.8"/>
+<rect x="334.5" y="728.7" width="16.0" height="90.0" fill="#d9b9a8" stroke="#444" stroke-width="0.8"/>
+<rect x="363.5" y="650.0" width="17.3" height="40.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<line x1="386.8" y1="352.3" x2="473.2" y2="352.3" stroke="#888" stroke-width="0.8" stroke-linecap="square" stroke-dasharray="2,2"/>
+<line x1="493.5" y1="306.0" x2="538.2" y2="306.0" stroke="#888" stroke-width="0.8" stroke-linecap="square" stroke-dasharray="2,2"/>
+<rect x="204.2" y="481.7" width="100.0" height="50.0" fill="#fff" stroke="#444" stroke-width="0.8"/>
+<rect x="244.2" y="597.7" width="60.0" height="36.0" fill="#e8e8e8" stroke="#444" stroke-width="0.8"/>
+<circle cx="191.0" cy="609.7" r="11.0" fill="#fff" stroke="#222" stroke-width="1"/>
+<rect x="170.0" y="596.7" width="13.0" height="26.0" fill="#fff" stroke="#444" stroke-width="0.8"/>
+<rect x="318.5" y="575.7" width="48.0" height="54.0" fill="#999" stroke="#444" stroke-width="0.8"/>
+<rect x="504.2" y="613.8" width="40.0" height="177.8" fill="#e8e8e8" stroke="#444" stroke-width="0.8"/>
+<rect x="508.2" y="655.8" width="32.0" height="60.0" fill="#fff" stroke="#444" stroke-width="0.8"/>
+<rect x="380.8" y="618.0" width="56.0" height="56.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<rect x="380.8" y="678.0" width="50.0" height="50.0" fill="#ddd" stroke="#444" stroke-width="0.8"/>
+<circle cx="396.8" cy="781.7" r="14.0" fill="#ddd" stroke="#222" stroke-width="1"/>
+<rect x="454.2" y="966.0" width="70.0" height="48.0" fill="#e0e0e0" stroke="#444" stroke-width="0.8"/>
+<line x1="454.2" y1="982.0" x2="524.2" y2="982.0" stroke="#999" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="454.2" y1="998.0" x2="524.2" y2="998.0" stroke="#999" stroke-width="0.8" stroke-linecap="square"/>
+<rect x="160.0" y="280.0" width="10.0" height="626.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="160.0" y="280.0" width="394.2" height="10.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="544.2" y="280.0" width="10.0" height="686.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="160.0" y="896.0" width="221.7" height="10.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="371.7" y="896.0" width="10.0" height="70.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="956.0" width="177.5" height="10.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="160.0" width="8.3" height="120.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="160.0" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="545.8" y="160.0" width="8.3" height="120.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="290.0" width="8.3" height="606.0" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="473.3" width="206.7" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="170.0" y="633.7" width="206.7" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="304.2" y="477.5" width="8.3" height="160.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="358.3" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="479.2" y="290.0" width="8.3" height="72.5" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="541.7" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="376.7" y="797.7" width="177.5" height="8.3" fill="#222" stroke="none" stroke-width="1"/>
+<rect x="459.2" y="956.0" width="60.0" height="10.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="836.7" width="8.3" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="295.0" width="8.3" height="40.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="313.2" y="473.3" width="53.3" height="8.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="304.2" y="533.7" width="8.3" height="50.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="484.3" width="8.3" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="372.5" y="556.0" width="8.3" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="544.2" y="556.0" width="10.0" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="312.5" y="633.7" width="60.0" height="8.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="494.5" y="358.3" width="40.0" height="8.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="544.2" y="188.0" width="10.0" height="53.3" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="219.2" y="280.0" width="108.3" height="10.0" fill="#fff" stroke="none" stroke-width="1"/>
+<rect x="160.0" y="350.0" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="160.0" y="535.5" width="10.0" height="40.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="160.0" y="727.8" width="10.0" height="80.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="230.0" y="896.0" width="90.0" height="10.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="544.2" y="422.5" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="544.2" y="655.8" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="371.7" y="816.8" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="544.2" y="816.8" width="10.0" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="388.8" y="956.0" width="64.0" height="10.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="400.8" y="160.0" width="60.0" height="8.3" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="474.8" y="160.0" width="60.0" height="8.3" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="372.5" y="180.0" width="8.3" height="60.0" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<rect x="392.8" y="797.7" width="40.0" height="8.3" fill="#fff" stroke="#555" stroke-width="0.8"/>
+<line x1="519.2" y1="961.0" x2="519.2" y2="901.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="519.2,901.0 513.3,901.3 507.5,902.2 501.7,903.6 496.2,905.6 490.9,908.1 485.8,911.1 481.1,914.6 476.7,918.6 472.8,922.9 469.3,927.7 466.3,932.7 463.7,938.0 461.8,943.6 460.3,949.3 459.5,955.1 459.2,961.0" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="890.0" x2="323.3" y2="890.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="323.3,890.0 323.6,884.8 324.4,879.6 325.6,874.5 327.4,869.6 329.6,864.9 332.3,860.4 335.4,856.2 339.0,852.3 342.8,848.8 347.0,845.7 351.5,843.0 356.3,840.7 361.2,839.0 366.3,837.7 371.4,836.9 376.7,836.7" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="295.0" x2="416.7" y2="295.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="416.7,295.0 416.5,298.9 415.9,302.8 414.9,306.6 413.6,310.3 411.9,313.9 409.9,317.2 407.6,320.4 405.0,323.3 402.0,325.9 398.9,328.3 395.5,330.3 392.0,332.0 388.3,333.3 384.5,334.2 380.6,334.8 376.7,335.0" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="366.5" y1="477.5" x2="366.5" y2="424.2" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="366.5,424.2 361.3,424.4 356.1,425.2 351.0,426.5 346.1,428.2 341.4,430.5 336.9,433.2 332.7,436.3 328.8,439.8 325.3,443.7 322.2,447.9 319.5,452.4 317.2,457.1 315.5,462.0 314.2,467.1 313.4,472.3 313.2,477.5" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="308.3" y1="533.7" x2="258.3" y2="533.7" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="258.3,533.7 258.6,538.6 259.3,543.4 260.5,548.2 262.1,552.8 264.2,557.2 266.8,561.4 269.7,565.4 273.0,569.0 276.6,572.3 280.6,575.2 284.8,577.8 289.2,579.9 293.8,581.5 298.6,582.7 303.4,583.4 308.3,583.7" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="537.7" x2="430.0" y2="537.7" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="430.0,537.7 429.7,532.4 429.0,527.3 427.7,522.2 425.9,517.3 423.7,512.5 421.0,508.0 417.9,503.8 414.4,500.0 410.5,496.4 406.3,493.3 401.8,490.6 397.1,488.4 392.1,486.6 387.1,485.4 381.9,484.6 376.7,484.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="376.7" y1="556.0" x2="430.0" y2="556.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="430.0,556.0 429.7,561.2 429.0,566.4 427.7,571.5 425.9,576.4 423.7,581.1 421.0,585.6 417.9,589.8 414.4,593.7 410.5,597.2 406.3,600.3 401.8,603.0 397.1,605.3 392.1,607.0 387.1,608.3 381.9,609.1 376.7,609.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="549.2" y1="556.0" x2="495.8" y2="556.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="495.8,556.0 496.1,561.2 496.9,566.4 498.1,571.5 499.9,576.4 502.1,581.1 504.8,585.6 507.9,589.8 511.5,593.7 515.3,597.2 519.5,600.3 524.0,603.0 528.8,605.3 533.7,607.0 538.8,608.3 543.9,609.1 549.2,609.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="312.5" y1="637.8" x2="372.5" y2="637.8" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,3"/>
+<line x1="534.5" y1="362.5" x2="534.5" y2="322.5" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="534.5,322.5 530.6,322.7 526.7,323.3 522.9,324.2 519.2,325.5 515.6,327.2 512.3,329.2 509.1,331.6 506.2,334.2 503.6,337.1 501.2,340.3 499.2,343.6 497.5,347.2 496.2,350.9 495.3,354.7 494.7,358.6 494.5,362.5" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="549.2" y1="188.0" x2="495.8" y2="188.0" stroke="#333" stroke-width="1.6" stroke-linecap="square"/>
+<polyline points="495.8,188.0 496.1,193.2 496.9,198.4 498.1,203.5 499.9,208.4 502.1,213.1 504.8,217.6 507.9,221.8 511.5,225.7 515.3,229.2 519.5,232.3 524.0,235.0 528.8,237.3 533.7,239.0 538.8,240.3 543.9,241.1 549.2,241.3" fill="none" stroke="#888" stroke-width="0.9"/>
+<line x1="219.2" y1="283.0" x2="276.3" y2="283.0" stroke="#3a7bd5" stroke-width="2.2" stroke-linecap="square"/>
+<line x1="270.3" y1="287.0" x2="327.5" y2="287.0" stroke="#3a7bd5" stroke-width="2.2" stroke-linecap="square"/>
+<line x1="165.0" y1="350.0" x2="165.0" y2="410.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="165.0" y1="535.5" x2="165.0" y2="575.5" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="165.0" y1="727.8" x2="165.0" y2="807.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="230.0" y1="901.0" x2="320.0" y2="901.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="549.2" y1="422.5" x2="549.2" y2="482.5" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="549.2" y1="655.8" x2="549.2" y2="715.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="376.7" y1="816.8" x2="376.7" y2="876.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="549.2" y1="816.8" x2="549.2" y2="876.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="388.8" y1="961.0" x2="452.8" y2="961.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="400.8" y1="164.2" x2="460.8" y2="164.2" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="474.8" y1="164.2" x2="534.8" y2="164.2" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="376.7" y1="180.0" x2="376.7" y2="240.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<line x1="392.8" y1="801.8" x2="432.8" y2="801.8" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<text x="271.2" y="215.0" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">DECK</text>
+<text x="271.2" y="229.0" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">10′-2″ × 6′ · 61 sf</text>
+<text x="271.2" y="241.0" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">10′-2″ wide [M] · ≈2′ above grade</text>
+<text x="110.0" y="262.0" font-size="8" text-anchor="middle" fill="#666" font-weight="normal">stairs down</text>
+<text x="467.5" y="211.0" font-size="10" text-anchor="middle" fill="#222" font-weight="bold">LAUNDRY / SHED</text>
+<text x="467.5" y="225.0" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-3″ × 5′-9″ · 48 sf</text>
+<text x="467.5" y="237.0" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">unfinished · east door only</text>
+<text x="272.0" y="395.0" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 2</text>
+<text x="272.0" y="409.0" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">10′-2″ × 9′-2″ · 93 sf</text>
+<text x="272.0" y="421.0" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">measured · slider · closet door on east wall</text>
+<text x="238.0" y="562.5" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">BATH</text>
+<text x="238.0" y="576.5" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">6′-8″ × 7′-7″ · 51 sf</text>
+<text x="238.0" y="588.5" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">door past the tub</text>
+<text x="342.5" y="496.5" font-size="9" text-anchor="middle" fill="#222" font-weight="bold">HALL</text>
+<text x="342.5" y="511.5" font-size="7.5" text-anchor="middle" fill="#666" font-weight="normal">3′ wide</text>
+<text x="272.0" y="760.8" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">LIVING ROOM</text>
+<text x="272.0" y="774.8" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">10′-2″ × 12′-8″ · 129 sf</text>
+<text x="272.0" y="786.8" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">fireplace · built-in · picture rail</text>
+<text x="440.1" y="311.0" font-size="8" text-anchor="middle" fill="#222" font-weight="bold">closet</text>
+<text x="440.1" y="329.0" font-size="6.5" text-anchor="middle" fill="#666" font-weight="normal">bed 2 · 4′-11″ × 3′-5″ [M]</text>
+<text x="513.8" y="311.0" font-size="7" text-anchor="middle" fill="#222" font-weight="bold">closet</text>
+<text x="513.8" y="329.0" font-size="6.5" text-anchor="middle" fill="#666" font-weight="normal">bed 1</text>
+<text x="462.5" y="441.5" font-size="12" text-anchor="middle" fill="#222" font-weight="bold">BEDROOM 1</text>
+<text x="462.5" y="455.5" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-2″ × 8′-9″ · 71 sf</text>
+<text x="462.5" y="467.5" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">measured · closet above · window east</text>
+<text x="476.5" y="708.8" font-size="11" text-anchor="middle" fill="#222" font-weight="bold">KITCHEN</text>
+<text x="476.5" y="722.8" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-2″ × 12′-5″ · 101 sf</text>
+<text x="476.5" y="734.8" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">fridge · range · WH on fireplace wall</text>
+<text x="462.5" y="874.8" font-size="10.5" text-anchor="middle" fill="#222" font-weight="bold">FRONT PORCH</text>
+<text x="462.5" y="888.8" font-size="9" text-anchor="middle" fill="#555" font-weight="normal">8′-2″ × 7′-6″ · 61 sf</text>
+<text x="462.5" y="900.8" font-size="8" text-anchor="middle" fill="#777" font-weight="normal">enclosed entry · windows 3 sides</text>
+<text x="360.7" y="776.7" font-size="8" text-anchor="middle" fill="#fff" font-weight="bold">FP</text>
+<text x="344.5" y="672.0" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">built-in</text>
+<text x="254.2" y="509.7" font-size="8" text-anchor="middle" fill="#333" font-weight="normal">tub</text>
+<text x="298.2" y="506.7" font-size="6" text-anchor="middle" fill="#666" font-weight="normal" transform="rotate(-90 298.2 506.7)">shower</text>
+<text x="274.2" y="618.7" font-size="8" text-anchor="middle" fill="#333" font-weight="normal">vanity</text>
+<text x="342.5" y="605.7" font-size="7" text-anchor="middle" fill="#333" font-weight="normal">floor furnace</text>
+<text x="342.5" y="615.7" font-size="6.5" text-anchor="middle" fill="#333" font-weight="normal">(red-tagged)</text>
+<text x="524.2" y="688.8" font-size="7" text-anchor="middle" fill="#333" font-weight="normal">sink</text>
+<text x="524.2" y="751.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">tile</text>
+<text x="524.2" y="763.8" font-size="7" text-anchor="middle" fill="#555" font-weight="normal">counter</text>
+<text x="408.8" y="649.0" font-size="7" text-anchor="middle" fill="#333" font-weight="normal">fridge</text>
+<text x="405.8" y="706.0" font-size="7" text-anchor="middle" fill="#333" font-weight="normal">range</text>
+<text x="396.8" y="785.7" font-size="6.5" text-anchor="middle" fill="#222" font-weight="normal">WH</text>
+<text x="489.2" y="1028.0" font-size="8" text-anchor="middle" fill="#666" font-weight="normal">concrete steps</text>
+<text x="357.1" y="1078.0" font-size="10" text-anchor="middle" fill="#555" font-weight="normal">9th Street (front)</text>
+<line x1="160.0" y1="1054.0" x2="554.2" y2="1054.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="160.0" y1="1049.0" x2="160.0" y2="1059.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="554.2" y1="1049.0" x2="554.2" y2="1059.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="357.1" y="1048.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">19′-9″ (from the two bedrooms)</text>
+<line x1="170.0" y1="132.0" x2="372.5" y2="132.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="170.0" y1="127.0" x2="170.0" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="372.5" y1="127.0" x2="372.5" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="271.2" y="126.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">bedroom 2 + deck 10′-2″ [M]</text>
+<line x1="380.8" y1="132.0" x2="544.2" y2="132.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="380.8" y1="127.0" x2="380.8" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="544.2" y1="127.0" x2="544.2" y2="137.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="462.5" y="126.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal">bedroom 1 8′-2″ [M]</text>
+<line x1="112.0" y1="280.0" x2="112.0" y2="906.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="107.0" y1="280.0" x2="117.0" y2="280.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="107.0" y1="906.0" x2="117.0" y2="906.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="106.0" y="593.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 106.0 593.0)">31′-4″</text>
+<line x1="602.2" y1="160.0" x2="602.2" y2="966.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="597.2" y1="160.0" x2="607.2" y2="160.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="597.2" y1="966.0" x2="607.2" y2="966.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="596.2" y="563.0" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 596.2 563.0)">40′-4″</text>
+<line x1="146.0" y1="290.0" x2="146.0" y2="473.3" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="141.0" y1="290.0" x2="151.0" y2="290.0" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="141.0" y1="473.3" x2="151.0" y2="473.3" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="140.0" y="381.7" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 140.0 381.7)">bed 2 9′-2″ [M]</text>
+<line x1="576.2" y1="366.7" x2="576.2" y2="541.7" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="571.2" y1="366.7" x2="581.2" y2="366.7" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<line x1="571.2" y1="541.7" x2="581.2" y2="541.7" stroke="#666" stroke-width="0.8" stroke-linecap="square"/>
+<text x="570.2" y="454.2" font-size="9.5" text-anchor="middle" fill="#444" font-weight="normal" transform="rotate(-90 570.2 454.2)">bed 1 8′-9″ [M]</text>
+<g transform="translate(80,936)"><polygon points="0,-20 6,4 0,0 -6,4" fill="#222"/><text x="0" y="18" font-size="11" text-anchor="middle" font-weight="bold">N</text><text x="0" y="31" font-size="7.5" text-anchor="middle" fill="#666">away from street</text></g>
+<line x1="60.0" y1="996.0" x2="160.0" y2="996.0" stroke="#222" stroke-width="2" stroke-linecap="square"/>
+<line x1="60.0" y1="990.0" x2="60.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="80.0" y1="990.0" x2="80.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="100.0" y1="990.0" x2="100.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="120.0" y1="990.0" x2="120.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="140.0" y1="990.0" x2="140.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<line x1="160.0" y1="990.0" x2="160.0" y2="1002.0" stroke="#222" stroke-width="1" stroke-linecap="square"/>
+<text x="110.0" y="1014.0" font-size="8.5" text-anchor="middle" fill="#444" font-weight="normal">0        5 ft</text>
+<line x1="160.0" y1="1154.0" x2="190.0" y2="1154.0" stroke="#3a7bd5" stroke-width="2" stroke-linecap="square"/>
+<text x="198.0" y="1157.0" font-size="8.5" text-anchor="start" fill="#555" font-weight="normal">window / glass</text>
+<line x1="270.0" y1="1154.0" x2="300.0" y2="1154.0" stroke="#999" stroke-width="1" stroke-linecap="square" stroke-dasharray="4,3"/>
+<text x="308.0" y="1157.0" font-size="8.5" text-anchor="start" fill="#555" font-weight="normal">cased opening</text>
+<text x="380.0" y="1157.0" font-size="8.5" text-anchor="start" fill="#555" font-weight="normal">[M] = measured by Keith, Sept 12</text>
+<text x="40" y="1176" font-size="10.5" fill="#444">Keith's sketch, scaled to measurements. Measured [M]: bedroom 2 10′-2″ × 9′-2″ (rear wall 29½″ + 5′-5″ slider + 27″); bedroom 2's closet 4′-11″ ×</text>
+<text x="40" y="1191" font-size="10.5" fill="#444">3′-5″ with its 24″ door at the rear corner of the east wall; bedroom 1 8′-2″ × 8′-9″; deck 10′-2″ wide. The two bedroom widths make the house ≈19′-9″</text>
+<text x="40" y="1206" font-size="10.5" fill="#444">wide.</text>
+<text x="40" y="1221" font-size="10.5" fill="#444">One straight partition (the fireplace wall) runs the full depth. West: bedroom 2, bath with the 3′ hall beside it, living room. East: closet strip</text>
+<text x="40" y="1236" font-size="10.5" fill="#444">(3′-5″ deep), bedroom 1, kitchen, front porch. Deck and laundry/shed side by side behind the house. The hall is only the strip in front of the bath;</text>
+<text x="40" y="1251" font-size="10.5" fill="#444">the bath door faces the bedroom doors (bedroom 2's at the hall's north end, bedroom 1's on its east side); kitchen door at the north end of its west</text>
+<text x="40" y="1266" font-size="10.5" fill="#444">wall with the side door opposite; living room through a cased opening at the hall's south end.</text>
+<text x="40" y="1281" font-size="10.5" fill="#444">Unmeasured (drawn from the sketch): hall 3′ wide (so bath 6′-8″); bedroom 1's closet 2′-10″ (rest of the strip); bath 7′-7″ deep; living room 12′-8″</text>
+<text x="40" y="1296" font-size="10.5" fill="#444">deep; kitchen 12′-5″; porch 7′-6″ deep projecting 3′; deck and laundry 6′ deep; windows.</text>
+</svg></div>
+</section>
+
+<footer>
+  <a href="https://www.zillow.com/homedetails/1645-9th-St-Berkeley-CA-94710/24838128_zpid/" target="_blank" rel="noopener">Listing (Zillow)</a>
+  <a href="https://www.zillow.com/homedetails/2435-Valley-St-Berkeley-CA-94702/24835270_zpid/" target="_blank" rel="noopener">Finish reference: 2435 Valley St</a>
+  <a href="https://keithmancuso.github.io/1645-9th-st/" target="_blank" rel="noopener">Photos and plans</a>
+  <span>Sept 2026</span>
+</footer>
+</div>
+
+<script>
+(function(){
+  var KEY='9th-brief-v1';
+  var state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){state={}}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){}}
+
+  // estimates toggle
+  var est=document.getElementById('est-toggle');
+  function applyEst(){document.body.classList.toggle('show-est',!!est.checked)}
+  est.checked=!!state.est; applyEst();
+  est.addEventListener('change',function(){state.est=est.checked;save();applyEst()});
+
+  // checklists
+  var boxes=Array.prototype.slice.call(document.querySelectorAll('.checks input[type=checkbox]'));
+  var count=document.getElementById('check-count');
+  function updateCount(){var n=boxes.filter(function(b){return b.checked}).length;count.textContent=n?n+' of '+boxes.length+' covered':''}
+  boxes.forEach(function(b){
+    b.checked=!!(state.c&&state.c[b.id]);
+    b.addEventListener('change',function(){state.c=state.c||{};if(b.checked)state.c[b.id]=1;else delete state.c[b.id];save();updateCount()});
+  });
+  updateCount();
+  document.getElementById('check-reset').addEventListener('click',function(){state.c={};save();boxes.forEach(function(b){b.checked=false});updateCount()});
+
+  // plan switch
+  var btns=document.querySelectorAll('.plans .switch button');
+  function showPlan(v){
+    document.getElementById('plan-proposed').hidden=v!=='proposed';
+    document.getElementById('plan-existing').hidden=v!=='existing';
+    btns.forEach(function(x){var on=x.dataset.plan===v;x.classList.toggle('on',on);x.setAttribute('aria-selected',on)});
+  }
+  btns.forEach(function(x){x.addEventListener('click',function(){showPlan(x.dataset.plan)})});
+})();
+</script>
+
+</body></html>

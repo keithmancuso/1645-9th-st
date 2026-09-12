@@ -6,6 +6,7 @@ Working files for evaluating and planning a renovation of a 1919 bungalow in Nor
 
 - **Subject property (1645 9th St):** https://www.zillow.com/homedetails/1645-9th-St-Berkeley-CA-94710/24838128_zpid/
 - **Renovation reference (2435 Valley St):** https://www.zillow.com/homedetails/2435-Valley-St-Berkeley-CA-94702/24835270_zpid/
+- **Contractor brief:** `contractor-brief.html` — shareable walkthrough brief (disclosure summary, sequenced scope, questions, walkthrough checklist, both plans inlined). Planning estimates are hidden behind a toggle so the page can go to a contractor as-is. Floor plans are pasted in from `floor-plan/*.svg`; re-paste if the plans change.
 - **Budget and offer position:** `BUDGET.md` — hard cap $1M all-in; lean scope ~$330–485k; offer $650k (list) as of Sept 10, 2026, which only fits the cap at the low end of lean scope. Summarizes the seller's disclosure package (PDF is in the iCloud folder, not this repo).
 
 ## Subject property — 1645 9th St, Berkeley, CA 94710
@@ -83,4 +84,11 @@ Photos: `photos/2435-valley-st-reference/` (87 images, Zillow gallery order, 153
 
 - Photo filenames are the Zillow gallery position, zero-padded. Do not renumber.
 - `floor-plan/generate.py` is the source of truth for the plans. After editing, run `floor-plan/export.sh` (regenerates the SVGs and screenshots them with headless Chrome at 2×, sizing the window from the SVG). Change a dimension by editing the model in `build()`; every room label, dimension string, and door cut follows.
+- On Linux (Claude Code on the web) `export.sh` won't find Chrome; use Playwright's headless shell with the same flags, reading the window size from the SVG's width/height (the `chromium --headless=new` binary there clips the bottom ~90 px of the sheet):
+
+  ```
+  /opt/pw-browsers/chromium_headless_shell-*/chrome-linux/headless_shell --no-sandbox --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=W,H --screenshot="$PWD/existing.png" "file://$PWD/existing.svg"
+  ```
+
 - `index.html` galleries are static lists; regenerate if photos are added.
+- **Pull requests: always auto-merge.** Once a PR is pushed and mergeable, mark it ready and merge it into `main` without asking (Keith, Sept 12, 2026).
