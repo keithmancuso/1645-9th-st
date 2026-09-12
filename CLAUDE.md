@@ -99,3 +99,4 @@ Photos: `photos/2435-valley-st-reference/` (87 images, Zillow gallery order, 153
   ```
 
 - `index.html` galleries are static lists; regenerate if photos are added.
+- **Pull requests: always auto-merge.** Once a PR is pushed and mergeable, mark it ready and merge it into `main` without asking (Keith, Sept 12, 2026).
