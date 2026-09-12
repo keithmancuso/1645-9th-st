@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1645 9th St — proposed renovation, 3D walkthrough</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #cfd8dc; font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; color: #222; }
+  #c { display: block; width: 100%; height: 100%; }
+  #ui { position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,.92); border-radius: 10px; padding: 12px 14px; max-width: 300px; box-shadow: 0 2px 10px rgba(0,0,0,.15); }
+  #ui h1 { font-size: 15px; margin: 0 0 6px; }
+  #ui .row { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+  button { font: inherit; font-size: 13px; padding: 5px 9px; border: 1px solid #bbb; border-radius: 6px; background: #f6f6f6; cursor: pointer; }
+  button.on { background: #2b5f8e; color: #fff; border-color: #2b5f8e; }
+  #help { font-size: 12px; color: #444; margin-top: 8px; }
+  #help kbd { background: #eee; border: 1px solid #ccc; border-radius: 3px; padding: 0 4px; font-size: 11px; }
+  #hint { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); background: rgba(0,0,0,.65); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 13px; pointer-events: none; opacity: 0; transition: opacity .3s; }
+  #hint.show { opacity: 1; }
+  #cross { position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; margin: -5px 0 0 -5px; border: 2px solid rgba(255,255,255,.8); border-radius: 50%; pointer-events: none; display: none; }
+  #loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 16px; color: #333; }
+  #joy { position: absolute; right: 24px; bottom: 24px; width: 120px; height: 120px; border-radius: 50%; background: rgba(255,255,255,.35); border: 2px solid rgba(255,255,255,.6); display: none; touch-action: none; }
+  #joy .knob { position: absolute; left: 40px; top: 40px; width: 40px; height: 40px; border-radius: 50%; background: rgba(43,95,142,.8); }
+  @media (max-width: 640px) { #ui { max-width: calc(100% - 24px); font-size: 13px; } #help { display: none; } }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="loading">Loading model…</div>
+<div id="ui">
+  <h1>1645 9th St — proposed plan</h1>
+  <div class="row">
+    <button data-view="dollhouse">Dollhouse</button>
+    <button data-view="exterior">Exterior</button>
+    <button data-view="driveway">Driveway</button>
+    <button data-view="kitchen">Kitchen</button>
+    <button data-view="living">Living</button>
+    <button data-view="deck">Deck</button>
+    <button data-view="laundry">Laundry</button>
+  </div>
+  <div class="row">
+    <button id="bRoof">Roof</button>
+    <button id="bCeil">Ceilings</button>
+    <button id="bFurn" class="on">Furniture</button>
+    <button id="bWalk">Walk mode</button>
+  </div>
+  <div id="help">
+    <b>Orbit:</b> drag to rotate, scroll to zoom, right-drag to pan. <b>Double-click</b> a floor to stand there.<br>
+    <b>Walk:</b> click to look around, <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> / arrows to move, <kbd>Shift</kbd> to run, <kbd>Esc</kbd> to release the mouse.
+  </div>
+</div>
+<div id="cross"></div>
+<div id="hint"></div>
+<div id="joy"><div class="knob"></div></div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.170.0/examples/jsm/"
+} }
+</script>
+<script id="glb" type="application/octet-stream">__GLB_BASE64__</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { PointerLockControls } from 'three/addons/controls/PointerLockControls.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const F = 0.3048;                       // plan feet -> meters
+const P = (x, y, z) => new THREE.Vector3(x * F, z * F, y * F);   // plan (x, y, z) -> three.js (x, up, z)
+const Z0 = 2.0, EYE = Z0 + 5.4;
+
+const canvas = document.getElementById('c');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xbfd4e6);
+scene.fog = new THREE.Fog(0xbfd4e6, 60, 160);
+const camera = new THREE.PerspectiveCamera(55, 1, 0.05, 400);
+const pmrem = new THREE.PMREMGenerator(renderer); scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture; scene.environmentIntensity = 0.35;
+
+const hemi = new THREE.HemisphereLight(0xdfe9f3, 0x6b7a5a, 0.9); scene.add(hemi);
+const sun = new THREE.DirectionalLight(0xfff2dd, 2.6);
+sun.position.copy(P(-30, -25, 45)); sun.castShadow = true;
+sun.shadow.mapSize.set(2048, 2048);
+const sc = sun.shadow.camera; sc.left = -20; sc.right = 20; sc.top = 20; sc.bottom = -20; sc.near = 1; sc.far = 80; sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.02;
+sun.target.position.copy(P(13, 12, 0)); scene.add(sun, sun.target);
+const fill = new THREE.AmbientLight(0xffffff, 0.15); scene.add(fill);
+
+// interior "fixtures" so walk mode isn't dark with the roof on
+const lamps = [];
+for (const [x, y] of [[7.5, 23], [6.3, 5.5], [8.7, 5.5], [12, 15], [21, 6], [20, 19], [17, -3]]) {
+  const l = new THREE.PointLight(0xfff1e0, 0, 8 * F * 3, 2); l.position.copy(P(x, y, Z0 + 7.6)); scene.add(l); lamps.push(l);
+}
+
+const orbit = new OrbitControls(camera, canvas);
+orbit.enableDamping = true; orbit.dampingFactor = 0.08; orbit.maxPolarAngle = Math.PI / 2 - 0.02;
+const walk = new PointerLockControls(camera, canvas);
+
+const groups = { roof: [], ceil: [], furn: [] };
+let floorMeshes = [];
+const state = { roof: false, ceil: false, furn: true, walk: false };
+
+const hint = document.getElementById('hint');
+let hintT; function showHint(t, ms = 2500) { hint.textContent = t; hint.classList.add('show'); clearTimeout(hintT); hintT = setTimeout(() => hint.classList.remove('show'), ms); }
+
+function applyVis() {
+  groups.roof.forEach(o => o.visible = state.roof);
+  groups.ceil.forEach(o => o.visible = state.ceil);
+  groups.furn.forEach(o => o.visible = state.furn);
+  for (const [id, k] of [['bRoof', 'roof'], ['bCeil', 'ceil'], ['bFurn', 'furn'], ['bWalk', 'walk']]) document.getElementById(id).classList.toggle('on', state[k]);
+  lamps.forEach(l => l.intensity = state.ceil ? 6 : 0);
+  hemi.intensity = state.ceil ? 1.6 : 0.9;
+  document.getElementById('cross').style.display = state.walk ? 'block' : 'none';
+  document.getElementById('joy').style.display = (state.walk && isTouch) ? 'block' : 'none';
+}
+
+const loader = new GLTFLoader();
+const b64 = document.getElementById('glb').textContent.trim();
+const bin = Uint8Array.from(atob(b64), c => c.charCodeAt(0)).buffer;
+loader.parse(bin, '', gltf => {
+  const root = gltf.scene;
+  root.traverse(o => {
+    if (!o.isMesh) return;
+    const n = o.name, c = (o.userData && o.userData.coll) || '';
+    o.castShadow = true; o.receiveShadow = true;
+    if (o.material && o.material.transparent) { o.material.depthWrite = false; o.castShadow = false; }
+    if (c === 'Roof' || n.startsWith('roof') || n.startsWith('chimney')) groups.roof.push(o);
+    if (n.startsWith('ceiling')) { groups.ceil.push(o); groups.roof.splice(groups.roof.indexOf(o), 1); }
+    if (c === 'Furniture') groups.furn.push(o);
+    if (n.startsWith('floor') || n.startsWith('dk') || n === 'lawn' || n.startsWith('path') || n.startsWith('drive') || n.startsWith('ground') || n === 'sidewalk' || n === 'street' || n === 'backyard' || n === 'patio' || n.startsWith('frontbed') || n.startsWith('sidebed') || n.startsWith('rug')) floorMeshes.push(o);
+  });
+  scene.add(root);
+  if (!floorMeshes.length) root.traverse(o => { if (o.isMesh) floorMeshes.push(o); });
+  document.getElementById('loading').remove();
+  const q = new URLSearchParams(location.search).get('view');
+  setView(VIEWS[q] ? q : 'dollhouse');
+  applyVis();
+}, e => { document.getElementById('loading').textContent = 'Failed to load model: ' + e; });
+
+// ---------------------------------------------------------------- views
+const VIEWS = {
+  dollhouse: { walk: false, roof: false, ceil: false, pos: P(-18, 68, 55), tgt: P(13, 14, Z0) },
+  exterior:  { walk: false, roof: true,  ceil: true,  pos: P(-8, 72, 9),  tgt: P(13, 24, 8) },
+  driveway:  { walk: true,  roof: true,  ceil: true,  pos: P(31, 52, 5.6), tgt: P(22, 32, 5) },
+  kitchen:   { walk: true,  roof: true,  ceil: true,  pos: P(14.3, 12.8, EYE), tgt: P(3.0, 2.5, Z0 + 3.9) },
+  living:    { walk: true,  roof: true,  ceil: true,  pos: P(1.5, 18, EYE),   tgt: P(11.5, 27.5, Z0 + 4.3) },
+  deck:      { walk: true,  roof: true,  ceil: true,  pos: P(5, -7, EYE - 0.25), tgt: P(12, 2, Z0 + 4) },
+  laundry:   { walk: true,  roof: true,  ceil: true,  pos: P(13.5, -1.5, EYE), tgt: P(22, -5, Z0 + 3.5) },
+};
+function setWalk(on) {
+  if (on === state.walk) return;
+  state.walk = on;
+  orbit.enabled = !on;
+  if (!on && walk.isLocked) walk.unlock();
+  if (on) showHint('Walk mode — click the view to look around, WASD to move, Esc to release', 4000);
+  applyVis();
+}
+function setView(name) {
+  const v = VIEWS[name];
+  state.roof = v.roof; state.ceil = v.ceil;
+  setWalk(v.walk);
+  camera.position.copy(v.pos);
+  if (v.walk) { camera.lookAt(v.tgt); }
+  else { orbit.target.copy(v.tgt); orbit.update(); }
+  applyVis();
+}
+document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => setView(b.dataset.view)));
+document.getElementById('bRoof').onclick = () => { state.roof = !state.roof; applyVis(); };
+document.getElementById('bCeil').onclick = () => { state.ceil = !state.ceil; applyVis(); };
+document.getElementById('bFurn').onclick = () => { state.furn = !state.furn; applyVis(); };
+document.getElementById('bWalk').onclick = () => {
+  if (state.walk) { setWalk(false); orbit.target.copy(camera.position).add(camera.getWorldDirection(new THREE.Vector3()).multiplyScalar(3)); orbit.update(); }
+  else { const dir = camera.getWorldDirection(new THREE.Vector3()); const t = orbit.target.clone(); camera.position.set(t.x, EYE * F, t.z); camera.lookAt(t.x + dir.x, EYE * F, t.z + dir.z); setWalk(true); }
+};
+
+// double-click a floor: stand there
+const ray = new THREE.Raycaster(); const mouse = new THREE.Vector2();
+canvas.addEventListener('dblclick', e => {
+  if (state.walk) return;
+  mouse.set((e.clientX / innerWidth) * 2 - 1, -(e.clientY / innerHeight) * 2 + 1);
+  ray.setFromCamera(mouse, camera);
+  const hits = ray.intersectObjects(floorMeshes, false);
+  if (!hits.length) return;
+  const p = hits[0].point; const dir = camera.getWorldDirection(new THREE.Vector3());
+  camera.position.set(p.x, p.y + 5.4 * F, p.z);
+  camera.lookAt(p.x + dir.x, p.y + 5.4 * F, p.z + dir.z);
+  state.roof = true; state.ceil = true;
+  setWalk(true);
+});
+canvas.addEventListener('click', () => { if (state.walk && !walk.isLocked && !isTouch) walk.lock(); });
+walk.addEventListener('unlock', () => { if (state.walk) showHint('Mouse released — click the view to look around again, or press Dollhouse', 2500); });
+
+// ---------------------------------------------------------------- walking
+const keys = {};
+addEventListener('keydown', e => { keys[e.code] = true; if (['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space'].includes(e.code)) e.preventDefault(); });
+addEventListener('keyup', e => { keys[e.code] = false; });
+const isTouch = matchMedia('(pointer: coarse)').matches;
+const joyV = new THREE.Vector2();
+{ // touch joystick + drag-look
+  const joy = document.getElementById('joy'), knob = joy.querySelector('.knob'); let jid = null;
+  joy.addEventListener('pointerdown', e => { jid = e.pointerId; joy.setPointerCapture(jid); });
+  joy.addEventListener('pointermove', e => { if (e.pointerId !== jid) return; const r = joy.getBoundingClientRect(); const dx = (e.clientX - r.left - 60) / 50, dy = (e.clientY - r.top - 60) / 50; joyV.set(Math.max(-1, Math.min(1, dx)), Math.max(-1, Math.min(1, dy))); knob.style.left = 40 + joyV.x * 40 + 'px'; knob.style.top = 40 + joyV.y * 40 + 'px'; });
+  const end = e => { if (e.pointerId !== jid) return; jid = null; joyV.set(0, 0); knob.style.left = '40px'; knob.style.top = '40px'; };
+  joy.addEventListener('pointerup', end); joy.addEventListener('pointercancel', end);
+  let look = null;
+  canvas.addEventListener('pointerdown', e => { if (state.walk && isTouch) look = { x: e.clientX, y: e.clientY, id: e.pointerId }; });
+  canvas.addEventListener('pointermove', e => {
+    if (!look || e.pointerId !== look.id) return;
+    const dx = e.clientX - look.x, dy = e.clientY - look.y; look.x = e.clientX; look.y = e.clientY;
+    const eu = new THREE.Euler(0, 0, 0, 'YXZ'); eu.setFromQuaternion(camera.quaternion);
+    eu.y -= dx * 0.005; eu.x = Math.max(-1.4, Math.min(1.4, eu.x - dy * 0.005)); camera.quaternion.setFromEuler(eu);
+  });
+  canvas.addEventListener('pointerup', () => look = null);
+}
+const clock = new THREE.Clock();
+function step(dt) {
+  if (!state.walk) return;
+  const run = keys.ShiftLeft || keys.ShiftRight;
+  const speed = (run ? 3.2 : 1.6) * dt;   // m/s
+  let fwd = (keys.KeyW || keys.ArrowUp ? 1 : 0) - (keys.KeyS || keys.ArrowDown ? 1 : 0) - joyV.y;
+  let side = (keys.KeyD || keys.ArrowRight ? 1 : 0) - (keys.KeyA || keys.ArrowLeft ? 1 : 0) + joyV.x;
+  if (!fwd && !side) return;
+  const dir = camera.getWorldDirection(new THREE.Vector3()); dir.y = 0; dir.normalize();
+  const right = new THREE.Vector3().crossVectors(dir, new THREE.Vector3(0, 1, 0));
+  camera.position.addScaledVector(dir, fwd * speed).addScaledVector(right, side * speed);
+  // stay on the lot and at eye height
+  camera.position.x = Math.max(-14 * F, Math.min(40 * F, camera.position.x));
+  camera.position.z = Math.max(-26 * F, Math.min(76 * F, camera.position.z));
+  const inside = camera.position.x > 0 && camera.position.x < 26 * F && camera.position.z > -8 * F && camera.position.z < 34 * F;
+  const target = (inside ? EYE : 5.4) * F; camera.position.y += (target - camera.position.y) * Math.min(1, dt * 6);
+}
+
+function resize() { const w = innerWidth, h = innerHeight; renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+addEventListener('resize', resize); resize();
+renderer.setAnimationLoop(() => { const dt = Math.min(clock.getDelta(), 0.05); step(dt); if (!state.walk) orbit.update(); renderer.render(scene, camera); });
+</script>
+</body>
+</html>

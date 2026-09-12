@@ -81,22 +81,29 @@ Sequencing: roof and gutters first (stop the water), then termite/foundation/sei
 
 | Purchase | + closing / carry | Renovation budget left | Fits lean scope? |
 |---|---|---|---|
-| $649k (list) | ~$25k | ~$325k | Only at the very low end, owner-GC, no surprises. Don't plan on it. |
+| $675k | ~$26k | ~$299k | No — below the lean-scope floor |
+| **$650k (offer, = list)** | **~$25k** | **~$325k** | **Only at the very low end of lean scope. See "Fitting $650k" below.** |
 | $600k | ~$24k | ~$375k | Tight |
 | $575k | ~$23k | ~$400k | Yes, with a normal contingency |
-| $550k | ~$22k | ~$425k | Yes |
 
 Closing/carry = ~1% closing costs + buyer's half of Berkeley's 1.5% transfer tax + 8–12 months of tax (~$11k/yr), insurance, utilities. Property tax after purchase ≈ 1.25% ad valorem + ~$2.9k/yr direct assessments.
 
-Financing note: with no heat, active leaks, and knob-and-tube, a conventional lender may balk. Plan on cash or a renovation loan (203k / HomeStyle).
+### Fitting $650k under the $1M cap (decided Sept 10, 2026)
+
+$650k leaves ~$325k for renovation. Lean scope is $330–485k, so the cap only holds if the scope lands at or below its low end. Two ways to get there; pick one before bids come in:
+
+1. **Trim lean scope to ~$300–325k.** Defer the rear porch → laundry/mudroom conversion ($15–25k; keep the washer hookup in the porch as-is), hold the kitchen to the IKEA/semi-custom low end ($45k), bathroom at $25k, plaster/paint at the low end, and carry a 15% contingency on the smaller base (~$40k). That is a sound house on the proposed floor plan with nothing fancy and zero room for surprises in the substructure.
+2. **Accept a cap of ~$1.1M** if the termite/foundation work comes in at the high end. This is a conscious decision, not drift — write it down here if taken.
+
+Financing at $650k: 20% down ($130k) + ~$25k closing leaves ~$85k of cash/brokerage (from ~$240k) toward renovation, so the renovation is loan-funded either way. Pre-approval in progress with CMG Home Loans (Andy Spellman, 510-508-5492); confirm whether it is conventional or a renovation product (HomeStyle / 203k) — the house has no working heat, knob-and-tube, and active leaks, all documented in the seller's package, and a conventional appraisal may flag them.
 
 ## Offer position
 
-- **Offer ~$575k, as-is.** Walk-away $600k.
-- Justify from the seller's own package: ~$50k of disclosed bids plus an unbid rewire, replumb, foundation, and heating system.
+- **Offer $650k (list price), as-is.** Decided Sept 10, 2026; pre-approval letter requested at this amount. Walk-away price: not set — decide before any counter or escalation clause.
+- Justify holding at list rather than above it from the seller's own package: ~$50k of disclosed bids plus an unbid rewire, replumb, foundation, and heating system.
 - Terms: 7–10 day inspection contingency (own sewer scope, electrician, foundation look); seller completes the sewer lateral before close or pays the $4,500 city deposit; seismic transfer-tax rebate stays assigned to buyer (already checked that way in the addendum); fast close.
-- Market check: 2435 Valley St (renovated, 1,067 sq ft) asks $995k. If it closes near $1.2M, flippers can make $649k work here and a $575k offer likely loses. That is acceptable; above ~$600k this house is outside the cap.
+- Market check: 2435 Valley St (renovated, 1,067 sq ft) asks $995k. If it closes near $1.2M, flippers can make $649k work here, so a list-price offer competes on terms and certainty rather than price. Going above list breaks the cap outright.
 
 ## Value check
 
-A finished 734 sq ft 2/1 on 9th St is worth roughly $850k–$1.05M depending on where Valley St closes. At $575k + $400k we are at ~$975k all-in for a house worth about that finished, with ~$80–150k of deferred exterior work still owed. This is a break-even-at-best project, not an investment; it only makes sense because we want this house.
+A finished 734 sq ft 2/1 on 9th St is worth roughly $850k–$1.05M depending on where Valley St closes. At $650k + $325k we are at ~$975k all-in; at $650k + $400k we are at ~$1.05M, the top of the finished-value range, with ~$80–150k of deferred exterior work still owed. This is a break-even-at-best project that goes underwater on paper if the renovation runs to the high end; it only makes sense because we want this house.
